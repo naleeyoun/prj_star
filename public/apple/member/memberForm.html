@@ -5,21 +5,509 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>yina</title>
 <style type="text/css">
-	table, th, td {
-		border: 1px solid black;
-		border-collapse: collapse;
-	}
-	
-	th, td {
-		padding: 15px;
-		}
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+}
+
+th, td {
+	padding: 15px;
+}
 </style>
 </head>
 
-	<body>
-	memberForm.html
-	</body>
+<body>
+	<!-- 
+memberForm.html 회원가입 폼
+이름 : <input type="text" id="" name="">
+ -->
+
+
+	<!-- 회원가입 만들기 -->
+
+	<h1>
+		<b>회원가입</b>
+	</h1>
+	<br>
+
+	<!-- 기본정보 -->
+	<h3>● 기본정보</h3>
+	<hr>
+
+	<table>
+		<tr>
+			<th>이름</th>
+			<td>
+				<form action="" method="post" id="" name=""
+					enctype="multipart/form-data">
+					<input type="text" id="" name="">
+				</form>
+			</td>
+			<th>추천인</th>
+			<td>
+				<form action="" method="post" id="" name=""
+					enctype="multipart/form-data">
+					<input type="text" id="" name="">
+				</form>
+			</td>
+		</tr>
+
+		<tr>
+			<th>아이디</th>
+			<td>
+				<form action="" method="post" id="" name=""
+					enctype="multipart/form-data">
+					<input type="text" id="" name="">
+				</form>
+			</td>
+			<th>비밀번호</th>
+			<td>
+				<form action="" method="post" id="" name=""
+					enctype="multipart/form-data">
+					<input type="password" id="" name="">
+				</form>
+			</td>
+		</tr>
+
+		<tr>
+			<th>성별</th>
+			<td>
+				<form action="" method="post" id="" name=""
+					enctype="multipart/form-data">
+					<input type="radio" id="" name="radio" value=1>남 <input
+						type="radio" id="" name="radio" value=0>여
+
+				</form>
+			</td>
+			<th>생일</th>
+			<td>
+				<form action="" method="post" id="" name=""
+					enctype="multipart/form-data">
+					<input type="date" id="" name="">
+				</form>
+			</td>
+		</tr>
+
+		<tr>
+			<th>국적</th>
+			<td>
+				<form action="" method="post" id="" name=""
+					enctype="multipart/form-data">
+					<select id="" name="">
+						<option>미국
+						<option>대한민국
+						<option>중국
+						<option>캐나다
+						<option>일본
+						<option>가나
+						<option>필리핀
+						<option>영국</option>
+					</select>
+				</form>
+			</td>
+
+			<th>주소</th>
+			<td>
+				<form action="" method="post" id="" name=""
+					enctype="multipart/form-data">
+					<select id="" name="">
+						<option>서울특별시
+						<option>인천광역시
+						<option>대구광역시
+						<option>대전광역시
+						<option>제주도
+						<option>광주광역시
+						<option>강원도
+						<option>충청도
+						<option>경상도</option>
+					</select>
+				</form>
+			</td>
+		</tr>
+
+		<tr>
+			<th>모바일</th>
+			<td width="300">
+				<form action="" method="post" id="" name=""
+					enctype="multipart/form-data">
+					<select id="" name="">
+						<option>010</option>
+						<option>070</option>
+					</select>
+				</form>
+
+				<form action="" method="post" id="" name=""
+					enctype="multipart/form-data">
+					<input type="number" id="" name="" style="width: 100px"> -
+					<input type="number" id="" name="" style="width: 100px">
+				</form>
+			</td>
+			<th>전화번호</th>
+			<td width="300">
+				<form action="" method="post" id="" name=""
+					enctype="multipart/form-data">
+					<select id="" name="">
+						<option>070</option>
+						<option>032</option>
+						<option>02</option>
+						<option>053</option>
+					</select>
+				</form>
+
+				<form action="" method="post" id="" name=""
+					enctype="multipart/form-data">
+					<input type="number" id="" name="" style="width: 100px"> -
+					<input type="number" id="" name="" style="width: 100px">
+				</form>
+			</td>
+		</tr>
+
+		<tr>
+			<th>팩스번호</th>
+			<td>
+				<form action="" method="post" id="" name=""
+					enctype="multipart/form-data">
+					<select id="" name="">
+						<option>070</option>
+						<option>032</option>
+						<option>02</option>
+						<option>0508</option>
+					</select>
+				</form>
+
+				<form action="" method="post" id="" name=""
+					enctype="multipart/form-data">
+					<input type="number" id="" name="" style="width: 100px"> -
+					<input type="number" id="" name="" style="width: 100px">
+				</form>
+			</td>
+			<th>이메일</th>
+			<td>
+				<form action="" method="post" id="" name=""
+					enctype="multipart/form-data">
+					<input type="text" id="" name="" style="width: 100px"> @ <select
+						id="" name="" style="width: 100px">
+						<option>gmail.com</option>
+						<option>daum.net</option>
+						<option>naver.com</option>
+						<option>직접입력</option>
+					</select>
+				</form>
+
+			</td>
+		</tr>
+
+		<tr>
+			<th width="110">비밀번호 문제</th>
+			<td>
+				<form action="" method="post" id="" name=""
+					enctype="multipart/form-data">
+					<select id="" name="" style="width: 250px">
+						<option>졸업한 초등학교 이름은?
+						<option>아버지 성함은?
+						<option>어머니 성함은?
+						<option>제일 좋아하는 장소는?
+						<option>제일 좋아하는 색깔은?</option>
+					</select>
+				</form>
+			</td>
+
+			<th>비밀번호 답</th>
+			<td>
+				<form action="" method="post" id="" name=""
+					enctype="multipart/form-data">
+					<input type="text" id="" name="" style="width: 250px">
+				</form>
+			</td>
+		</tr>
+		<tr>
+			<th>사진</th>
+			<td colspan="3">
+				<form action="" method="post" id="" name=""
+					enctype="multipart/form-data">
+					<input type="file" id="" name="file" accept=".png,.jpg">
+				</form>
+			</td>
+
+		</tr>
+
+		<tr>
+			<th>SNS</th>
+			<td>
+				<form action="" method="post" id="" name=""
+					enctype="multipart/form-data">
+					<input type="text" id="" name="" style="width: 250px">
+				</form>
+			</td>
+
+			<th>홈페이지</th>
+			<td>
+				<form action="" method="post" id="" name=""
+					enctype="multipart/form-data">
+					<input type="text" id="" name="" style="width: 250px">
+				</form>
+			</td>
+		</tr>
+
+		<tr>
+			<th>직업</th>
+			<td>
+				<form action="" method="post" id="" name=""
+					enctype="multipart/form-data">
+					<input type="text" id="" name="">
+				</form>
+			</td>
+			<th>취미</th>
+			<td>
+				<form action="" method="post" id="" name=""
+					enctype="multipart/form-data">
+					<input type="checkbox" id="" name="" value="YES">요리 <input
+						type="checkbox" id="" name="" value="YES">운동 <input
+						type="checkbox" id="" name="" value="YES">게임 <input
+						type="checkbox" id="" name="" value="YES">독서 <br> <input
+						type="checkbox" id="" name="" value="YES">영화감상 <input
+						type="checkbox" id="" name="" value="YES">낮잠 <input
+						type="checkbox" id="" name="" value="YES">사진촬영
+
+				</form>
+			</td>
+		</tr>
+
+		<tr>
+			<th>결혼여부</th>
+			<td>
+				<form action="" method="post" id="" name=""
+					enctype="multipart/form-data">
+					<input type="radio" id="" name="radio2" value=1>기혼 <input
+						type="radio" id="" name="radio2" value=0>미혼
+
+				</form>
+			</td>
+			<th>결혼기념일</th>
+			<td>
+				<form action="" method="post" id="" name=""
+					enctype="multipart/form-data">
+					<input type="date" id="" name="">
+				</form>
+			</td>
+		</tr>
+
+		<tr>
+			<th>자녀유무</th>
+			<td>
+				<form action="" method="post" id="" name=""
+					enctype="multipart/form-data">
+					<input type="radio" id="" name="radio2" value=1>유 <input
+						type="radio" id="" name="radio2" value=0>무
+
+				</form>
+			</td>
+			<th>좋아하는 색깔</th>
+			<td>
+				<form action="" method="post" id="" name=""
+					enctype="multipart/form-data">
+					<input type="color" id="color" name="color">
+				</form>
+			</td>
+		</tr>
+
+		<tr>
+			<th>자기소개</th>
+			<td colspan="3">
+				<form action="" method="post" id="" name=""
+					enctype="multipart/form-data">
+					<input type="text" id="" name="" style="width: 700px">
+				</form>
+			</td>
+		</tr>
+
+	</table>
+	<br>
+	<br>
+
+	<!-- 프로젝트 정보 -->
+	<h3>● 프로젝트 정보</h3>
+	<hr>
+
+	<table>
+		<tr>
+			<th>번호</th>
+			<th>프로젝트명</th>
+			<th>참여기간</th>
+			<th>역할</th>
+			<th>발주사</th>
+		</tr>
+
+		<tr>
+			<td>1.</td>
+			<td>
+				<form action="" method="post" id="" name=""
+					enctype="multipart/form-data">
+					<input type="text" id="" name="">
+				</form>
+			</td>
+			<td>
+				<form action="" method="post" id="" name=""
+					enctype="multipart/form-data">
+					<input type="date" id="" name=""> ~ <br> <input
+						type="date" id="" name="">
+				</form>
+			</td>
+			<td>
+				<form action="" method="post" id="" name=""
+					enctype="multipart/form-data">
+					<input type="text" id="" name="">
+				</form>
+			</td>
+
+			<td>
+				<form action="" method="post" id="" name=""
+					enctype="multipart/form-data">
+					<input type="text" id="" name="">
+				</form>
+			</td>
+		</tr>
+
+		<tr>
+			<td>2.</td>
+			<td>
+				<form action="" method="post" id="" name=""
+					enctype="multipart/form-data">
+					<input type="text" id="" name="">
+				</form>
+			</td>
+			<td>
+				<form action="" method="post" id="" name=""
+					enctype="multipart/form-data">
+					<input type="date" id="" name=""> ~ <br> <input
+						type="date" id="" name="">
+				</form>
+			</td>
+			<td>
+				<form action="" method="post" id="" name=""
+					enctype="multipart/form-data">
+					<input type="text" id="" name="">
+				</form>
+			</td>
+
+			<td>
+				<form action="" method="post" id="" name=""
+					enctype="multipart/form-data">
+					<input type="text" id="" name="">
+				</form>
+			</td>
+		</tr>
+
+		<tr>
+			<td>3.</td>
+			<td>
+				<form action="" method="post" id="" name=""
+					enctype="multipart/form-data">
+					<input type="text" id="" name="">
+				</form>
+			</td>
+			<td>
+				<form action="" method="post" id="" name=""
+					enctype="multipart/form-data">
+					<input type="date" id="" name=""> ~ <br> <input
+						type="date" id="" name="">
+				</form>
+			</td>
+			<td>
+				<form action="" method="post" id="" name=""
+					enctype="multipart/form-data">
+					<input type="text" id="" name="">
+				</form>
+			</td>
+
+			<td>
+				<form action="" method="post" id="" name=""
+					enctype="multipart/form-data">
+					<input type="text" id="" name="">
+				</form>
+			</td>
+
+		</tr>
+
+		<tr>
+			<td>4.</td>
+			<td>
+				<form action="" method="post" id="" name=""
+					enctype="multipart/form-data">
+					<input type="text" id="" name="">
+				</form>
+			</td>
+			<td>
+				<form action="" method="post" id="" name=""
+					enctype="multipart/form-data">
+					<input type="date" id="" name=""> ~ <br> <input
+						type="date" id="" name="">
+				</form>
+			</td>
+			<td>
+				<form action="" method="post" id="" name=""
+					enctype="multipart/form-data">
+					<input type="text" id="" name="">
+				</form>
+			</td>
+
+			<td>
+				<form action="" method="post" id="" name=""
+					enctype="multipart/form-data">
+					<input type="text" id="" name="">
+				</form>
+			</td>
+		</tr>
+	</table>
+	<br>
+	<br>
+
+	<!-- 선택 정보 -->
+	<h3>● 선택 정보</h3>
+	<hr>
+
+	<table>
+		<tr>
+			<th>개인정보 유효기간</th>
+			<td>
+				<form action="" method="post" id="" name=""
+					enctype="multipart/form-data">
+					<input type="radio" id="" name="radio3" value=0>1년
+					<input type="radio" id="" name="radio3" value=1>3년
+					<input type="radio" id="" name="radio3" value=2>5년
+					<input type="radio" id="" name="radio3" value=3>10년
+				</form>
+			</td>
+		</tr>
+
+		<tr>
+			<th>모바일 마케팅 수신 동의</th>
+			<td>
+				<form action="" method="post" id="" name=""
+					enctype="multipart/form-data">
+					<input type="radio" id="" name="radio4" value=1>동의
+					<input type="radio" id="" name="radio4" value=0>미동의
+				</form>
+			</td>
+		</tr>
+
+		<tr>
+			<th>이메일 마케팅 수신 동의</th>
+			<td>
+				<form action="" method="post" id="" name=""
+					enctype="multipart/form-data">
+					<input type="radio" id="" name="radio5" value=1>동의
+					<input type="radio" id="" name="radio5" value=0>미동의
+				</form>
+			</td>
+		</tr>
+	</table>
+
+	<br>
+
+
+
+</body>
 
 </html>
 
-		
