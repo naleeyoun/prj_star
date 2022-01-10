@@ -6,7 +6,7 @@
 <title>yina</title>
 <style type="text/css">
 table, th, td {
-	border: 1px solid black;
+	border: 1px solid silver;
 	border-collapse: collapse;
 }
 
@@ -110,6 +110,10 @@ memberForm.html 회원가입 폼
 			<td>
 				<form action="" method="post" id="" name=""
 					enctype="multipart/form-data">
+
+					<small>우편번호</small> <input type="text" id="" name=""
+						style="width: 134px" value="12345">
+					<br>
 					<select id="" name="">
 						<option value="1">서울특별시
 						<option value="2" selected>인천광역시
@@ -120,8 +124,8 @@ memberForm.html 회원가입 폼
 						<option value="7">강원도
 						<option value="8">충청도
 						<option value="9">경상도</option>
-					</select>
-				</form>
+					</select> <input type="text" id="" name="" style="width: 195px"
+						placeholder="상세주소" value="이나로 55 이나아파트 1234-4567">
 			</td>
 		</tr>
 
@@ -143,9 +147,9 @@ memberForm.html 회원가입 폼
 
 				<form action="" method="post" id="" name=""
 					enctype="multipart/form-data">
-					<input type="text" id="" name="" style="width: 100px"
-						value="1234"> - <input type="text" id="" name=""
-						style="width: 100px" value="5678">
+					<input type="text" id="" name="" style="width: 100px" value="1234">
+					- <input type="text" id="" name="" style="width: 100px"
+						value="5678">
 				</form>
 			</td>
 			<th>전화번호</th>
@@ -184,9 +188,9 @@ memberForm.html 회원가입 폼
 
 				<form action="" method="post" id="" name=""
 					enctype="multipart/form-data">
-					<input type="text" id="" name="" style="width: 100px"
-						value="8520"> - <input type="text" id="" name=""
-						style="width: 100px" value="9632">
+					<input type="text" id="" name="" style="width: 100px" value="8520">
+					- <input type="text" id="" name="" style="width: 100px"
+						value="9632">
 				</form>
 			</td>
 			<th>이메일</th>
@@ -232,15 +236,14 @@ memberForm.html 회원가입 폼
 		<tr>
 			<th>사진</th>
 			<td colspan="3">
-<!-- 파일첨부 부분
+				<!-- 파일첨부 부분
 				<form action="" method="post" id="" name=""
 					enctype="multipart/form-data">
 					<input type="file" id="" name="file" accept=".png,.jpg">
 				</form>
--->
-				<img src="../../neo.png" width="150px">
+--> <img src="../../neo.png" width="150px">
 			</td>
-			
+
 
 		</tr>
 
@@ -249,8 +252,13 @@ memberForm.html 회원가입 폼
 			<td>
 				<form action="" method="post" id="" name=""
 					enctype="multipart/form-data">
-					<input type="text" id="" name="" style="width: 250px"
-						value="www.daum.net">
+					<select id="" name="">
+						<option>facebook
+						<option selected>instagram
+						<option>tiktok
+						<option>zepeto
+					</select> <input type="text" id="" name="" style="width: 200px"
+						value="yina123">
 				</form>
 			</td>
 
@@ -331,7 +339,8 @@ memberForm.html 회원가입 폼
 			<td colspan="3">
 				<form action="" method="post" id="" name=""
 					enctype="multipart/form-data">
-					<textarea id="" name="" style="width: 700px" rows="5" placeholder="80자 이내로 입력해주세요.">별 멀리 무성할 다 위에도 별빛이 멀리 이런 추억과 버리었습니다. 겨울이 나는 별 프랑시스 북간도에 다 이름을 하나의 계십니다. 당신은 내일 별빛이 밤이 계십니다. 이런 무덤 별들을 나는 쓸쓸함과 피어나듯이 딴은 가득 까닭입니다.</textarea>
+					<textarea id="" name="" style="width: 700px" rows="5"
+						placeholder="80자 이내로 입력해주세요.">별 멀리 무성할 다 위에도 별빛이 멀리 이런 추억과 버리었습니다. 겨울이 나는 별 프랑시스 북간도에 다 이름을 하나의 계십니다. 당신은 내일 별빛이 밤이 계십니다. 이런 무덤 별들을 나는 쓸쓸함과 피어나듯이 딴은 가득 까닭입니다.</textarea>
 				</form>
 			</td>
 		</tr>
@@ -364,8 +373,8 @@ memberForm.html 회원가입 폼
 			<td>
 				<form action="" method="post" id="" name=""
 					enctype="multipart/form-data">
-					<input type="date" id="" name="" value="2021-01-01"> <br>
-					~<input type="date" id="" name="" value="2021-12-31">
+					<input type="month" id="" name="" value="2021-01"> <br>
+					~<input type="month" id="" name="" value="2021-12">
 				</form>
 			</td>
 			<td>
@@ -394,8 +403,8 @@ memberForm.html 회원가입 폼
 			<td>
 				<form action="" method="post" id="" name=""
 					enctype="multipart/form-data">
-					<input type="date" id="" name="" value="2020-06-30"><br>
-					~<input type="date" id="" name="" value="2020-12-01">
+					<input type="month" id="" name="" value="2020-06"><br>
+					~<input type="month" id="" name="" value="2020-12">
 				</form>
 			</td>
 			<td>
@@ -424,8 +433,8 @@ memberForm.html 회원가입 폼
 			<td>
 				<form action="" method="post" id="" name=""
 					enctype="multipart/form-data">
-					<input type="date" id="" name="" value="2019-05-01"> <br>
-					~<input type="date" id="" name="" value="2020-02-20">
+					<input type="month" id="" name="" value="2019-05"> <br>
+					~<input type="month" id="" name="" value="2020-02">
 				</form>
 			</td>
 			<td>
@@ -455,8 +464,8 @@ memberForm.html 회원가입 폼
 			<td>
 				<form action="" method="post" id="" name=""
 					enctype="multipart/form-data">
-					<input type="date" id="" name=""> <br> ~<input
-						type="date" id="" name="">
+					<input type="month" id="" name=""> <br> ~<input
+						type="month" id="" name="">
 				</form>
 			</td>
 			<td>
@@ -519,6 +528,8 @@ memberForm.html 회원가입 폼
 	</table>
 
 	<br>
+	<br>
+	<a href="./memberList.html">목록</a> 
 
 </body>
 
