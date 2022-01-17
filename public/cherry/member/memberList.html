@@ -36,26 +36,29 @@
 	<!-- <img src="../../images/edit_cgv.PNG"> -->
 	<br>
 	<br>
-	<h2 style="color: #4C4C4C; text-align: center; font-family: 'CJ ONLYONE Medium';">Cherry</h2>
+	<!-- <h2 style="color: #4C4C4C; text-align: center; font-family: 'CJ ONLYONE Medium';">Cherry</h2> -->
+	<!-- <h2 style="color: #4C4C4C; text-align: center; font-family: '카페24 고운밤';">Cherry</h2> -->
+	<h1 style="color: #4C4C4C; text-align: center; font-family: olwas; font-size: 80px; width: 70%; margin-left: auto; margin-right: auto; ">Cherry</h1>
+	<!-- background-color: rgb(248,249,250); -->
+	<!-- Nabvar -->
 	
-	<!-- 네비게이션 바 -->
-	
-	<nav class="navbar navbar-expand-lg navbar-light bg-light" style="width: 70%; margin-left: auto; margin-right: auto;">
+	<nav class="navbar navbar-expand-lg navbar-light bg-light" style="width: 70%; margin-left: auto; margin-right: auto; font-family: '카페24 고운밤';">
+	<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light"> -->
 	  <div class="container-fluid">
-	    <a class="navbar-brand" href="#">회원리스트</a>
+	    <a class="navbar-brand" href="./memberList.html">회원리스트</a>
 	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
 	      <span class="navbar-toggler-icon"></span>
 	    </button>
-	    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+	    <div class="collapse navbar-collapse" id="navbarTogglerDemo02" style="font-size: 20px;">
 	      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 	        <li class="nav-item">
-	          <a class="nav-link active" aria-current="page" href="#">회원가입</a>
+	          <a class="nav-link active" aria-current="page" href="./memberForm.html">회원가입</a>
 	        </li>
 	        <li class="nav-item">
-	          <a class="nav-link" href="#">회원수정</a>
+	          <a class="nav-link" href="./memberEdit.html">회원정보수정</a>
 	        </li>
 	        <li class="nav-item">
-	          <a class="nav-link disabled">회원정보</a>
+	          <a class="nav-link" href="memberView.html">회원정보</a>
 	        </li>
 	      </ul>
 	      <form class="d-flex">
@@ -66,18 +69,28 @@
 	  </div>
 	</nav>
 	<br>
+	<!-- BreadCrumb -->
+	
+	<nav style="--bs-breadcrumb-divider: '>'; margin-left: auto; margin-right: auto; width: 70%; font-family: '카페24 고운밤';" aria-label="breadcrumb">
+	  <ol class="breadcrumb">
+	    <li class="breadcrumb-item"><a href="../../index.html" style="color:gray;">index</a></li>
+	    <li class="breadcrumb-item active" aria-current="page">회원리스트</li>
+	  </ol>
+	</nav>
+	
+	
+	<!-- <h2 style="color: #4C4C4C; text-align: center; font-family: 'CJ ONLYONE Medium';">회원리스트</h2> -->
+	<h2 style="color: #4C4C4C; text-align: center; font-family: '카페24 고운밤';">회원리스트</h1>
+	<!-- <p style="color: #4C4C4C; text-align: center; font-family: 'CJ ONLYONE Medium';">회원님의 소중한 정보를 안전하게 관리하세요.</p> -->
+	<p style="color: #4C4C4C; text-align: center; font-family: '카페24 고운밤'; font-size: 15x;">회원님의 소중한 정보를 안전하게 관리하세요.</p>
 	<br>
-	<h2 style="color: #4C4C4C; text-align: center; font-family: 'CJ ONLYONE Medium';">회원리스트</h2>
-	<p style="color: #4C4C4C; text-align: center; font-family: 'CJ ONLYONE Medium';">회원님의 소중한 정보를 안전하게 관리하세요.</p>
 	<br>
-	<br>
-
-
 
 
 	<table class="table table-default" style="width: 60%; margin-left: auto; margin-right: auto;">
 			
-		<tr style="color: #4C4C4C;font-family: 'CJ ONLYONE Medium';">
+		<!-- <tr style="color: #4C4C4C;font-family: 'CJ ONLYONE Medium';"> -->
+		<tr style="color: #4C4C4C; font-family: '카페24 고운밤'; font-size: 18px; background-color:rgb(248,249,250);">
 			<th>no.</th>
 			<th>
 				<form action="" input="post" id="" name="">
@@ -162,13 +175,13 @@
 		</tr>
 					
 	</table>
-
+	<br>
 
 	<!-- 삭제 등록 버튼 -->
 	
-		<div class="d-grid gap-1 d-md-flex justify-content-md-end" style="margin-right: 20%">
+		<div class="d-grid gap-1 d-md-flex justify-content-md-end" style="margin-right: 20%; font-family: '카페24 고운밤'; font-size: 20px;">
 			<button class="btn btn-outline-secondary me-md-2" type="button">선택삭제</button>
-	  		<button class="btn btn-secondary" type="button">등록</button>
+	  		<button class="btn btn-secondary" type="button"><a href="./memberForm.html" style="color:white;">등록</a></button>
 		</div>
 
 
@@ -184,7 +197,7 @@
 		        <span aria-hidden="true">&laquo;</span>
 		      </a>
 		    </li>
-		    <li class="page-item"><a class="page-link" href="#">1</a></li>
+		    <li class="page-item"><a class="page-link" href="./memberList.html">1</a></li>
 		    <li class="page-item"><a class="page-link" href="#">2</a></li>
 		    <li class="page-item"><a class="page-link" href="#">3</a></li>
 		    <li class="page-item">

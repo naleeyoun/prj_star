@@ -3,8 +3,17 @@
 <head>
 <meta charset="uTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>memberEdit</title>
-<style type="text/css">
+
+<!-- Bootstrap CSS -->
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+	crossorigin="anonymous">
+	
+<title>memberEdit_cherry</title>
+
+<!-- <style type="text/css">
 table, th, td {
 	border: 1px solid silver;
 	border-collapse: collapse;
@@ -13,38 +22,101 @@ table, th, td {
 th, td {
 	padding: 15px;
 }
+</style> -->
+
+<style type="text/css">
+	
+
+	th{
+		color: #4C4C4C;
+		font-family: '카페24 고운밤';
+		font-size: 18px;
+		background-color:rgb(248,249,250);
+	}
+
 </style>
 </head>
 
-<body>
+<body style="background-image: url(../../images/bg_cherry2.PNG);">
 	<!-- 
 memberForm.html 회원가입 폼
 이름 : <input type="text" id="" name="">
  -->
 
 
-	<!-- 회원가입 만들기 -->
+	<!-- 회원정보 수정 만들기 -->
 
-	<h1>
-		<b>회원가입</b>
-	</h1>
+	<!-- <img src="../../images/edit_cgv.PNG"> -->
+	<br>
+	<br>
+	<!-- <h2 style="color: #4C4C4C; text-align: center; font-family: 'CJ ONLYONE Medium';">Cherry</h2> -->
+	<!-- <h2 style="color: #4C4C4C; text-align: center; font-family: '카페24 고운밤';">Cherry</h2> -->
+	<h1 style="color: #4C4C4C; text-align: center; font-family: olwas; font-size: 80px; width: 70%; margin-left: auto; margin-right: auto; ">Cherry</h1>
+	<!-- background-color: rgb(248,249,250); -->
+	
+	<!-- Nabvar -->
+	
+	<nav class="navbar navbar-expand-lg navbar-light bg-light" style="width: 70%; margin-left: auto; margin-right: auto; font-family: '카페24 고운밤';">
+	<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light"> -->
+	  <div class="container-fluid">
+	    <a class="navbar-brand" href="./memberList.html" >회원리스트</a>
+	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+	      <span class="navbar-toggler-icon"></span>
+	    </button>
+	    <div class="collapse navbar-collapse" id="navbarTogglerDemo02" style="font-size: 20px;">
+	      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+	        <li class="nav-item">
+	          <a class="nav-link"  href="./memberForm.html">회원가입</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link active" aria-current="page" href="./memberEdit.html">회원정보수정</a>
+	        </li>
+	        <li class="nav-item">
+	          <a class="nav-link" href="memberView.html">회원정보</a>
+	        </li>
+	      </ul>
+	      <form class="d-flex">
+	        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+	        <button class="btn btn-outline-success" type="submit">Search</button>
+	      </form>
+	    </div>
+	  </div>
+	</nav>
+	<br>
+	
+	<!-- BreadCrumb -->
+	
+	<nav style="--bs-breadcrumb-divider: '>'; margin-left: auto; margin-right: auto; width: 70%; font-family: '카페24 고운밤';" aria-label="breadcrumb">
+	  <ol class="breadcrumb">
+	    <li class="breadcrumb-item"><a href="../../index.html" style="color:gray;">index</a></li>
+	    <li class="breadcrumb-item active" aria-current="page"><a href="./memberList.html" style="color:gray;">회원리스트</a></li>
+	    <li class="breadcrumb-item active" aria-current="page">회원정보 수정</li>
+	  </ol>
+	</nav>
+	
+	
+	<!-- <h2 style="color: #4C4C4C; text-align: center; font-family: 'CJ ONLYONE Medium';">회원리스트</h2> -->
+	<h2 style="color: #4C4C4C; text-align: center; font-family: '카페24 고운밤';">회원정보 수정</h1>
+	<!-- <p style="color: #4C4C4C; text-align: center; font-family: 'CJ ONLYONE Medium';">회원님의 소중한 정보를 안전하게 관리하세요.</p> -->
+	<p style="color: #4C4C4C; text-align: center; font-family: '카페24 고운밤'; font-size: 15x;">회원님의 소중한 정보를 안전하게 관리하세요.</p>
+	<br>
 	<br>
 
-	<!-- 기본정보 -->
-	<h3>● 기본정보</h3>
-	<hr>
 
-	<table>
+	<!-- 기본정보 -->
+	<h4 style="width: 60%; margin-left: auto; margin-right: auto; color: #4C4C4C; font-family: '카페24 고운밤'; font-size: 15x;">기본정보</h4>
+
+	<table class="table table-default" style="width: 60%; margin-left: auto; margin-right: auto;">
 		<tr>
-			<th>이름</th>
-			<td>
+			<th style="width: 20%; background-color:rgb(248,249,250);">이름</th>
+			<td style="width: 30%;">
 				<form action="" method="post" id="" name=""
 					enctype="multipart/form-data">
 					<input type="text" id="" name="" value="윤이나">
 				</form>
 			</td>
-			<th>추천인</th>
-			<td>
+			<th style="background-color:rgb(248,249,250);">추천인</th>
+			<td style="width: 30%;">
 				<form action="" method="post" id="" name=""
 					enctype="multipart/form-data">
 					<input type="text" id="" name="" value="nanana111">
@@ -53,24 +125,24 @@ memberForm.html 회원가입 폼
 		</tr>
 
 		<tr>
-			<th>아이디</th>
+			<th style="background-color:rgb(248,249,250);">아이디</th>
 			<td>
 				<form action="" method="post" id="" name=""
 					enctype="multipart/form-data">
 					<input type="text" id="" name="" value="yina12">
 				</form>
 			</td>
-			<th>비밀번호</th>
+			<th style="background-color:rgb(248,249,250);">비밀번호</th>
 			<td>
 				<form action="" method="post" id="" name=""
 					enctype="multipart/form-data">
-					<input type="password" id="" name="" value="dbsdlsk">
+					<input type="password" id="" name="" value="123123123">
 				</form>
 			</td>
 		</tr>
 
 		<tr>
-			<th>성별</th>
+			<th style="background-color:rgb(248,249,250);">성별</th>
 			<td>
 				<form action="" method="post" id="" name=""
 					enctype="multipart/form-data">
@@ -79,17 +151,17 @@ memberForm.html 회원가입 폼
 
 				</form>
 			</td>
-			<th>생일</th>
+			<th style="background-color:rgb(248,249,250);">생일</th>
 			<td>
 				<form action="" method="post" id="" name=""
 					enctype="multipart/form-data">
-					<input type="date" id="" name="" value="1991-01-11">
+					<input type="date" id="" name="" value="2000-01-11">
 				</form>
 			</td>
 		</tr>
 
 		<tr>
-			<th>국적</th>
+			<th style="background-color:rgb(248,249,250);">국적</th>
 			<td>
 				<form action="" method="post" id="" name=""
 					enctype="multipart/form-data">
@@ -106,14 +178,13 @@ memberForm.html 회원가입 폼
 				</form>
 			</td>
 
-			<th>주소</th>
+			<th style="background-color:rgb(248,249,250);">주소</th>
 			<td>
 				<form action="" method="post" id="" name=""
 					enctype="multipart/form-data">
 
-					<small>우편번호</small> <input type="text" id="" name=""
-						style="width: 134px" value="12345">
-					<br>
+					<small>우편번호</small> <input type="text" id="" name="" style="width: 134px" value="12345">
+					<br>									
 					<select id="" name="">
 						<option value="1">서울특별시
 						<option value="2" selected>인천광역시
@@ -124,22 +195,28 @@ memberForm.html 회원가입 폼
 						<option value="7">강원도
 						<option value="8">충청도
 						<option value="9">경상도</option>
-					</select> <input type="text" id="" name="" style="width: 195px"
-						placeholder="상세주소" value="이나로 55 이나아파트 1234-4567">
+					</select>
+					<input type="text" id="" name="" style="width: 195px" placeholder="상세주소" value="이나로 55 이나아파트 1234-4567">
+					
+				</form>
 			</td>
 		</tr>
 
 		<tr>
-			<th>모바일</th>
+			<th style="background-color:rgb(248,249,250);">모바일</th>
 			<td width="300">
 				<form action="" method="post" id="" name=""
 					enctype="multipart/form-data">
-					통신사 <select id="" name="">
+					통신사
+					<select id="" name="">
 						<option>SKT</option>
 						<option selected>LGU+</option>
 						<option>KT</option>
 						<option>알뜰폰</option>
-					</select> <select id="" name="" style="width: 70px">
+					</select>
+					
+					
+					<select id="" name="" style="width: 70px">
 						<option selected>010</option>
 						<option>070</option>
 					</select>
@@ -147,12 +224,11 @@ memberForm.html 회원가입 폼
 
 				<form action="" method="post" id="" name=""
 					enctype="multipart/form-data">
-					<input type="text" id="" name="" style="width: 100px" value="1234">
-					- <input type="text" id="" name="" style="width: 100px"
-						value="5678">
+					<input type="text" id="" name="" style="width: 100px" value="1234"> -
+					<input type="text" id="" name="" style="width: 100px" value="5678">
 				</form>
 			</td>
-			<th>전화번호</th>
+			<th style="background-color:rgb(248,249,250);">전화번호</th>
 			<td width="300">
 				<form action="" method="post" id="" name=""
 					enctype="multipart/form-data">
@@ -166,15 +242,14 @@ memberForm.html 회원가입 폼
 
 				<form action="" method="post" id="" name=""
 					enctype="multipart/form-data">
-					<input type="text" id="" name="" style="width: 100px" value="545">
-					- <input type="text" id="" name="" style="width: 100px"
-						value="7890">
+					<input type="text" id="" name="" style="width: 100px" value="545"> -
+					<input type="text" id="" name="" style="width: 100px" value="7890">
 				</form>
 			</td>
 		</tr>
 
 		<tr>
-			<th>팩스번호</th>
+			<th style="background-color:rgb(248,249,250);">팩스번호</th>
 			<td>
 				<form action="" method="post" id="" name=""
 					enctype="multipart/form-data">
@@ -188,18 +263,16 @@ memberForm.html 회원가입 폼
 
 				<form action="" method="post" id="" name=""
 					enctype="multipart/form-data">
-					<input type="text" id="" name="" style="width: 100px" value="8520">
-					- <input type="text" id="" name="" style="width: 100px"
-						value="9632">
+					<input type="text" id="" name="" style="width: 100px" value="8520"> -
+					<input type="text" id="" name="" style="width: 100px" value="9632">
 				</form>
 			</td>
-			<th>이메일</th>
+			<th style="background-color:rgb(248,249,250);">이메일</th>
 			<td>
 				<form action="" method="post" id="" name=""
 					enctype="multipart/form-data">
-					<input type="text" id="" name="" style="width: 120px"
-						value="yina12"> @ <select id="" name=""
-						style="width: 120px">
+					<input type="text" id="" name="" style="width: 120px" value="yina12"> @ <select
+						id="" name="" style="width: 120px">
 						<option>gmail.com</option>
 						<option>daum.net</option>
 						<option selected>naver.com</option>
@@ -211,7 +284,7 @@ memberForm.html 회원가입 폼
 		</tr>
 
 		<tr>
-			<th width="110">비밀번호 문제</th>
+			<th style="background-color:rgb(248,249,250);" width="110">비밀번호 문제</th>
 			<td>
 				<form action="" method="post" id="" name=""
 					enctype="multipart/form-data">
@@ -225,7 +298,7 @@ memberForm.html 회원가입 폼
 				</form>
 			</td>
 
-			<th>비밀번호 답</th>
+			<th style="background-color:rgb(248,249,250);">비밀번호 답</th>
 			<td>
 				<form action="" method="post" id="" name=""
 					enctype="multipart/form-data">
@@ -234,21 +307,21 @@ memberForm.html 회원가입 폼
 			</td>
 		</tr>
 		<tr>
-			<th>사진</th>
-			<td colspan="3">
-				<!-- 파일첨부 부분
+			<th style="background-color:rgb(248,249,250);">사진</th>
+			<td colspan="3">	
+				<img src="../../images/photo1_1.PNG">
+			<!-- 			
 				<form action="" method="post" id="" name=""
 					enctype="multipart/form-data">
 					<input type="file" id="" name="file" accept=".png,.jpg">
 				</form>
---> <img src="../../neo.png" width="150px">
+ -->				
 			</td>
-
 
 		</tr>
 
 		<tr>
-			<th>SNS</th>
+			<th style="background-color:rgb(248,249,250);">SNS</th>
 			<td>
 				<form action="" method="post" id="" name=""
 					enctype="multipart/form-data">
@@ -257,30 +330,30 @@ memberForm.html 회원가입 폼
 						<option selected>instagram
 						<option>tiktok
 						<option>zepeto
-					</select> <input type="text" id="" name="" style="width: 200px"
-						value="yina123">
+					</select>					
+					
+					<input type="text" id="" name="" style="width: 200px" value="yina123">
 				</form>
 			</td>
 
-			<th>홈페이지</th>
+			<th style="background-color:rgb(248,249,250);">홈페이지</th>
 			<td>
 				<form action="" method="post" id="" name=""
 					enctype="multipart/form-data">
-					<input type="text" id="" name="" style="width: 250px"
-						value="www.naver.com">
+					<input type="text" id="" name="" style="width: 250px" value="www.naver.com">
 				</form>
 			</td>
 		</tr>
 
 		<tr>
-			<th>직업</th>
+			<th style="background-color:rgb(248,249,250);">직업</th>
 			<td>
 				<form action="" method="post" id="" name=""
 					enctype="multipart/form-data">
 					<input type="text" id="" name="" value="개발자">
 				</form>
 			</td>
-			<th>취미</th>
+			<th style="background-color:rgb(248,249,250);">취미</th>
 			<td>
 				<form action="" method="post" id="" name=""
 					enctype="multipart/form-data">
@@ -297,16 +370,16 @@ memberForm.html 회원가입 폼
 		</tr>
 
 		<tr>
-			<th>결혼여부</th>
+			<th style="background-color:rgb(248,249,250);">결혼여부</th>
 			<td>
 				<form action="" method="post" id="" name=""
 					enctype="multipart/form-data">
-					<input type="radio" id="" name="radio2" value=1 checked>기혼
-					<input type="radio" id="" name="radio2" value=0>미혼
+					<input type="radio" id="" name="radio2" value=1 checked>기혼 <input
+						type="radio" id="" name="radio2" value=0>미혼
 
 				</form>
 			</td>
-			<th>결혼기념일</th>
+			<th style="background-color:rgb(248,249,250);">결혼기념일</th>
 			<td>
 				<form action="" method="post" id="" name=""
 					enctype="multipart/form-data">
@@ -316,7 +389,7 @@ memberForm.html 회원가입 폼
 		</tr>
 
 		<tr>
-			<th>자녀유무</th>
+			<th style="background-color:rgb(248,249,250);">자녀유무</th>
 			<td>
 				<form action="" method="post" id="" name=""
 					enctype="multipart/form-data">
@@ -325,23 +398,29 @@ memberForm.html 회원가입 폼
 
 				</form>
 			</td>
-			<th>좋아하는 색깔</th>
+			<th style="background-color:rgb(248,249,250);">좋아하는 색깔</th>
 			<td>
 				<form action="" method="post" id="" name=""
 					enctype="multipart/form-data">
-					<input type="color" id="color" name="color" value="#00DB00">
+					<input type="color" id="color" name="color" value="value="#00DB00">
 				</form>
 			</td>
 		</tr>
 
 		<tr>
-			<th>자기소개</th>
+			<th style="background-color:rgb(248,249,250);">자기소개</th>
 			<td colspan="3">
-				<form action="" method="post" id="" name=""
+<!-- 				<form action="" method="post" id="" name=""
 					enctype="multipart/form-data">
-					<textarea id="" name="" style="width: 700px" rows="5"
-						placeholder="80자 이내로 입력해주세요.">별 멀리 무성할 다 위에도 별빛이 멀리 이런 추억과 버리었습니다. 겨울이 나는 별 프랑시스 북간도에 다 이름을 하나의 계십니다. 당신은 내일 별빛이 밤이 계십니다. 이런 무덤 별들을 나는 쓸쓸함과 피어나듯이 딴은 가득 까닭입니다.</textarea>
+					<textarea id="" name="" style="width: 700px" rows="5" placeholder="80자 이내로 입력해주세요.">별 멀리 무성할 다 위에도 별빛이 멀리 이런 추억과 버리었습니다. 겨울이 나는 별 프랑시스 북간도에 다 이름을 하나의 계십니다. 당신은 내일 별빛이 밤이 계십니다. 이런 무덤 별들을 나는 쓸쓸함과 피어나듯이 딴은 가득 까닭입니다.</textarea>
 				</form>
+			</td>
+			 -->
+				
+			<div class="form-floating">
+ 			 <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px" maxlength="80">별 멀리 무성할 다 위에도 별빛이 멀리 이런 추억과 버리었습니다. 겨울이 나는 별 프랑시스 북간도에 다 이름을 하나의 계십니다. 당신은 내일 별빛이 밤이 계십니다. 이런 무덤 별들을 나는 쓸쓸함과 피어나듯이 딴은 가득 까닭입니다.</textarea>
+ 			 <label for="floatingTextarea2">80자 이내로 입력해주세요.</label>
+			</div>
 			</td>
 		</tr>
 
@@ -350,11 +429,11 @@ memberForm.html 회원가입 폼
 	<br>
 
 	<!-- 프로젝트 정보 -->
-	<h3>● 프로젝트 정보</h3>
-	<hr>
+	<h4 style="width: 60%; margin-left: auto; margin-right: auto; color: #4C4C4C; font-family: '카페24 고운밤'; font-size: 15x;">프로젝트 정보</h4>
 
-	<table>
-		<tr>
+	<table class="table table-default" style="width: 60%; margin-left: auto; margin-right: auto;">
+
+		<tr style="background-color:rgb(248,249,250);">
 			<th>번호</th>
 			<th>프로젝트명</th>
 			<th>참여기간</th>
@@ -373,8 +452,8 @@ memberForm.html 회원가입 폼
 			<td>
 				<form action="" method="post" id="" name=""
 					enctype="multipart/form-data">
-					<input type="month" id="" name="" value="2021-01"> <br>
-					~<input type="month" id="" name="" value="2021-12">
+					<input type="month" id="" name="" value="2021-01"> <br> ~<input
+						type="month" id="" name="" value="2021-12">
 				</form>
 			</td>
 			<td>
@@ -403,8 +482,8 @@ memberForm.html 회원가입 폼
 			<td>
 				<form action="" method="post" id="" name=""
 					enctype="multipart/form-data">
-					<input type="month" id="" name="" value="2020-06"><br>
-					~<input type="month" id="" name="" value="2020-12">
+					<input type="month" id="" name="" value="2020-06"> <br> ~<input
+						type="month" id="" name="" value="2020-12">
 				</form>
 			</td>
 			<td>
@@ -417,7 +496,7 @@ memberForm.html 회원가입 폼
 			<td>
 				<form action="" method="post" id="" name=""
 					enctype="multipart/form-data">
-					<input type="text" id="" name="" value="농협은행">
+					<input type="text" id="" name="" value="NH농협은행">
 				</form>
 			</td>
 		</tr>
@@ -433,8 +512,8 @@ memberForm.html 회원가입 폼
 			<td>
 				<form action="" method="post" id="" name=""
 					enctype="multipart/form-data">
-					<input type="month" id="" name="" value="2019-05"> <br>
-					~<input type="month" id="" name="" value="2020-02">
+					<input type="month" id="" name="" value="2019-05"> <br> ~<input
+						type="month" id="" name="" value="2020-02">
 				</form>
 			</td>
 			<td>
@@ -487,25 +566,24 @@ memberForm.html 회원가입 폼
 	<br>
 
 	<!-- 선택 정보 -->
-	<h3>● 선택 정보</h3>
-	<hr>
+	<h4 style="width: 60%; margin-left: auto; margin-right: auto; color: #4C4C4C; font-family: '카페24 고운밤'; font-size: 15x;">선택 정보</h4>
 
-	<table>
+	<table class="table table-default" style="width: 60%; margin-left: auto; margin-right: auto;">
 		<tr>
-			<th>개인정보 유효기간</th>
+			<th style="background-color:rgb(248,249,250);">개인정보 유효기간</th>
 			<td>
 				<form action="" method="post" id="" name=""
 					enctype="multipart/form-data">
-					<input type="radio" id="" name="radio3" value=0>1년 <input
-						type="radio" id="" name="radio3" value=1>3년 <input
-						type="radio" id="" name="radio3" value=2 checked>5년 <input
-						type="radio" id="" name="radio3" value=3>10년
+					<input type="radio" id="" name="radio3" value=0>1년
+					<input type="radio" id="" name="radio3" value=1>3년
+					<input type="radio" id="" name="radio3" value=2 checked>5년
+					<input type="radio" id="" name="radio3" value=3>10년
 				</form>
 			</td>
 		</tr>
 
 		<tr>
-			<th>모바일 마케팅 수신 동의</th>
+			<th style="background-color:rgb(248,249,250);">모바일 마케팅 수신 동의</th>
 			<td>
 				<form action="" method="post" id="" name=""
 					enctype="multipart/form-data">
@@ -516,22 +594,33 @@ memberForm.html 회원가입 폼
 		</tr>
 
 		<tr>
-			<th>이메일 마케팅 수신 동의</th>
+			<th style="background-color:rgb(248,249,250);">이메일 마케팅 수신 동의</th>
 			<td>
 				<form action="" method="post" id="" name=""
 					enctype="multipart/form-data">
-					<input type="radio" id="" name="radio5" value=1>동의 <input
-						type="radio" id="" name="radio5" value=0 checked>미동의
+					<input type="radio" id="" name="radio5" value=1>동의
+					<input type="radio" id="" name="radio5" value=0 checked>미동의
 				</form>
 			</td>
 		</tr>
 	</table>
+	
+	<br>
+
+	<!-- 삭제 등록 버튼 -->
+	
+		<div class="d-grid gap-1 d-md-flex justify-content-md-end" style="margin-right: 20%; font-family: '카페24 고운밤'; font-size: 20px;">
+			<!-- <button class="btn btn-outline-secondary me-md-2" type="button"><a href="./memberList.html" style="color:white;">목록</a></button> -->
+			<button class="btn btn-secondary" type="button"><a href="./memberList.html" style="color:white;">목록</a></button>
+	  		<button class="btn btn-secondary" type="button"><a href="./memberView.html" style="color:white;">저장</a></button>
+		</div>
 
 	<br>
 	<br>
-	<a href="./memberList.html">목록</a>
-	<a href="./memberView.html">저장</a> 
 
+	
+<!-- 	<a href="./memberList.html">목록</a>
+	<a href="./memberView.html">저장</a> -->
 </body>
 
 </html>
