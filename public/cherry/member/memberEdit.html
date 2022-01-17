@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 <!-- Bootstrap CSS -->
+
 <link
 	href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
 	rel="stylesheet"
@@ -46,18 +47,13 @@ memberForm.html 회원가입 폼
 
 	<!-- 회원정보 수정 만들기 -->
 
-	<!-- <img src="../../images/edit_cgv.PNG"> -->
 	<br>
 	<br>
-	<!-- <h2 style="color: #4C4C4C; text-align: center; font-family: 'CJ ONLYONE Medium';">Cherry</h2> -->
-	<!-- <h2 style="color: #4C4C4C; text-align: center; font-family: '카페24 고운밤';">Cherry</h2> -->
 	<h1 style="color: #4C4C4C; text-align: center; font-family: olwas; font-size: 80px; width: 70%; margin-left: auto; margin-right: auto; ">Cherry</h1>
-	<!-- background-color: rgb(248,249,250); -->
 	
 	<!-- Nabvar -->
 	
 	<nav class="navbar navbar-expand-lg navbar-light bg-light" style="width: 70%; margin-left: auto; margin-right: auto; font-family: '카페24 고운밤';">
-	<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light"> -->
 	  <div class="container-fluid">
 	    <a class="navbar-brand" href="./memberList.html" >회원리스트</a>
 	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -95,9 +91,7 @@ memberForm.html 회원가입 폼
 	</nav>
 	
 	
-	<!-- <h2 style="color: #4C4C4C; text-align: center; font-family: 'CJ ONLYONE Medium';">회원리스트</h2> -->
-	<h2 style="color: #4C4C4C; text-align: center; font-family: '카페24 고운밤';">회원정보 수정</h1>
-	<!-- <p style="color: #4C4C4C; text-align: center; font-family: 'CJ ONLYONE Medium';">회원님의 소중한 정보를 안전하게 관리하세요.</p> -->
+	<h2 style="color: #4C4C4C; text-align: center; font-family: '카페24 고운밤';">회원정보 수정</h2>
 	<p style="color: #4C4C4C; text-align: center; font-family: '카페24 고운밤'; font-size: 15x;">회원님의 소중한 정보를 안전하게 관리하세요.</p>
 	<br>
 	<br>
@@ -110,200 +104,214 @@ memberForm.html 회원가입 폼
 		<tr>
 			<th style="width: 20%; background-color:rgb(248,249,250);">이름</th>
 			<td style="width: 30%;">
-				<form action="" method="post" id="" name=""
-					enctype="multipart/form-data">
-					<input type="text" id="" name="" value="윤이나">
-				</form>
+			<div class="row">
+ 			 	<div class="col">
+   			 		<input type="text" class="form-control" placeholder="이름을 입력해 주세요." aria-label="First name" value="윤이나">
+ 				</div>
+  			</div>
 			</td>
 			<th style="background-color:rgb(248,249,250);">추천인</th>
 			<td style="width: 30%;">
-				<form action="" method="post" id="" name=""
-					enctype="multipart/form-data">
-					<input type="text" id="" name="" value="nanana111">
-				</form>
+			<div class="row">
+ 			 	<div class="col">
+   			 		<input type="text" class="form-control" aria-label="First name" value="nanana111">
+ 				</div>
+  			</div>
 			</td>
 		</tr>
 
 		<tr>
 			<th style="background-color:rgb(248,249,250);">아이디</th>
 			<td>
-				<form action="" method="post" id="" name=""
-					enctype="multipart/form-data">
-					<input type="text" id="" name="" value="yina12">
-				</form>
+				<input type="text" class="form-control" placeholder="20자 이내로 입력해주세요." max-length="20" aria-label="First name" value="yina12">
 			</td>
 			<th style="background-color:rgb(248,249,250);">비밀번호</th>
 			<td>
-				<form action="" method="post" id="" name=""
-					enctype="multipart/form-data">
-					<input type="password" id="" name="" value="123123123">
-				</form>
+				<input type="password" class="form-control" placeholder="8자 이상으로 입력해주세요." min-length="8" aria-label="First name" value="123123">
 			</td>
 		</tr>
 
 		<tr>
 			<th style="background-color:rgb(248,249,250);">성별</th>
 			<td>
-				<form action="" method="post" id="" name=""
-					enctype="multipart/form-data">
-					<input type="radio" id="" name="radio" value=1>남 <input
-						type="radio" id="" name="radio" value=0 checked>여
-
-				</form>
+				<div class="form-check form-check-inline form-switch">
+				  <input class="form-check-input" type="radio" name="radio" id="flexSwitchCheckDefault1">
+				  <label class="form-check-label" for="flexSwitchCheckDefault">남자</label>
+				</div>
+				<div class="form-check form-switch form-check-inline">
+				  <input class="form-check-input" type="radio" name="radio" id="flexSwitchCheckChecked2" checked>
+				  <label class="form-check-label" for="flexSwitchCheckChecked">여자</label>
+				</div>
 			</td>
 			<th style="background-color:rgb(248,249,250);">생일</th>
 			<td>
-				<form action="" method="post" id="" name=""
-					enctype="multipart/form-data">
-					<input type="date" id="" name="" value="2000-01-11">
-				</form>
+		      <div class="form">
+		         <input type="date" class="form-control" id="" value="1991-01-11">
+		      </div>
 			</td>
 		</tr>
 
 		<tr>
 			<th style="background-color:rgb(248,249,250);">국적</th>
 			<td>
-				<form action="" method="post" id="" name=""
-					enctype="multipart/form-data">
-					<select id="" name="">
-						<option value="1">미국
-						<option value="2" selected>대한민국
-						<option value="3">중국
-						<option value="4">캐나다
-						<option value="5">일본
-						<option value="6">가나
-						<option value="7">필리핀
-						<option value="8">영국</option>
-					</select>
-				</form>
+				<select class="form-select" aria-label="Default select example">
+				  <option selected>선택해주세요.</option>
+				  <option value="1">미국</option>
+				  <option value="2" selected>대한민국</option>
+				  <option value="3">중국</option>
+				  <option value="4">캐나다</option>
+				  <option value="5">일본</option>
+				</select>
 			</td>
 
 			<th style="background-color:rgb(248,249,250);">주소</th>
 			<td>
-				<form action="" method="post" id="" name=""
-					enctype="multipart/form-data">
-
-					<small>우편번호</small> <input type="text" id="" name="" style="width: 134px" value="12345">
-					<br>									
-					<select id="" name="">
-						<option value="1">서울특별시
-						<option value="2" selected>인천광역시
-						<option value="3">대구광역시
-						<option value="4">대전광역시
-						<option value="5">제주도
-						<option value="6">광주광역시
-						<option value="7">강원도
-						<option value="8">충청도
-						<option value="9">경상도</option>
-					</select>
-					<input type="text" id="" name="" style="width: 195px" placeholder="상세주소" value="이나로 55 이나아파트 1234-4567">
-					
-				</form>
+				<div style="display: inline-block;">
+				<input type="text" style="width: 190px; display: inline-block;" class="form-control" placeholder="우편번호" max-length="5" aria-label="First name" value="12345">
+									
+			 	<div class="col" style="display: inline-block;">
+			    <div class="select">
+			      <select class="form-select" id="floatingSelectGrid" aria-label="domain">
+			        <option selected>서울특별시</option>
+			        <option value="1" selected>인천광역시</option>
+			        <option value="2">대구광역시</option>
+			        <option value="3">대전광역시</option>
+			        <option value="4">제주도</option>
+			        <option value="5">광주광역시</option>
+			      </select>
+			    </div>
+			  </div>
+				  
+			<div class="row">
+ 			 	<div class="col">
+   			 		<input type="text" class="form-control" placeholder="상세주소" aria-label="First name" value="이나로 55 이나아파트 1234-4567">
+ 				</div>
+  			</div>	
+			</div>
 			</td>
 		</tr>
 
 		<tr>
 			<th style="background-color:rgb(248,249,250);">모바일</th>
 			<td width="300">
-				<form action="" method="post" id="" name=""
-					enctype="multipart/form-data">
-					통신사
-					<select id="" name="">
-						<option>SKT</option>
-						<option selected>LGU+</option>
-						<option>KT</option>
-						<option>알뜰폰</option>
-					</select>
+	 			    <div class="col"  style="display: inline-block;">
+	 			    <div class="select">
+				      <select class="form-select" id="floatingSelectGrid" aria-label="domain">
+				        <option selected>통신사</option>
+				        <option value="1">SKT</option>
+				        <option value="2" selected>LGU+</option>
+				        <option value="3">KT</option>
+				        <option value="3">알뜰폰</option>
+				      </select>
+				     </div>
+				     </div>
+ 				<div class="row">
 					
-					
-					<select id="" name="" style="width: 70px">
-						<option selected>010</option>
-						<option>070</option>
-					</select>
-				</form>
+				 	<div class="col" style="display: inline-block;">
+				    <div class="select">
+				      <select class="form-select" id="floatingSelectGrid" aria-label="domain">
+				        <option selected>010</option>
+				        <option value="1">011</option>
+				        <option value="2">070</option>
+				      </select>
+				    </div>
+				  </div>
 
-				<form action="" method="post" id="" name=""
-					enctype="multipart/form-data">
-					<input type="text" id="" name="" style="width: 100px" value="1234"> -
-					<input type="text" id="" name="" style="width: 100px" value="5678">
-				</form>
+				  <div class="col">
+				  <input type="text" class="form-control" aria-label="First name" value="1234">
+				  </div>
+				  -
+				  <div class="col">
+				    <input type="text" class="form-control" aria-label="Last name" value="5678">
+				  </div>
+				</div>  
 			</td>
 			<th style="background-color:rgb(248,249,250);">전화번호</th>
 			<td width="300">
-				<form action="" method="post" id="" name=""
-					enctype="multipart/form-data">
-					<select id="" name="" style="width: 70px">
-						<option>070</option>
-						<option selected>032</option>
-						<option>02</option>
-						<option>053</option>
-					</select>
-				</form>
+				<div class="row">
+					
+				 	<div class="col" style="display: inline-block;">
+				    <div class="select">
+				      <select class="form-select" id="floatingSelectGrid" aria-label="domain">
+				        <option>02</option>
+				        <option value="1" selected>032</option>
+				        <option value="2">070</option>
+				      </select>
+				    </div>
+				  </div>
 
-				<form action="" method="post" id="" name=""
-					enctype="multipart/form-data">
-					<input type="text" id="" name="" style="width: 100px" value="545"> -
-					<input type="text" id="" name="" style="width: 100px" value="7890">
-				</form>
+				  <div class="col">
+				    <input type="text" class="form-control" aria-label="First name" value="545">
+				  </div>
+				  -
+				  <div class="col">
+				    <input type="text" class="form-control" aria-label="Last name" value="7890">
+				  </div>
+				</div>  
 			</td>
 		</tr>
 
 		<tr>
 			<th style="background-color:rgb(248,249,250);">팩스번호</th>
 			<td>
-				<form action="" method="post" id="" name=""
-					enctype="multipart/form-data">
-					<select id="" name="" style="width: 70px">
-						<option>070</option>
-						<option>032</option>
-						<option>02</option>
-						<option selected>0508</option>
-					</select>
-				</form>
+ 				 <div class="row">
+					
+				 	<div class="col" style="display: inline-block;">
+				    <div class="select">
+				      <select class="form-select" id="floatingSelectGrid" aria-label="domain">
+				        <option>02</option>
+				        <option value="1">032</option>
+				        <option value="2" selected>0508</option>
+				      </select>
+				    </div>
+				  </div>
 
-				<form action="" method="post" id="" name=""
-					enctype="multipart/form-data">
-					<input type="text" id="" name="" style="width: 100px" value="8520"> -
-					<input type="text" id="" name="" style="width: 100px" value="9632">
-				</form>
+				  <div class="col">
+				    <input type="text" class="form-control" aria-label="First name" value="8520">
+				  </div>
+				  -
+				  <div class="col">
+				    <input type="text" class="form-control" aria-label="Last name" value="5678">
+				  </div>
+				</div>  
 			</td>
 			<th style="background-color:rgb(248,249,250);">이메일</th>
 			<td>
-				<form action="" method="post" id="" name=""
-					enctype="multipart/form-data">
-					<input type="text" id="" name="" style="width: 120px" value="yina12"> @ <select
-						id="" name="" style="width: 120px">
-						<option>gmail.com</option>
-						<option>daum.net</option>
-						<option selected>naver.com</option>
-						<option>직접입력</option>
-					</select>
-				</form>
-
+				 <div class="row g-2">
+				  <div class="col-md">
+				    <div class="text">
+				      <input type="text" class="form-control" aria-label="First name" value="yina12">
+				    </div>
+				  </div>
+				  <div class="col-md">
+				    <div class="select">
+				      <select class="form-select" id="floatingSelectGrid" aria-label="domain">
+				        <option selected>선택해주세요.</option>
+				        <option value="1">@daum.net</option>
+				        <option value="2" selected>@naver.com</option>
+				        <option value="3">@google.com</option>
+				      </select>
+				    </div>
+				  </div>
+				</div>
 			</td>
 		</tr>
 
 		<tr>
 			<th style="background-color:rgb(248,249,250);" width="110">비밀번호 문제</th>
 			<td>
-				<form action="" method="post" id="" name=""
-					enctype="multipart/form-data">
-					<select id="" name="" style="width: 250px">
-						<option>졸업한 초등학교 이름은?
-						<option>아버지 성함은?
-						<option>어머니 성함은?
-						<option selected>제일 좋아하는 장소는?
-						<option>제일 좋아하는 색깔은?</option>
-					</select>
-				</form>
+			      <select class="form-select" id="floatingSelectGrid" aria-label="domain">
+			        <option selected>졸업한 초등학교 이름은?</option>
+			        <option value="1">아버지 성함은?</option>
+			        <option value="2">어머니 성함은?</option>
+			        <option value="3" selected>제일 좋아하는 장소는?</option>
+			        <option value="4">제일 좋아하는 색깔은?</option>
+			      </select>
 			</td>
 
 			<th style="background-color:rgb(248,249,250);">비밀번호 답</th>
 			<td>
-				<form action="" method="post" id="" name=""
-					enctype="multipart/form-data">
-					<input type="text" id="" name="" style="width: 250px" value="집">
-				</form>
+				<input type="text" class="form-control"aria-label="First name" value="집">
 			</td>
 		</tr>
 		<tr>
@@ -323,99 +331,93 @@ memberForm.html 회원가입 폼
 		<tr>
 			<th style="background-color:rgb(248,249,250);">SNS</th>
 			<td>
-				<form action="" method="post" id="" name=""
-					enctype="multipart/form-data">
-					<select id="" name="">
-						<option>facebook
-						<option selected>instagram
-						<option>tiktok
-						<option>zepeto
-					</select>					
-					
-					<input type="text" id="" name="" style="width: 200px" value="yina123">
-				</form>
+				 <div class="col-4" style="display: inline-block;">
+				 <div class="select">
+				 	<select class="form-select" id="floatingSelectGrid" aria-label="domain">
+				        <option selected>facebook</option>
+				        <option value="1" selected>instagram</option>
+				        <option value="2">tiktok</option>
+				        <option value="3">zepeto</option>
+				      </select>
+				  </div>
+				  </div>
+				  <div class="col" style="display: inline-block;">
+				    <input type="text" class="form-control" aria-label="First name" value="yina123">
+				  </div>
+
 			</td>
 
 			<th style="background-color:rgb(248,249,250);">홈페이지</th>
 			<td>
-				<form action="" method="post" id="" name=""
-					enctype="multipart/form-data">
-					<input type="text" id="" name="" style="width: 250px" value="www.naver.com">
-				</form>
+				  <div class="col" style="display: inline-block;">
+				    <input type="text" class="form-control" aria-label="First name" value="www.naver.com">
+				  </div>
 			</td>
 		</tr>
 
 		<tr>
 			<th style="background-color:rgb(248,249,250);">직업</th>
 			<td>
-				<form action="" method="post" id="" name=""
-					enctype="multipart/form-data">
-					<input type="text" id="" name="" value="개발자">
-				</form>
+				<input type="text" class="form-control" aria-label="First name" value="개발자">
 			</td>
 			<th style="background-color:rgb(248,249,250);">취미</th>
 			<td>
-				<form action="" method="post" id="" name=""
-					enctype="multipart/form-data">
-					<input type="checkbox" id="" name="" value="1" checked>요리 <input
-						type="checkbox" id="" name="" value="2" checked>운동 <input
-						type="checkbox" id="" name="" value="3">게임 <input
-						type="checkbox" id="" name="" value="4">독서 <br> <input
-						type="checkbox" id="" name="" value="5">영화감상 <input
-						type="checkbox" id="" name="" value="6" checked>낮잠 <input
-						type="checkbox" id="" name="" value="7" checked>사진촬영
-
-				</form>
+				<input type="checkbox" class="btn-check" id="btn-check-outlined" autocomplete="off" checked>
+				<label class="btn btn-outline-primary" for="btn-check-outlined">요리</label>
+				<input type="checkbox" class="btn-check" id="btn-check-outlined2" autocomplete="off" checked>
+				<label class="btn btn-outline-primary" for="btn-check-outlined2">운동</label>
+				<input type="checkbox" class="btn-check" id="btn-check-outlined3" autocomplete="off">
+				<label class="btn btn-outline-primary" for="btn-check-outlined3">게임</label>
+				<input type="checkbox" class="btn-check" id="btn-check-outlined" autocomplete="off">
+				<label class="btn btn-outline-primary" for="btn-check-outlined">독서</label>
+				<input type="checkbox" class="btn-check" id="btn-check-outlined2" autocomplete="off" checked>
+				<label class="btn btn-outline-primary" for="btn-check-outlined2">영화감상</label>
+				<input type="checkbox" class="btn-check" id="btn-check-outlined3" autocomplete="off" checked>
+				<label class="btn btn-outline-primary" for="btn-check-outlined3">낮잠</label>
 			</td>
 		</tr>
 
 		<tr>
 			<th style="background-color:rgb(248,249,250);">결혼여부</th>
 			<td>
-				<form action="" method="post" id="" name=""
-					enctype="multipart/form-data">
-					<input type="radio" id="" name="radio2" value=1 checked>기혼 <input
-						type="radio" id="" name="radio2" value=0>미혼
-
-				</form>
+				<div class="form-check form-check-inline form-switch">
+				  <input class="form-check-input" type="radio" name="radio2" id="flexSwitchCheckDefault1" checked>
+				  <label class="form-check-label" for="flexSwitchCheckDefault">기혼</label>
+				</div>
+				<div class="form-check form-switch form-check-inline">
+				  <input class="form-check-input" type="radio" name="radio2" id="flexSwitchCheckChecked2">
+				  <label class="form-check-label" for="flexSwitchCheckChecked">미혼</label>
+				</div>
 			</td>
 			<th style="background-color:rgb(248,249,250);">결혼기념일</th>
 			<td>
-				<form action="" method="post" id="" name=""
-					enctype="multipart/form-data">
-					<input type="date" id="" name="" value="2021-06-08">
-				</form>
+		    	<div class="form">
+		        	<input type="date" class="form-control" id="" value="2021-06-08">
+		    	</div>
 			</td>
 		</tr>
 
 		<tr>
 			<th style="background-color:rgb(248,249,250);">자녀유무</th>
 			<td>
-				<form action="" method="post" id="" name=""
-					enctype="multipart/form-data">
-					<input type="radio" id="" name="radio2" value=1 checked>유 <input
-						type="radio" id="" name="radio2" value=0>무
-
-				</form>
+				<div class="form-check form-check-inline form-switch">
+				  <input class="form-check-input" type="radio" name="radio3" id="flexSwitchCheckDefault1" checked>
+				  <label class="form-check-label" for="flexSwitchCheckDefault">유</label>
+				</div>
+				<div class="form-check form-switch form-check-inline">
+				  <input class="form-check-input" type="radio" name="radio3" id="flexSwitchCheckChecked2">
+				  <label class="form-check-label" for="flexSwitchCheckChecked">무</label>
+				</div>
 			</td>
 			<th style="background-color:rgb(248,249,250);">좋아하는 색깔</th>
 			<td>
-				<form action="" method="post" id="" name=""
-					enctype="multipart/form-data">
-					<input type="color" id="color" name="color" value="value="#00DB00">
-				</form>
+<input type="color" class="form-control form-control-color" id="exampleColorInput" value="#00db00" title="Choose your color">
 			</td>
 		</tr>
 
 		<tr>
 			<th style="background-color:rgb(248,249,250);">자기소개</th>
 			<td colspan="3">
-<!-- 				<form action="" method="post" id="" name=""
-					enctype="multipart/form-data">
-					<textarea id="" name="" style="width: 700px" rows="5" placeholder="80자 이내로 입력해주세요.">별 멀리 무성할 다 위에도 별빛이 멀리 이런 추억과 버리었습니다. 겨울이 나는 별 프랑시스 북간도에 다 이름을 하나의 계십니다. 당신은 내일 별빛이 밤이 계십니다. 이런 무덤 별들을 나는 쓸쓸함과 피어나듯이 딴은 가득 까닭입니다.</textarea>
-				</form>
-			</td>
-			 -->
 				
 			<div class="form-floating">
  			 <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px" maxlength="80">별 멀리 무성할 다 위에도 별빛이 멀리 이런 추억과 버리었습니다. 겨울이 나는 별 프랑시스 북간도에 다 이름을 하나의 계십니다. 당신은 내일 별빛이 밤이 계십니다. 이런 무덤 별들을 나는 쓸쓸함과 피어나듯이 딴은 가득 까닭입니다.</textarea>
@@ -444,90 +446,81 @@ memberForm.html 회원가입 폼
 		<tr>
 			<td>1.</td>
 			<td>
-				<form action="" method="post" id="" name=""
-					enctype="multipart/form-data">
-					<input type="text" id="" name="" value="금융 웹 사이트 구축">
-				</form>
+				<input type="text" class="form-control" aria-label="First name" value="금융 웹 사이트 구축">
 			</td>
 			<td>
-				<form action="" method="post" id="" name=""
-					enctype="multipart/form-data">
-					<input type="month" id="" name="" value="2021-01"> <br> ~<input
-						type="month" id="" name="" value="2021-12">
-				</form>
+		      <div class="form">
+		      	<div class="col-9">
+		         <input type="month" class="form-control" id="" value="2021-01">
+		         </div>
+		         ~
+		      <div class="form" style="display: inline-block;">
+		       <div class="col">
+		         <input type="month" class="form-control" id="" value="2021-12">
+		      </div>
+		      </div>
+		      </div>
 			</td>
 			<td>
-				<form action="" method="post" id="" name=""
-					enctype="multipart/form-data">
-					<input type="text" id="" name="" value="이체 시스템 구축">
-				</form>
+				<input type="text" class="form-control" aria-label="First name" value="이체 시스템 구축">
 			</td>
 
 			<td>
-				<form action="" method="post" id="" name=""
-					enctype="multipart/form-data">
-					<input type="text" id="" name="" value="KB국민은행">
-				</form>
+				<input type="text" class="form-control" aria-label="First name" value="KB국민은행">
 			</td>
 		</tr>
 
 		<tr>
 			<td>2.</td>
 			<td>
-				<form action="" method="post" id="" name=""
-					enctype="multipart/form-data">
-					<input type="text" id="" name="" value="금융 모바일 앱 구축">
-				</form>
+				<input type="text" class="form-control" aria-label="First name" value="금융 모바일 앱 구축">
 			</td>
 			<td>
-				<form action="" method="post" id="" name=""
-					enctype="multipart/form-data">
-					<input type="month" id="" name="" value="2020-06"> <br> ~<input
-						type="month" id="" name="" value="2020-12">
-				</form>
+		      <div class="form">
+		      	<div class="col-9">
+		         <input type="month" class="form-control" id="" value="2020-06">
+		         </div>
+		         ~
+		      <div class="form" style="display: inline-block;">
+		       <div class="col">
+		         <input type="month" class="form-control" id="" value="2020-12">
+		      </div>
+		      </div>
+		      </div>
 			</td>
 			<td>
-				<form action="" method="post" id="" name=""
-					enctype="multipart/form-data">
-					<input type="text" id="" name="" value="챗봇 시스템 구축">
-				</form>
+				<input type="text" class="form-control" aria-label="First name" value="챗봇 시스템 구축">
 			</td>
 
 			<td>
-				<form action="" method="post" id="" name=""
-					enctype="multipart/form-data">
-					<input type="text" id="" name="" value="NH농협은행">
-				</form>
+				<input type="text" class="form-control" aria-label="First name" value="NH농협은행">
 			</td>
 		</tr>
 
 		<tr>
 			<td>3.</td>
 			<td>
-				<form action="" method="post" id="" name=""
-					enctype="multipart/form-data">
-					<input type="text" id="" name="" value="통합 자산관리 시스템 구축">
-				</form>
+				<input type="text" class="form-control" aria-label="First name" value="통합 자산관리 시스템 구축">
 			</td>
 			<td>
-				<form action="" method="post" id="" name=""
-					enctype="multipart/form-data">
-					<input type="month" id="" name="" value="2019-05"> <br> ~<input
-						type="month" id="" name="" value="2020-02">
-				</form>
+		      <div class="form">
+		      	<div class="col-9">
+		         <input type="month" class="form-control" id="" value="2019-05">
+		         </div>
+		         ~
+		      <div class="form" style="display: inline-block;">
+		       <div class="col">
+		         <input type="month" class="form-control" id="" value="2020-02">
+		      </div>
+		      </div>
+		      </div>
 			</td>
 			<td>
-				<form action="" method="post" id="" name=""
-					enctype="multipart/form-data">
-					<input type="text" id="" name="" value="자산 연동 구축">
-				</form>
+				<input type="text" class="form-control" aria-label="First name" value="자산 연동 구축">
 			</td>
 
 			<td>
-				<form action="" method="post" id="" name=""
-					enctype="multipart/form-data">
-					<input type="text" id="" name="" value="KB금융그룹">
-				</form>
+				<input type="text" class="form-control" aria-label="First name" value="KB금융그룹">
 			</td>
 
 		</tr>
@@ -535,30 +528,27 @@ memberForm.html 회원가입 폼
 		<tr>
 			<td>4.</td>
 			<td>
-				<form action="" method="post" id="" name=""
-					enctype="multipart/form-data">
-					<input type="text" id="" name="">
-				</form>
+				<input type="text" class="form-control" aria-label="First name">
 			</td>
 			<td>
-				<form action="" method="post" id="" name=""
-					enctype="multipart/form-data">
-					<input type="month" id="" name=""> <br> ~<input
-						type="month" id="" name="">
-				</form>
+		      <div class="form">
+		      	<div class="col-9">
+		         <input type="month" class="form-control" id="">
+		         </div>
+		         ~
+		      <div class="form" style="display: inline-block;">
+		       <div class="col">
+		         <input type="month" class="form-control" id="">
+		      </div>
+		      </div>
+		      </div>
 			</td>
 			<td>
-				<form action="" method="post" id="" name=""
-					enctype="multipart/form-data">
-					<input type="text" id="" name="">
-				</form>
+				<input type="text" class="form-control" aria-label="First name">
 			</td>
 
 			<td>
-				<form action="" method="post" id="" name=""
-					enctype="multipart/form-data">
-					<input type="text" id="" name="">
-				</form>
+				<input type="text" class="form-control" aria-label="First name">
 			</td>
 		</tr>
 	</table>
@@ -572,35 +562,50 @@ memberForm.html 회원가입 폼
 		<tr>
 			<th style="background-color:rgb(248,249,250);">개인정보 유효기간</th>
 			<td>
-				<form action="" method="post" id="" name=""
-					enctype="multipart/form-data">
-					<input type="radio" id="" name="radio3" value=0>1년
-					<input type="radio" id="" name="radio3" value=1>3년
-					<input type="radio" id="" name="radio3" value=2 checked>5년
-					<input type="radio" id="" name="radio3" value=3>10년
-				</form>
+				<div class="form-check form-check-inline form-switch">
+				  <input class="form-check-input" type="radio" name="radio4" id="flexSwitchCheckDefault1">
+				  <label class="form-check-label" for="flexSwitchCheckDefault">1년</label>
+				</div>
+				<div class="form-check form-switch form-check-inline">
+				  <input class="form-check-input" type="radio" name="radio4" id="flexSwitchCheckChecked2">
+				  <label class="form-check-label" for="flexSwitchCheckChecked">3년</label>
+				</div>
+				<div class="form-check form-switch form-check-inline">
+				  <input class="form-check-input" type="radio" name="radio4" id="flexSwitchCheckChecked3" checked>
+				  <label class="form-check-label" for="flexSwitchCheckChecked">5년</label>
+				</div>
+				<div class="form-check form-switch form-check-inline">
+				  <input class="form-check-input" type="radio" name="radio4" id="flexSwitchCheckChecked4">
+				  <label class="form-check-label" for="flexSwitchCheckChecked">10년</label>
+				</div>
 			</td>
 		</tr>
 
 		<tr>
 			<th style="background-color:rgb(248,249,250);">모바일 마케팅 수신 동의</th>
 			<td>
-				<form action="" method="post" id="" name=""
-					enctype="multipart/form-data">
-					<input type="radio" id="" name="radio4" value=1 checked>동의
-					<input type="radio" id="" name="radio4" value=0>미동의
-				</form>
+				<div class="form-check form-check-inline form-switch">
+				  <input class="form-check-input" type="radio" name="radio5" id="flexSwitchCheckDefault1" checked>
+				  <label class="form-check-label" for="flexSwitchCheckDefault">동의</label>
+				</div>
+				<div class="form-check form-switch form-check-inline">
+				  <input class="form-check-input" type="radio" name="radio5" id="flexSwitchCheckChecked2">
+				  <label class="form-check-label" for="flexSwitchCheckChecked">미동의</label>
+				</div>
 			</td>
 		</tr>
 
 		<tr>
 			<th style="background-color:rgb(248,249,250);">이메일 마케팅 수신 동의</th>
 			<td>
-				<form action="" method="post" id="" name=""
-					enctype="multipart/form-data">
-					<input type="radio" id="" name="radio5" value=1>동의
-					<input type="radio" id="" name="radio5" value=0 checked>미동의
-				</form>
+				<div class="form-check form-check-inline form-switch">
+				  <input class="form-check-input" type="radio" name="radio6" id="flexSwitchCheckDefault1">
+				  <label class="form-check-label" for="flexSwitchCheckDefault">동의</label>	
+				</div>
+				<div class="form-check form-switch form-check-inline">
+				  <input class="form-check-input" type="radio" name="radio6" id="flexSwitchCheckChecked2" checked>
+				  <label class="form-check-label" for="flexSwitchCheckChecked">미동의</label>
+				</div>	
 			</td>
 		</tr>
 	</table>
@@ -610,17 +615,19 @@ memberForm.html 회원가입 폼
 	<!-- 삭제 등록 버튼 -->
 	
 		<div class="d-grid gap-1 d-md-flex justify-content-md-end" style="margin-right: 20%; font-family: '카페24 고운밤'; font-size: 20px;">
-			<!-- <button class="btn btn-outline-secondary me-md-2" type="button"><a href="./memberList.html" style="color:white;">목록</a></button> -->
-			<button class="btn btn-secondary" type="button"><a href="./memberList.html" style="color:white;">목록</a></button>
-	  		<button class="btn btn-secondary" type="button"><a href="./memberView.html" style="color:white;">저장</a></button>
-		</div>
+	  		<a class="btn btn-secondary" href="./memberList.html" role="button">목록</a>
+	  		<a class="btn btn-secondary" href="./memberView.html" role="button">저장</a>
+	  		<a class="btn btn-secondary" href="#myModal" role="button" data-toggle="modal">삭제</a>
+	  	</div>
+
 
 	<br>
 	<br>
 
-	
-<!-- 	<a href="./memberList.html">목록</a>
-	<a href="./memberView.html">저장</a> -->
+		<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+		crossorigin="anonymous"></script>
 </body>
 
 </html>

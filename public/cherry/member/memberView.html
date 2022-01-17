@@ -13,16 +13,6 @@
 
 
 <title>memberView_cherry</title>
-<!-- <style type="text/css">
-	table, th, td {
-		border: 1px solid silver;
-		border-collapse: collapse;
-	}
-	
-	th, td {
-		padding: 15px;
-		}
-</style> -->
 
 <style type="text/css">
 	
@@ -44,18 +34,13 @@
 
 	<!-- 회원정보 만들기 -->
 	
-	<!-- <img src="../../images/edit_cgv.PNG"> -->
 	<br>
 	<br>
-	<!-- <h2 style="color: #4C4C4C; text-align: center; font-family: 'CJ ONLYONE Medium';">Cherry</h2> -->
-	<!-- <h2 style="color: #4C4C4C; text-align: center; font-family: '카페24 고운밤';">Cherry</h2> -->
 	<h1 style="color: #4C4C4C; text-align: center; font-family: olwas; font-size: 80px; width: 70%; margin-left: auto; margin-right: auto; ">Cherry</h1>
-	<!-- background-color: rgb(248,249,250); -->
 	
 	<!-- Nabvar -->
 	
 	<nav class="navbar navbar-expand-lg navbar-light bg-light" style="width: 70%; margin-left: auto; margin-right: auto; font-family: '카페24 고운밤';">
-	<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light"> -->
 	  <div class="container-fluid">
 	    <a class="navbar-brand" href="./memberList.html" >회원리스트</a>
 	    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
@@ -93,9 +78,7 @@
 	</nav>
 	
 	
-	<!-- <h2 style="color: #4C4C4C; text-align: center; font-family: 'CJ ONLYONE Medium';">회원리스트</h2> -->
 	<h2 style="color: #4C4C4C; text-align: center; font-family: '카페24 고운밤';">회원정보</h1>
-	<!-- <p style="color: #4C4C4C; text-align: center; font-family: 'CJ ONLYONE Medium';">회원님의 소중한 정보를 안전하게 관리하세요.</p> -->
 	<p style="color: #4C4C4C; text-align: center; font-family: '카페24 고운밤'; font-size: 15x;">회원님의 소중한 정보를 안전하게 관리하세요.</p>
 	<br>
 	<br>
@@ -136,7 +119,11 @@
 		
 		<tr>
 			<th style="background-color:rgb(248,249,250);">모바일</th>
-			<td width="300">LGU+ 010-1234-5678</td>
+			<td width="300">LGU+ 010-1234-5678
+			<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+				sms
+			</button>
+			</td>
 			<th style="background-color:rgb(248,249,250);">전화번호</th>
 			<td width="300">032-545-7890</td>
 		</tr>
@@ -145,7 +132,11 @@
 			<th style="background-color:rgb(248,249,250);">팩스번호</th>
 			<td>0508-8520-5678</td>
 			<th style="background-color:rgb(248,249,250);">이메일</th>
-			<td>yina12@naver.com</td>
+			<td>yina12@naver.com
+			<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+				email
+			</button>
+			</td>
 		</tr>
 		
 		<tr>
@@ -156,7 +147,6 @@
 		</tr>
 		<tr>
 			<th style="background-color:rgb(248,249,250);">사진</th>
-			<!-- <td colspan="3"><img src="../../neo.png"></td> -->
 			<td colspan="3"><img src="../../images/photo1_1.PNG"></td>
 		</tr>
 		
@@ -262,19 +252,38 @@
 	<!-- 삭제 등록 버튼 -->
 	
 		<div class="d-grid gap-1 d-md-flex justify-content-md-end" style="margin-right: 20%; font-family: '카페24 고운밤'; font-size: 20px;">
-			<!-- <button class="btn btn-outline-secondary me-md-2" type="button"><a href="./memberList.html" style="color:white;">목록</a></button> -->
-			<button class="btn btn-secondary" type="button"><a href="./memberList.html" style="color:white;">목록</a></button>
-	  		<button class="btn btn-secondary" type="button"><a href="./memberEdit.html" style="color:white;">수정</a></button>
-	  		<button class="btn btn-outline-secondary me-md-2" type="button"><a href="./memberList.html" style="color:gray;">삭제</a></button>
+			<a class="btn btn-secondary" href="./memberList.html" role="button">목록</a>
+			<a class="btn btn-secondary" href="./memberEdit.html" role="button">수정</a>
+			<a class="btn btn-secondary" href="./memberList.html" role="button">삭제</a>
+			<a class="btn btn-secondary" href="#modal" role="button">삭제</a>
 		</div>
 
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  Launch demo modal
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+       <p>Modal body text goes here.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 	<br>
 	<br>
-
-<!-- 	<a href="./memberList.html">목록</a> 
-	<a href="./memberEdit.html">수정</a>  
-	<a href="./memberList.html">삭제</a>  -->
 
 </body>
 	
