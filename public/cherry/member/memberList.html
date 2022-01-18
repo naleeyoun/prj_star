@@ -180,11 +180,31 @@
 	<!-- 삭제 등록 버튼 -->
 	
 		<div class="d-grid gap-1 d-md-flex justify-content-md-end" style="margin-right: 20%; font-family: '카페24 고운밤'; font-size: 20px;">
-			<a class="btn btn-secondary me-md-2" href="#" role="button">선택삭제</a>
+			<button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">선택삭제</button>
 			<a class="btn btn-secondary" href="./memberForm.html" role="button">등록</a>
 		</div>
 
-
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"><img src="../../images/alert.png" width="30px"> 회원정보 삭제</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+       <p>회원정보가 삭제됩니다.<p>
+       <p>계속하려면 확인을, 종료하려면 취소를 선택해주세요.</p>
+      </div>
+      <div class="modal-footer">
+<!--         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">취소</button>
+        <button type="button" class="btn btn-primary">확인</button> -->
+        <a class="btn btn-secondary" href="./memberList.html" role="button">취소</a>
+        <a class="btn btn-primary" href="./memberList.html" role="button">확인</a>
+      </div>
+    </div>
+  </div>
+</div>
 	<br>
 	<br>
 

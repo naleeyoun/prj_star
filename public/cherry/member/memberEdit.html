@@ -98,11 +98,12 @@ memberForm.html 회원가입 폼
 
 
 	<!-- 기본정보 -->
+	<p style="color:red; width: 60%; margin-left: auto; margin-right: auto; font-family: '카페24 고운밤'; font-size: 15x;">*필수입력<p>
 	<h4 style="width: 60%; margin-left: auto; margin-right: auto; color: #4C4C4C; font-family: '카페24 고운밤'; font-size: 15x;">기본정보</h4>
 
 	<table class="table table-default" style="width: 60%; margin-left: auto; margin-right: auto;">
 		<tr>
-			<th style="width: 20%; background-color:rgb(248,249,250);">이름</th>
+			<th style="width: 20%; background-color:rgb(248,249,250);">이름  <p style="color:red; display:inline-block;">*</p></th>
 			<td style="width: 30%;">
 			<div class="row">
  			 	<div class="col">
@@ -121,18 +122,18 @@ memberForm.html 회원가입 폼
 		</tr>
 
 		<tr>
-			<th style="background-color:rgb(248,249,250);">아이디</th>
+			<th style="background-color:rgb(248,249,250);">아이디 <p style="color:red; display:inline-block;">*</p></th>
 			<td>
 				<input type="text" class="form-control" placeholder="20자 이내로 입력해주세요." max-length="20" aria-label="First name" value="yina12">
 			</td>
-			<th style="background-color:rgb(248,249,250);">비밀번호</th>
+			<th style="background-color:rgb(248,249,250);">비밀번호 <p style="color:red; display:inline-block;">*</p></th>
 			<td>
 				<input type="password" class="form-control" placeholder="8자 이상으로 입력해주세요." min-length="8" aria-label="First name" value="123123">
 			</td>
 		</tr>
 
 		<tr>
-			<th style="background-color:rgb(248,249,250);">성별</th>
+			<th style="background-color:rgb(248,249,250);">성별 <p style="color:red; display:inline-block;">*</p></th>
 			<td>
 				<div class="form-check form-check-inline form-switch">
 				  <input class="form-check-input" type="radio" name="radio" id="flexSwitchCheckDefault1">
@@ -143,7 +144,7 @@ memberForm.html 회원가입 폼
 				  <label class="form-check-label" for="flexSwitchCheckChecked">여자</label>
 				</div>
 			</td>
-			<th style="background-color:rgb(248,249,250);">생일</th>
+			<th style="background-color:rgb(248,249,250);">생년월일 <p style="color:red; display:inline-block;">*</p></th>
 			<td>
 		      <div class="form">
 		         <input type="date" class="form-control" id="" value="1991-01-11">
@@ -152,7 +153,7 @@ memberForm.html 회원가입 폼
 		</tr>
 
 		<tr>
-			<th style="background-color:rgb(248,249,250);">국적</th>
+			<th style="background-color:rgb(248,249,250);">국적 <p style="color:red; display:inline-block;">*</p></th>
 			<td>
 				<select class="form-select" aria-label="Default select example">
 				  <option selected>선택해주세요.</option>
@@ -164,24 +165,48 @@ memberForm.html 회원가입 폼
 				</select>
 			</td>
 
-			<th style="background-color:rgb(248,249,250);">주소</th>
+			<th style="background-color:rgb(248,249,250);">주소 <p style="color:red; display:inline-block;">*</p></th>
 			<td>
 				<div style="display: inline-block;">
 				<input type="text" style="width: 190px; display: inline-block;" class="form-control" placeholder="우편번호" max-length="5" aria-label="First name" value="12345">
-									
-			 	<div class="col" style="display: inline-block;">
-			    <div class="select">
-			      <select class="form-select" id="floatingSelectGrid" aria-label="domain">
-			        <option selected>서울특별시</option>
-			        <option value="1" selected>인천광역시</option>
-			        <option value="2">대구광역시</option>
-			        <option value="3">대전광역시</option>
-			        <option value="4">제주도</option>
-			        <option value="5">광주광역시</option>
-			      </select>
+				<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">우편번호검색</button>	
+				
+			<!-- 우편번호검색 Modal -->
+			<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h5 class="modal-title" id="exampleModalLabel">우편번호 검색</h5>
+			        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			      </div>
+			      <div class="modal-body">
+			        <form>
+			          <div class="mb-3" style="display: inline-block;">
+				         <!-- <label for="recipient-name" class="col-form-label">모바일</label> -->
+			            <input type="text" style="width: 400px; display: inline-block;" class="form-control" id="recipient-name" placeholder="예) 판교역로 235, 분당 주공, 삼평동 681">
+			            <button type="button" class="btn btn-primary">검색</button>
+			            </div>
+			          <div class="mb-3">
+			            <label for="message-text" class="col-form-label">
+			            <b>Tip</b><br>
+			            아래와 같은 조합으로 검색을 하시면 더욱 정확한 결과가 검색됩니다.<br><br>
+			            도로명 + 건물번호<br>
+			            <span style="color:blue;">예) 판교역로 235, 제주 첨단로 242</span><br><br>
+			            지역명(동/리) + 번지<br>
+			            <span style="color:blue;">예) 삼평동 681, 제주 영평동 2181</span><br><br>
+			            지역명(동/리) + 건물명(아파트명)<br>
+			            <span style="color:blue;">예) 분당 주공, 연수동 주공3차</span><br><br>
+			            </label>
+			          </div>
+			        </form>
+			      </div>
+			      <div class="modal-footer">
+	      	        <a class="btn btn-secondary" href="./memberEdit.html" role="button">취소</a>
+			        <a class="btn btn-primary" href="./memberEdit.html" role="button">확인</a>
+			      </div>
 			    </div>
 			  </div>
-				  
+			</div>	
 			<div class="row">
  			 	<div class="col">
    			 		<input type="text" class="form-control" placeholder="상세주소" aria-label="First name" value="이나로 55 이나아파트 1234-4567">
@@ -192,9 +217,9 @@ memberForm.html 회원가입 폼
 		</tr>
 
 		<tr>
-			<th style="background-color:rgb(248,249,250);">모바일</th>
+			<th style="background-color:rgb(248,249,250);">모바일 <p style="color:red; display:inline-block;">*</p></th>
 			<td width="300">
-	 			    <div class="col"  style="display: inline-block;">
+<!-- 	 			    <div class="col"  style="display: inline-block;">
 	 			    <div class="select">
 				      <select class="form-select" id="floatingSelectGrid" aria-label="domain">
 				        <option selected>통신사</option>
@@ -204,7 +229,7 @@ memberForm.html 회원가입 폼
 				        <option value="3">알뜰폰</option>
 				      </select>
 				     </div>
-				     </div>
+				     </div> -->
  				<div class="row">
 					
 				 	<div class="col" style="display: inline-block;">
@@ -275,7 +300,7 @@ memberForm.html 회원가입 폼
 				  </div>
 				</div>  
 			</td>
-			<th style="background-color:rgb(248,249,250);">이메일</th>
+			<th style="background-color:rgb(248,249,250);">이메일 <p style="color:red; display:inline-block;">*</p></th>
 			<td>
 				 <div class="row g-2">
 				  <div class="col-md">
@@ -298,7 +323,7 @@ memberForm.html 회원가입 폼
 		</tr>
 
 		<tr>
-			<th style="background-color:rgb(248,249,250);" width="110">비밀번호 문제</th>
+			<th style="background-color:rgb(248,249,250);" width="110">비밀번호 문제 <p style="color:red; display:inline-block;">*</p></th>
 			<td>
 			      <select class="form-select" id="floatingSelectGrid" aria-label="domain">
 			        <option selected>졸업한 초등학교 이름은?</option>
@@ -309,7 +334,7 @@ memberForm.html 회원가입 폼
 			      </select>
 			</td>
 
-			<th style="background-color:rgb(248,249,250);">비밀번호 답</th>
+			<th style="background-color:rgb(248,249,250);">비밀번호 답 <p style="color:red; display:inline-block;">*</p></th>
 			<td>
 				<input type="text" class="form-control"aria-label="First name" value="집">
 			</td>
@@ -363,17 +388,17 @@ memberForm.html 회원가입 폼
 			<th style="background-color:rgb(248,249,250);">취미</th>
 			<td>
 				<input type="checkbox" class="btn-check" id="btn-check-outlined" autocomplete="off" checked>
-				<label class="btn btn-outline-primary" for="btn-check-outlined">요리</label>
+				<label class="btn btn-outline-secondary" for="btn-check-outlined">요리</label>
 				<input type="checkbox" class="btn-check" id="btn-check-outlined2" autocomplete="off" checked>
-				<label class="btn btn-outline-primary" for="btn-check-outlined2">운동</label>
+				<label class="btn btn-outline-secondary" for="btn-check-outlined2">운동</label>
 				<input type="checkbox" class="btn-check" id="btn-check-outlined3" autocomplete="off">
-				<label class="btn btn-outline-primary" for="btn-check-outlined3">게임</label>
+				<label class="btn btn-outline-secondary" for="btn-check-outlined3">게임</label>
 				<input type="checkbox" class="btn-check" id="btn-check-outlined" autocomplete="off">
-				<label class="btn btn-outline-primary" for="btn-check-outlined">독서</label>
+				<label class="btn btn-outline-secondary" for="btn-check-outlined">독서</label>
 				<input type="checkbox" class="btn-check" id="btn-check-outlined2" autocomplete="off" checked>
-				<label class="btn btn-outline-primary" for="btn-check-outlined2">영화감상</label>
+				<label class="btn btn-outline-secondary" for="btn-check-outlined2">영화감상</label>
 				<input type="checkbox" class="btn-check" id="btn-check-outlined3" autocomplete="off" checked>
-				<label class="btn btn-outline-primary" for="btn-check-outlined3">낮잠</label>
+				<label class="btn btn-outline-secondary" for="btn-check-outlined3">낮잠</label>
 			</td>
 		</tr>
 
@@ -560,7 +585,7 @@ memberForm.html 회원가입 폼
 
 	<table class="table table-default" style="width: 60%; margin-left: auto; margin-right: auto;">
 		<tr>
-			<th style="background-color:rgb(248,249,250);">개인정보 유효기간</th>
+			<th style="background-color:rgb(248,249,250);">개인정보 유효기간 <p style="color:red; display:inline-block;">*</p></th>
 			<td>
 				<div class="form-check form-check-inline form-switch">
 				  <input class="form-check-input" type="radio" name="radio4" id="flexSwitchCheckDefault1">
@@ -582,7 +607,7 @@ memberForm.html 회원가입 폼
 		</tr>
 
 		<tr>
-			<th style="background-color:rgb(248,249,250);">모바일 마케팅 수신 동의</th>
+			<th style="background-color:rgb(248,249,250);">모바일 마케팅 수신 동의 <p style="color:red; display:inline-block;">*</p></th>
 			<td>
 				<div class="form-check form-check-inline form-switch">
 				  <input class="form-check-input" type="radio" name="radio5" id="flexSwitchCheckDefault1" checked>
@@ -596,7 +621,7 @@ memberForm.html 회원가입 폼
 		</tr>
 
 		<tr>
-			<th style="background-color:rgb(248,249,250);">이메일 마케팅 수신 동의</th>
+			<th style="background-color:rgb(248,249,250);">이메일 마케팅 수신 동의 <p style="color:red; display:inline-block;">*</p></th>
 			<td>
 				<div class="form-check form-check-inline form-switch">
 				  <input class="form-check-input" type="radio" name="radio6" id="flexSwitchCheckDefault1">
@@ -617,17 +642,52 @@ memberForm.html 회원가입 폼
 		<div class="d-grid gap-1 d-md-flex justify-content-md-end" style="margin-right: 20%; font-family: '카페24 고운밤'; font-size: 20px;">
 	  		<a class="btn btn-secondary" href="./memberList.html" role="button">목록</a>
 	  		<a class="btn btn-secondary" href="./memberView.html" role="button">저장</a>
-	  		<a class="btn btn-secondary" href="#myModal" role="button" data-toggle="modal">삭제</a>
+	  		<button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#exampleModal">삭제</button>
 	  	</div>
 
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"><img src="../../images/alert.png" width="30px"> 회원정보 삭제</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+       <p>회원정보가 삭제됩니다.<p>
+       <p>계속하려면 확인을, 종료하려면 취소를 선택해주세요.</p>
+      </div>
+      <div class="modal-footer">
+<!--         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">취소</button>
+        <button type="button" class="btn btn-primary">확인</button> -->
+        <a class="btn btn-secondary" href="./memberEdit.html" role="button">취소</a>
+        <a class="btn btn-primary" href="./memberList.html" role="button">확인</a>
+      </div>
+    </div>
+  </div>
+</div>
 
 	<br>
 	<br>
 
-		<script
+	<!-- <div class="d-grid gap-2 col-1 mx-auto">
+		<a href="./memberForm.html" button type="button" class="btn btn-danger btn-lg">+ 등록</button></a>
+	</div> -->
+	
+	
+	<!-- Optional JavaScript; choose one of the two! -->
+
+	<!-- Option 1: Bootstrap Bundle with Popper -->
+	<script
 		src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
 		crossorigin="anonymous"></script>
+
+	<!-- Option 2: Separate Popper and Bootstrap JS -->
+	<!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
 </body>
 
 </html>
