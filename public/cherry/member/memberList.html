@@ -121,10 +121,10 @@
 			<td><img src="../../images/photo1.PNG" width="30px"> <a href="./memberView.html">윤이나</a></td>
 			<td>yina</td>
 			<td>010-1234-5678
-			<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal" style="padding: 0;"><img src="../../images/sms_logo.png"></button>
+			<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#sms" style="padding: 0;"><img src="../../images/sms_logo.png"></button>
 			
 			<!-- sms Modal -->
-			<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal fade" id="sms" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 			  <div class="modal-dialog">
 			    <div class="modal-content">
 			      <div class="modal-header">
@@ -175,10 +175,10 @@
 						
 			</td>
 			<td>yina@naver.com
-			<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal2" style="padding: 0;"><img src="../../images/mail_logo.png"></button>
+			<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#email" style="padding: 0;"><img src="../../images/mail_logo.png"></button>
 			
 			<!-- email Modal -->
-			<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal fade" id="email" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 			  <div class="modal-dialog">
 			    <div class="modal-content">
 			      <div class="modal-header">
@@ -228,10 +228,10 @@
 			</div>		
 			</td>
 			<td>
-				<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal3" style="padding: 0;"><img src="../../images/kakaotalk_icon.png" width="30px"></button>
+				<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#katalk" style="padding: 0;"><img src="../../images/kakaotalk_icon.png" width="30px"></button>
 
 				<!-- 카카오톡 Modal -->
-				<div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal fade" id="katalk" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 				  <div class="modal-dialog">
 				    <div class="modal-content">
 				      <div class="modal-header">
@@ -281,10 +281,10 @@
 			</div>		
 			</td>
 			<td>
-				<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal4" style="padding: 0;"><img src="../../images/line_icon.png" width="30px"></button>
+				<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#line" style="padding: 0;"><img src="../../images/line_icon.png" width="30px"></button>
 
 				<!-- line Modal -->
-				<div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal fade" id="line" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 				  <div class="modal-dialog">
 				    <div class="modal-content">
 				      <div class="modal-header">
@@ -345,21 +345,21 @@
 			<td><img src="../../images/photo2.PNG" width="30px"> 네오</td>
 			<td>neo</td>
 			<td>010-4567-8978
-			<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal" style="padding: 0;"><img src="../../images/sms_logo.png"></button>
+			<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#sms_neo" style="padding: 0;"><img src="../../images/sms_logo.png"></button>
 			
 			<!-- sms Modal -->
-			<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal fade" id="sms_neo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 			  <div class="modal-dialog">
 			    <div class="modal-content">
 			      <div class="modal-header">
-			        <h5 class="modal-title" id="exampleModalLabel">sms 전송</h5>
+			        <h5 class="modal-title" id="exampleModalLabel_neo">sms 전송</h5>
 			        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 			      </div>
 			      <div class="modal-body">
 			        <form>
 			          <div class="mb-3">
 			            <label for="recipient-name" class="col-form-label">모바일</label>
-			            <input type="text" class="form-control" id="recipient-name" value="010-1234-5678">
+			            <input type="text" class="form-control" id="recipient-name" value="010-4567-8978">
 			          </div>
 			          <div class="mb-3">
 			            <label for="message-text" class="col-form-label">메시지 입력</label>
@@ -369,13 +369,13 @@
 			      </div>
 			      <div class="modal-footer">
 	      	        <a class="btn btn-secondary" href="./memberList.html" role="button">취소</a>
-			        <a class="btn btn-primary" href="./memberList.html" role="button" data-bs-target="#success">전송</a>
+			        <a class="btn btn-primary" href="#success" role="button" data-bs-toggle="modal" data-bs-target="#success">전송</a>
 			      </div>
 			    </div>
 			  </div>
 			</div>
 			
-						<!-- 메시지전송 완료 modal -->
+			<!-- 메시지전송 완료 modal -->
 			<div class="modal fade" id="success" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 			  <div class="modal-dialog">
 			    <div class="modal-content">
@@ -395,13 +395,13 @@
 			      </div>
 			    </div>
 			  </div>
-			</div>			
+			</div>				
 			</td>
 			<td>neo@daum.net
-			<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal2" style="padding: 0;"><img src="../../images/mail_logo.png"></button>
+			<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#email_neo" style="padding: 0;"><img src="../../images/mail_logo.png"></button>
 			
 			<!-- email Modal -->
-			<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal fade" id="email_neo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 			  <div class="modal-dialog">
 			    <div class="modal-content">
 			      <div class="modal-header">
@@ -412,7 +412,7 @@
 			        <form>
 			          <div class="mb-3">
 			            <label for="recipient-name" class="col-form-label">email</label>
-			            <input type="text" class="form-control" id="recipient-name" value="yina12@naver.com">
+			            <input type="text" class="form-control" id="recipient-name" value="neo@daum.net">
 			          </div>
 			          <div class="mb-3">
 			            <label for="message-text" class="col-form-label">내용 입력</label>
@@ -422,17 +422,39 @@
 			      </div>
 			      <div class="modal-footer">
 	      	        <a class="btn btn-secondary" href="./memberList.html" role="button">취소</a>
-			        <a class="btn btn-primary" href="./memberList.html" role="button">전송</a>
+			        <a class="btn btn-primary" href="#emailSuccess" role="button" data-bs-toggle="modal" data-bs-target="#emailSuccess">전송</a>
 			      </div>
 			    </div>
 			  </div>
-			</div>			
+			</div>
+			
+			<!-- 메시지전송 완료 modal -->
+			<div class="modal fade" id="emailSuccess" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h5 class="modal-title" id="exampleModalLabel">email 전송</h5>
+			        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			      </div>
+			      <div class="modal-body">
+			        <form>
+			          <div class="mb-3">
+			            <label for="recipient-name" class="col-form-label">메시지 전송이 완료되었습니다^_^</label>
+			          </div>
+			        </form>
+			      </div>
+			      <div class="modal-footer">
+			        <a class="btn btn-primary" href="./memberList.html" role="button">확인</a>
+			      </div>
+			    </div>
+			  </div>
+			</div>		
 			</td>
 			<td>
-				<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal3" style="padding: 0;"><img src="../../images/kakaotalk_icon.png" width="30px"></button>
+				<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#katalk_neo" style="padding: 0;"><img src="../../images/kakaotalk_icon.png" width="30px"></button>
 
 				<!-- 카카오톡 Modal -->
-				<div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal fade" id="katalk_neo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 				  <div class="modal-dialog">
 				    <div class="modal-content">
 				      <div class="modal-header">
@@ -443,7 +465,7 @@
 				        <form>
 				          <div class="mb-3">
 				            <label for="recipient-name" class="col-form-label">카카오톡 아이디</label>
-				            <input type="text" class="form-control" id="recipient-name" value="yina123">
+				            <input type="text" class="form-control" id="recipient-name" value="neo">
 				          </div>
 				          <div class="mb-3">
 				            <label for="message-text" class="col-form-label">메시지 입력</label>
@@ -481,11 +503,12 @@
 			  </div>
 			</div>			
 			</td>
+			
 			<td>
-				<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal4" style="padding: 0;"><img src="../../images/line_icon.png" width="30px"></button>
+				<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#line_neo" style="padding: 0;"><img src="../../images/line_icon.png" width="30px"></button>
 
 				<!-- line Modal -->
-				<div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal fade" id="line_neo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 				  <div class="modal-dialog">
 				    <div class="modal-content">
 				      <div class="modal-header">
@@ -496,7 +519,7 @@
 				        <form>
 				          <div class="mb-3">
 				            <label for="recipient-name" class="col-form-label">Line 아이디</label>
-				            <input type="text" class="form-control" id="recipient-name" value="yina123">
+				            <input type="text" class="form-control" id="recipient-name" value="neo">
 				          </div>
 				          <div class="mb-3">
 				            <label for="message-text" class="col-form-label">메시지 입력</label>
@@ -546,10 +569,10 @@
 			<td><img src="../../images/photo3.PNG" width="30px"> 라이언</td>
 			<td>lion</td>
 			<td>010-8888-8888
-			<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal" style="padding: 0;"><img src="../../images/sms_logo.png"></button>
+			<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#sms_lion" style="padding: 0;"><img src="../../images/sms_logo.png"></button>
 			
 			<!-- sms Modal -->
-			<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal fade" id="sms_lion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 			  <div class="modal-dialog">
 			    <div class="modal-content">
 			      <div class="modal-header">
@@ -560,7 +583,7 @@
 			        <form>
 			          <div class="mb-3">
 			            <label for="recipient-name" class="col-form-label">모바일</label>
-			            <input type="text" class="form-control" id="recipient-name" value="010-1234-5678">
+			            <input type="text" class="form-control" id="recipient-name" value="010-8888-8888">
 			          </div>
 			          <div class="mb-3">
 			            <label for="message-text" class="col-form-label">메시지 입력</label>
@@ -570,18 +593,18 @@
 			      </div>
 			      <div class="modal-footer">
 	      	        <a class="btn btn-secondary" href="./memberList.html" role="button">취소</a>
-			        <a class="btn btn-primary" href="./memberList.html" role="button">전송</a>
+			        <a class="btn btn-primary" href="#smsSuccess" role="button" data-bs-toggle="modal" data-bs-target="#smsSuccess">전송</a>
 			      </div>
 			    </div>
 			  </div>
 			</div>
 			
-						<!-- 메시지전송 완료 modal -->
-			<div class="modal fade" id="success" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<!-- 메시지전송 완료 modal -->
+			<div class="modal fade" id="smsSuccess" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 			  <div class="modal-dialog">
 			    <div class="modal-content">
 			      <div class="modal-header">
-			        <h5 class="modal-title" id="exampleModalLabel">sms 전송</h5>
+			        <h5 class="modal-title" id="exampleModalLabel">email 전송</h5>
 			        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 			      </div>
 			      <div class="modal-body">
@@ -596,13 +619,13 @@
 			      </div>
 			    </div>
 			  </div>
-			</div>			
+			</div>		
 			</td>
 			<td>lion@naver.com
-			<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal2" style="padding: 0;"><img src="../../images/mail_logo.png"></button>
+			<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#email_lion" style="padding: 0;"><img src="../../images/mail_logo.png"></button>
 			
 			<!-- email Modal -->
-			<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal fade" id="email_lion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 			  <div class="modal-dialog">
 			    <div class="modal-content">
 			      <div class="modal-header">
@@ -613,7 +636,7 @@
 			        <form>
 			          <div class="mb-3">
 			            <label for="recipient-name" class="col-form-label">email</label>
-			            <input type="text" class="form-control" id="recipient-name" value="yina12@naver.com">
+			            <input type="text" class="form-control" id="recipient-name" value="lion@naver.com">
 			          </div>
 			          <div class="mb-3">
 			            <label for="message-text" class="col-form-label">내용 입력</label>
@@ -623,17 +646,39 @@
 			      </div>
 			      <div class="modal-footer">
 	      	        <a class="btn btn-secondary" href="./memberList.html" role="button">취소</a>
-			        <a class="btn btn-primary" href="./memberList.html" role="button">전송</a>
+			        <a class="btn btn-primary" href="#emailSuccess" role="button" data-bs-toggle="modal" data-bs-target="#emailSuccess">전송</a>
 			      </div>
 			    </div>
 			  </div>
-			</div>			
+			</div>
+			
+			<!-- 메시지전송 완료 modal -->
+			<div class="modal fade" id="emailSuccess" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h5 class="modal-title" id="exampleModalLabel">email 전송</h5>
+			        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			      </div>
+			      <div class="modal-body">
+			        <form>
+			          <div class="mb-3">
+			            <label for="recipient-name" class="col-form-label">메시지 전송이 완료되었습니다^_^</label>
+			          </div>
+			        </form>
+			      </div>
+			      <div class="modal-footer">
+			        <a class="btn btn-primary" href="./memberList.html" role="button">확인</a>
+			      </div>
+			    </div>
+			  </div>
+			</div>				
 			</td>
 			<td>
-				<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal3" style="padding: 0;"><img src="../../images/kakaotalk_icon.png" width="30px"></button>
+				<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#katalk_lion" style="padding: 0;"><img src="../../images/kakaotalk_icon.png" width="30px"></button>
 
 				<!-- 카카오톡 Modal -->
-				<div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal fade" id="katalk_lion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 				  <div class="modal-dialog">
 				    <div class="modal-content">
 				      <div class="modal-header">
@@ -644,7 +689,7 @@
 				        <form>
 				          <div class="mb-3">
 				            <label for="recipient-name" class="col-form-label">카카오톡 아이디</label>
-				            <input type="text" class="form-control" id="recipient-name" value="yina123">
+				            <input type="text" class="form-control" id="recipient-name" value="lion">
 				          </div>
 				          <div class="mb-3">
 				            <label for="message-text" class="col-form-label">메시지 입력</label>
@@ -683,10 +728,10 @@
 			</div>		
 			</td>
 			<td>
-				<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal4" style="padding: 0;"><img src="../../images/line_icon.png" width="30px"></button>
+				<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#line_lion" style="padding: 0;"><img src="../../images/line_icon.png" width="30px"></button>
 
 				<!-- linie Modal -->
-				<div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal fade" id="line_lion" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 				  <div class="modal-dialog">
 				    <div class="modal-content">
 				      <div class="modal-header">
@@ -697,7 +742,7 @@
 				        <form>
 				          <div class="mb-3">
 				            <label for="recipient-name" class="col-form-label">Line 아이디</label>
-				            <input type="text" class="form-control" id="recipient-name" value="yina123">
+				            <input type="text" class="form-control" id="recipient-name" value="lion">
 				          </div>
 				          <div class="mb-3">
 				            <label for="message-text" class="col-form-label">메시지 입력</label>
@@ -747,10 +792,10 @@
 			<td><img src="../../images/photo4.PNG" width="30px"> 튜브</td>
 			<td>tube</td>
 			<td>010-5678-6554
-			<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal" style="padding: 0;"><img src="../../images/sms_logo.png"></button>
+			<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#sms_tube" style="padding: 0;"><img src="../../images/sms_logo.png"></button>
 			
 			<!-- sms Modal -->
-			<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal fade" id="sms_tube" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 			  <div class="modal-dialog">
 			    <div class="modal-content">
 			      <div class="modal-header">
@@ -761,7 +806,7 @@
 			        <form>
 			          <div class="mb-3">
 			            <label for="recipient-name" class="col-form-label">모바일</label>
-			            <input type="text" class="form-control" id="recipient-name" value="010-1234-5678">
+			            <input type="text" class="form-control" id="recipient-name" value="010-5678-6554">
 			          </div>
 			          <div class="mb-3">
 			            <label for="message-text" class="col-form-label">메시지 입력</label>
@@ -771,18 +816,18 @@
 			      </div>
 			      <div class="modal-footer">
 	      	        <a class="btn btn-secondary" href="./memberList.html" role="button">취소</a>
-			        <a class="btn btn-primary" href="./memberList.html" role="button">전송</a>
+			        <a class="btn btn-primary" href="#emailSuccess" role="button" data-bs-toggle="modal" data-bs-target="#emailSuccess">전송</a>
 			      </div>
 			    </div>
 			  </div>
 			</div>
 			
-						<!-- 메시지전송 완료 modal -->
-			<div class="modal fade" id="success" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<!-- 메시지전송 완료 modal -->
+			<div class="modal fade" id="emailSuccess" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 			  <div class="modal-dialog">
 			    <div class="modal-content">
 			      <div class="modal-header">
-			        <h5 class="modal-title" id="exampleModalLabel">sms 전송</h5>
+			        <h5 class="modal-title" id="exampleModalLabel">email 전송</h5>
 			        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 			      </div>
 			      <div class="modal-body">
@@ -797,13 +842,13 @@
 			      </div>
 			    </div>
 			  </div>
-			</div>			
+			</div>				
 			</td>
 			<td>tube@gmail.com
-			<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal2" style="padding: 0;"><img src="../../images/mail_logo.png"></button>
+			<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#email_tube" style="padding: 0;"><img src="../../images/mail_logo.png"></button>
 			
 			<!-- email Modal -->
-			<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal fade" id="email_tube" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 			  <div class="modal-dialog">
 			    <div class="modal-content">
 			      <div class="modal-header">
@@ -814,7 +859,7 @@
 			        <form>
 			          <div class="mb-3">
 			            <label for="recipient-name" class="col-form-label">email</label>
-			            <input type="text" class="form-control" id="recipient-name" value="yina12@naver.com">
+			            <input type="text" class="form-control" id="recipient-name" value="tube@gmail.com">
 			          </div>
 			          <div class="mb-3">
 			            <label for="message-text" class="col-form-label">내용 입력</label>
@@ -824,17 +869,39 @@
 			      </div>
 			      <div class="modal-footer">
 	      	        <a class="btn btn-secondary" href="./memberList.html" role="button">취소</a>
-			        <a class="btn btn-primary" href="./memberList.html" role="button">전송</a>
+			        <a class="btn btn-primary" href="#emailSuccess" role="button" data-bs-toggle="modal" data-bs-target="#emailSuccess">전송</a>
 			      </div>
 			    </div>
 			  </div>
-			</div>			
+			</div>
+			
+			<!-- 메시지전송 완료 modal -->
+			<div class="modal fade" id="emailSuccess" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h5 class="modal-title" id="exampleModalLabel">email 전송</h5>
+			        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			      </div>
+			      <div class="modal-body">
+			        <form>
+			          <div class="mb-3">
+			            <label for="recipient-name" class="col-form-label">메시지 전송이 완료되었습니다^_^</label>
+			          </div>
+			        </form>
+			      </div>
+			      <div class="modal-footer">
+			        <a class="btn btn-primary" href="./memberList.html" role="button">확인</a>
+			      </div>
+			    </div>
+			  </div>
+			</div>					
 			</td>
 			<td>
-				<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal3" style="padding: 0;"><img src="../../images/kakaotalk_icon.png" width="30px"></button>
+				<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#katalk_tube" style="padding: 0;"><img src="../../images/kakaotalk_icon.png" width="30px"></button>
 
 				<!-- 카카오톡 Modal -->
-				<div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal fade" id="katalk_tube" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 				  <div class="modal-dialog">
 				    <div class="modal-content">
 				      <div class="modal-header">
@@ -845,7 +912,7 @@
 				        <form>
 				          <div class="mb-3">
 				            <label for="recipient-name" class="col-form-label">카카오톡 아이디</label>
-				            <input type="text" class="form-control" id="recipient-name" value="yina123">
+				            <input type="text" class="form-control" id="recipient-name" value="tube">
 				          </div>
 				          <div class="mb-3">
 				            <label for="message-text" class="col-form-label">메시지 입력</label>
@@ -884,10 +951,10 @@
 			</div>		
 			</td>
 			<td>
-				<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal4" style="padding: 0;"><img src="../../images/line_icon.png" width="30px"></button>
+				<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#line_tube" style="padding: 0;"><img src="../../images/line_icon.png" width="30px"></button>
 
 				<!-- line Modal -->
-				<div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal fade" id="line_tube" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 				  <div class="modal-dialog">
 				    <div class="modal-content">
 				      <div class="modal-header">
@@ -898,7 +965,7 @@
 				        <form>
 				          <div class="mb-3">
 				            <label for="recipient-name" class="col-form-label">Line 아이디</label>
-				            <input type="text" class="form-control" id="recipient-name" value="yina123">
+				            <input type="text" class="form-control" id="recipient-name" value="tube">
 				          </div>
 				          <div class="mb-3">
 				            <label for="message-text" class="col-form-label">메시지 입력</label>
@@ -948,10 +1015,10 @@
 			<td><img src="../../images/photo5.PNG" width="30px"> 콘</td>
 			<td>con</td>
 			<td>010-7894-6541
-			<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal" style="padding: 0;"><img src="../../images/sms_logo.png"></button>
+			<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#sms_con" style="padding: 0;"><img src="../../images/sms_logo.png"></button>
 			
 			<!-- sms Modal -->
-			<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal fade" id="sms_con" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 			  <div class="modal-dialog">
 			    <div class="modal-content">
 			      <div class="modal-header">
@@ -962,7 +1029,7 @@
 			        <form>
 			          <div class="mb-3">
 			            <label for="recipient-name" class="col-form-label">모바일</label>
-			            <input type="text" class="form-control" id="recipient-name" value="010-1234-5678">
+			            <input type="text" class="form-control" id="recipient-name" value="010-7894-6541">
 			          </div>
 			          <div class="mb-3">
 			            <label for="message-text" class="col-form-label">메시지 입력</label>
@@ -972,18 +1039,18 @@
 			      </div>
 			      <div class="modal-footer">
 	      	        <a class="btn btn-secondary" href="./memberList.html" role="button">취소</a>
-			        <a class="btn btn-primary" href="./memberList.html" role="button">전송</a>
+			        <a class="btn btn-primary" href="#emailSuccess" role="button" data-bs-toggle="modal" data-bs-target="#emailSuccess">전송</a>
 			      </div>
 			    </div>
 			  </div>
 			</div>
 			
-						<!-- 메시지전송 완료 modal -->
-			<div class="modal fade" id="success" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<!-- 메시지전송 완료 modal -->
+			<div class="modal fade" id="emailSuccess" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 			  <div class="modal-dialog">
 			    <div class="modal-content">
 			      <div class="modal-header">
-			        <h5 class="modal-title" id="exampleModalLabel">sms 전송</h5>
+			        <h5 class="modal-title" id="exampleModalLabel">email 전송</h5>
 			        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 			      </div>
 			      <div class="modal-body">
@@ -1001,10 +1068,10 @@
 			</div>			
 			</td>
 			<td>con@gmail.com
-			<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal2" style="padding: 0;"><img src="../../images/mail_logo.png"></button>
+			<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#email_con" style="padding: 0;"><img src="../../images/mail_logo.png"></button>
 			
 			<!-- email Modal -->
-			<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal fade" id="email_con" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 			  <div class="modal-dialog">
 			    <div class="modal-content">
 			      <div class="modal-header">
@@ -1015,7 +1082,7 @@
 			        <form>
 			          <div class="mb-3">
 			            <label for="recipient-name" class="col-form-label">email</label>
-			            <input type="text" class="form-control" id="recipient-name" value="yina12@naver.com">
+			            <input type="text" class="form-control" id="recipient-name" value="con@gmail.com">
 			          </div>
 			          <div class="mb-3">
 			            <label for="message-text" class="col-form-label">내용 입력</label>
@@ -1025,17 +1092,39 @@
 			      </div>
 			      <div class="modal-footer">
 	      	        <a class="btn btn-secondary" href="./memberList.html" role="button">취소</a>
-			        <a class="btn btn-primary" href="./memberList.html" role="button">전송</a>
+			        <a class="btn btn-primary" href="#emailSuccess" role="button" data-bs-toggle="modal" data-bs-target="#emailSuccess">전송</a>
 			      </div>
 			    </div>
 			  </div>
-			</div>			
+			</div>
+			
+			<!-- 메시지전송 완료 modal -->
+			<div class="modal fade" id="emailSuccess" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h5 class="modal-title" id="exampleModalLabel">email 전송</h5>
+			        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			      </div>
+			      <div class="modal-body">
+			        <form>
+			          <div class="mb-3">
+			            <label for="recipient-name" class="col-form-label">메시지 전송이 완료되었습니다^_^</label>
+			          </div>
+			        </form>
+			      </div>
+			      <div class="modal-footer">
+			        <a class="btn btn-primary" href="./memberList.html" role="button">확인</a>
+			      </div>
+			    </div>
+			  </div>
+			</div>				
 			</td>
 			<td>
-				<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal3" style="padding: 0;"><img src="../../images/kakaotalk_icon.png" width="30px"></button>
+				<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#katalk_con" style="padding: 0;"><img src="../../images/kakaotalk_icon.png" width="30px"></button>
 
 				<!-- 카카오톡 Modal -->
-				<div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal fade" id="katalk_con" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 				  <div class="modal-dialog">
 				    <div class="modal-content">
 				      <div class="modal-header">
@@ -1046,7 +1135,7 @@
 				        <form>
 				          <div class="mb-3">
 				            <label for="recipient-name" class="col-form-label">카카오톡 아이디</label>
-				            <input type="text" class="form-control" id="recipient-name" value="yina123">
+				            <input type="text" class="form-control" id="recipient-name" value="con">
 				          </div>
 				          <div class="mb-3">
 				            <label for="message-text" class="col-form-label">메시지 입력</label>
@@ -1085,10 +1174,10 @@
 			</div>		
 			</td>
 			<td>
-				<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal4" style="padding: 0;"><img src="../../images/line_icon.png" width="30px"></button>
+				<button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#line_con" style="padding: 0;"><img src="../../images/line_icon.png" width="30px"></button>
 
 				<!-- line Modal -->
-				<div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+				<div class="modal fade" id="line_con" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 				  <div class="modal-dialog">
 				    <div class="modal-content">
 				      <div class="modal-header">
@@ -1099,7 +1188,7 @@
 				        <form>
 				          <div class="mb-3">
 				            <label for="recipient-name" class="col-form-label">Line 아이디</label>
-				            <input type="text" class="form-control" id="recipient-name" value="yina123">
+				            <input type="text" class="form-control" id="recipient-name" value="line">
 				          </div>
 				          <div class="mb-3">
 				            <label for="message-text" class="col-form-label">메시지 입력</label>
