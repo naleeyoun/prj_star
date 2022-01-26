@@ -14,27 +14,33 @@
 
 <style>
     body {
-        padding-top: 5em;
+        color: gray;
+        margin-top: 2em;
+        
     }
     
 	#login > div {
-        margin: 15px 0;
+        margin: 15px;
     }
 
 </style>
 </head>
 <body>
 
-<div class="container" style="padding-left: 10%; padding-right: 10%;">
+<div class="container">
 	<!-- <div class="col-md-12 col-sm-12 col-12 "> -->
 	<div class="col-md-10 col-sm-12 col-lg-8">
   
+		
 		<div id=login >
-			<div>
-				<img src="../../../images/naver_logo.png">
+			<div class="row">
+				<img src="../../../images/duck_logo.png">
 			</div>
+			<br>			
 			<br>
-			<br>
+			
+		<!-- 아이디, 비밀번호 입력창 -->
+		
 			<div>
 				<input type="text" class="form-control" name="username"	placeholder="아이디를 입력해주세요." autofocus>
 			</div>
@@ -42,44 +48,75 @@
 				<input type="password" class="form-control" name="password"	placeholder="비밀번호를 입력해주세요.">
 			</div>
 			<div>
-				<button type="submit" class="form-control btn" style="background-color: rgb(0,199,60);">로그인</button>
+				<button type="submit" class="form-control btn" style="background-color: orange;">로그인</button>
 			</div>
-			<div>
-				<button type="submit" class="form-control btn btn-outline-primary">회원가입</button>
+		
+		<!-- 아이디 저장, 자동 로그인 체크박스 -->
+		
+			<div class="row" style="display: inline-block;">
+				<div class="form-check" style="display: inline-block;">
+					<input class="form-check-input" type="checkbox" id="gridCheck1">
+					<label class="form-check-label" for="gridCheck1"> 아이디 저장 </label>
+				<div class="form-check" style="display: inline-block;">
+					<input class="form-check-input" type="checkbox" id="gridCheck1">
+					<label class="form-check-label" for="gridCheck1"> 자동 로그인 </label>
+				</div>
+				</div>
 			</div>
 		</div>
-		<div class="row" style="display: inline-block; padding-left: 15px;">
-			<div class="form-check" style="display: inline-block;">
-				<input class="form-check-input" type="checkbox" id="gridCheck1">
-				<label class="form-check-label" for="gridCheck1"> 아이디 저장 </label>
-			<div class="form-check" style="display: inline-block;">
-				<input class="form-check-input" type="checkbox" id="gridCheck1">
-				<label class="form-check-label" for="gridCheck1"> 자동 로그인 </label>
-		</div>
-		<br>
-			</div>
-			<div>
-				<u style="float : left;">아이디/비밀번호 찾기></u>
-			</div>			
-			</div>
-		<br>
-		<br>
-		<div id=login >
-			<div>
-				<button type="submit" class="form-control btn btn-outline-primary">구글 로그인</button>
-			</div>
-			<div>
-				<button type="submit" class="form-control btn" style="background-color: rgb(0,199,60);">네이버 로그인</button>
-			</div>
-			<div>
-				<button type="submit" class="form-control btn btn-primary">페이스북 로그인</button>
-			</div>
-			<div>
-				<button type="submit" class="form-control btn" style="background-color: #f9e000;">카카오톡 로그인</button>
-			</div>			
-		</div>		
 	</div>
+
+		<br>
+		<br>
+		
+		<!-- 간편 로그인 -->
+		
+	<div class="container" style="color: black;"> <!-- table -->
+		<div class="row"> <!-- tr -->
+			<div class="col"></div>
+			<div class="col">간편 로그인</div>
+			<div class="col"></div>
+		</div>
+		
+		<br>
+		
+		<div class="row"> <!-- tr -->
+			<div class="col"></div>
+			<div class="col">
+				<button type="button" class="btn" style="padding: 0;"><img src="../../../images/kakaotalk_logo.png" width=50px></button>
+			</div>
+			<div class="col">
+				<button type="button" class="btn" style="padding: 0;"><img src="../../../images/google_logo.png" width=50px></button>
+			</div>
+			<div class="col">
+				<button type="button" class="btn" style="padding: 0;"><img src="../../../images/facebook_logo.png" width=50px></button>
+			</div>
+			<div class="col"></div>
+		</div>
+	</div>
+	<br>
+
+		<!-- 회원가입 -->
+		
+	<div class="container">
+		<div class="row">
+			<div class="col" style="text-align: center;"> Yina는 처음이신가요? <a href="#">회원가입</a></div>
+		</div>	
+	</div>
+	<hr style="color: gray;">
+
+	
+		<!-- 아이디, 비밀번호 찾기 -->
+		
+	<div class="container">
+		<div class="row">
+			<div class="col" style="text-align: center;"><a href="#">아이디/비밀번호 찾기</a></div>
+		</div>	
+	</div>
+	<br>
+
 </div>
+
 
 
 
