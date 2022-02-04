@@ -12,17 +12,10 @@
 
 <title>memberList_durian</title>
 
-<style>
-/*     body {
-        color: gray;
-        margin-top: 2em;
-        
-    }
-    
-	#login > div {
-        margin: 15px;
-    }
- */
+<style type="text/css">
+	
+
+
 </style>
 </head>
 <body>
@@ -122,10 +115,10 @@
 <hr>
 
 
-<nav class="nav" style="float: right;">
+<nav class="nav">
 	<div class="nav-link">
-		<div class="dropdown">
-			<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false" style="width:150px;">
+		<div class="dropdown" style="display:inline-block;">
+			<button style="display:inline-block;" class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false" style="width:150px;">
 				삭제여부
 			</button>
 			<ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
@@ -139,8 +132,8 @@
 	</div>
 
 	<div class="nav-link">
-		<div class="input-group mb-3">
- 			<button class="btn btn-secondary" type="button" aria-expanded="false" style="width:150px;">
+		<div class="input-group mb-3" >
+ 			<button style="display:inline-block;" class="btn btn-secondary" type="button" aria-expanded="false" style="width:150px;">
  				날짜
  			</button>
 
@@ -155,12 +148,10 @@
 		</div>
  		</div>
 	</div>
-</nav>
-
-<nav class="nav" style="clear:both; float:right;">
+	
 	<div class="nav-link">
 		<div class="input-group mb-3">
-			<button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="width:150px;">
+			<button style="display:inline-block;" class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="width:150px;">
 				이름
 			</button>
 			<ul class="dropdown-menu">
@@ -170,11 +161,26 @@
 				<li><hr class="dropdown-divider"></li>
 				<li><a class="dropdown-item" href="#">Separated link</a></li>
 			</ul>
-		<input type="text" class="form-control" aria-label="Text input with dropdown button">
+			<input type="text" class="form-control" aria-label="Text input with dropdown button"> 
 		</div>
 	</div>
-</nav>
+	
+	<div class="nav-link">
+		<div class="mb-3">
+			<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+				<i class="fas fa-search"></i>
+			</button>
+		</div>
+	</div>
+	<div class="nav-link">
+		<div class="mb-3">
+			<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+				<i class="fas fa-search"></i>
+			</button>
+		</div>
+	</div>
 
+</nav>
 
 
 <div class="container">
@@ -183,7 +189,7 @@
 		
 		<div id=login >
 			<div class="row">
-				<img src="../../../images/duck_logo.png">
+				<!-- <img src="../../../images/duck_logo.png"> -->
 			</div>
 			<br>			
 			<br>
