@@ -46,7 +46,7 @@
 
 <!-- 상단 navbar home, Features, 시스템관리 메뉴 -->
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light" style="margin-top: 2em; font-family: '나눔스퀘어라운드 Regular';">
+<nav class="navbar navbar-expand-lg navbar-light bg-light" style="margin-top: 2em; font-family: '나눔스퀘어라운드 Regular'; ">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Home<a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -86,7 +86,77 @@
 <h2 style="color: #4C4C4C; text-align: center; font-family: '나눔스퀘어라운드 Regular';">회원리스트</h1>
 <br>
 <br>
-<br>
+
+
+
+<!-- navbar 삭제여부, 날짜, 이름 검색 -->
+
+<nav class="nav" style="font-family: '나눔스퀘어라운드 Regular'; float:right;">
+	<div class="nav-link">
+		<div class="dropdown">
+			<button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false" style="width:150px;">
+				삭제여부
+			</button>
+			<ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+				<li><a class="dropdown-item active" href="#">Action</a></li>
+				<li><a class="dropdown-item" href="#">Another action</a></li>
+				<li><a class="dropdown-item" href="#">Something else here</a></li>
+				<li><hr class="dropdown-divider"></li>
+				<li><a class="dropdown-item" href="#">Separated link</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="nav-link">
+		<div class="input-group mb-3" >
+ 			<button class="btn btn-secondary" type="button" aria-expanded="false" style="width:150px;">
+ 				날짜
+ 			</button>
+
+ 		<div class="form">
+			<input type="date" class="form-control" id="">
+		</div>
+		<div class="form">
+			&nbsp;&nbsp;~&nbsp;&nbsp;
+		</div>
+		<div class="form">
+			<input type="date" class="form-control" id="">
+		</div>
+ 		</div>
+	</div>
+	
+	<div class="nav-link">
+		<div class="input-group mb-3">
+			<button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="width:150px;">
+				이름
+			</button>
+			<ul class="dropdown-menu">
+				<li><a class="dropdown-item" href="#">Action</a></li>
+				<li><a class="dropdown-item" href="#">Another action</a></li>
+				<li><a class="dropdown-item" href="#">Something else here</a></li>
+				<li><hr class="dropdown-divider"></li>
+				<li><a class="dropdown-item" href="#">Separated link</a></li>
+			</ul>
+			<input type="text" class="form-control" aria-label="Text input with dropdown button"> 
+		</div>
+	</div>
+	
+	<div class="nav-link">
+		<div class="mb-3">
+			<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+				<i class="fas fa-search"></i>
+			</button>
+		</div>
+	</div>
+	<div class="nav-link">
+		<div class="mb-3">
+			<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+				<i class="fas fa-search"></i>
+			</button>
+		</div>
+	</div>
+</nav>
+
 
 
 <!-- 회원리스트 -->
@@ -94,25 +164,145 @@
 <table class="table" style="font-family: '나눔스퀘어라운드 Regular';">
   <thead style="background-color: #FFE400;">
     <tr>
-		<th>no.</th>
+		<th>No.</th>
 		<th>
 			<form action="" input="post" id="" name="">
 				<input type="checkbox" id="" name="">
 			</form>
 		</th>
-			<th>활성상태</th>
-			<th>등급</th>
-			<th colspan="2" style="text-align: center;">이름</th>
-			<th>성별</th>
-			<th>아이디</th>
-			<th>연락처</th>
-			<th>이메일</th>
-			<th colspan="2" style="text-align:center;">sns</th>
-			<th>이메일마케팅동의</th>
-			<th>모바일마케팅동의</th>
-			<th>활성시간</th>	
-			<th>비활성시간</th>	
-   	    </tr>
+		<th>
+			<div class="d-flex">
+				<div class="dropdown me-1">
+					<button type="button" class="btn btn-outline dropdown-toggle" id="dropdownMenuOffset" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="10,20">
+						<b>상태</b>
+					</button>
+					<ul class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+						<li><a class="dropdown-item" href="#">활성</a></li>
+						<li><a class="dropdown-item" href="#">비활성</a></li>
+					</ul>
+				</div>
+			</div>
+		</th>
+		<th>
+			<div class="d-flex">
+				<div class="dropdown me-1">
+					<button type="button" class="btn btn-outline dropdown-toggle" id="dropdownMenuOffset" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="10,20">
+						<b>등급</b>
+					</button>
+					<ul class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+						<li><a class="dropdown-item" href="#">관리자</a></li>
+						<li><a class="dropdown-item" href="#">일반</a></li>
+					</ul>
+				</div>
+			</div>			
+		</th>
+		<th colspan="2" style="text-align: center;">
+			<div class="d-flex">
+				<div class="text">
+					<button type="text" class="btn btn-outline" aria-expanded="false" data-bs-offset="10,20">
+						<b>이름</b>
+					</button>
+				</div>
+			</div>
+		</th>	
+		<th style="text-align: center;">
+			<div class="d-flex">
+				<div class="dropdown me-1">
+					<button type="button" class="btn btn-outline dropdown-toggle" id="dropdownMenuOffset" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="10,20">
+						<b>성별</b>
+					</button>
+					<ul class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+						<li><a class="dropdown-item" href="#">남성</a></li>
+						<li><a class="dropdown-item" href="#">여성</a></li>
+				</div>
+			</div>
+		</th>
+		<th style="text-align: center;">
+			<div class="d-flex">
+				<div class="text">
+					<button type="text" class="btn btn-outline" aria-expanded="false" data-bs-offset="10,20">
+						<b>아이디</b>
+					</button>
+				</div>
+			</div>
+		</th>
+		<th style="text-align: center;">
+			<div class="d-flex">
+				<div class="text">
+					<button type="text" class="btn btn-outline" aria-expanded="false" data-bs-offset="10,20">
+						<b>연락처</b>
+					</button>
+				</div>
+			</div>
+		</th>
+		<th style="text-align: center;">
+			<div class="d-flex">
+				<div class="text">
+					<button type="text" class="btn btn-outline" aria-expanded="false" data-bs-offset="10,20">
+						<b>이메일</b>
+					</button>
+				</div>
+			</div>
+		</th>
+		<th colspan="2" style="text-align: center;">
+			<div class="d-flex">
+				<div class="dropdown me-1">
+					<button type="button" class="btn btn-outline dropdown-toggle" id="dropdownMenuOffset" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="10,20">
+						<b>sns</b>
+					</button>
+					<ul class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+						<li><a class="dropdown-item" href="#">인스타그램</a></li>
+						<li><a class="dropdown-item" href="#">페이스북</a></li>
+						<li><a class="dropdown-item" href="#">카카오톡</a></li>
+					</ul>
+				</div>
+			</div>			
+		</th>
+		<th>
+			<div class="d-flex">
+				<div class="dropdown me-1">
+					<button type="button" class="btn btn-outline dropdown-toggle" id="dropdownMenuOffset" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="10,20">
+						<b>이메일마케팅</b>
+					</button>
+					<ul class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+						<li><a class="dropdown-item" href="#">동의</a></li>
+						<li><a class="dropdown-item" href="#">미동의</a></li>
+					</ul>
+				</div>
+			</div>			
+		</th>
+		<th>
+			<div class="d-flex">
+				<div class="dropdown me-1">
+					<button type="button" class="btn btn-outline dropdown-toggle" id="dropdownMenuOffset" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="10,20">
+						<b>모바일마케팅</b>
+					</button>
+					<ul class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+						<li><a class="dropdown-item" href="#">동의</a></li>
+						<li><a class="dropdown-item" href="#">미동의</a></li>
+					</ul>
+				</div>
+			</div>			
+		</th>
+		<th>
+			<div class="d-flex">
+				<div class="text">
+					<button type="text" class="btn btn-outline" aria-expanded="false" data-bs-offset="10,20">
+						<b>활성시간</b>
+					</button>
+				</div>
+			</div>
+		</th>		
+		<th>
+			<div class="d-flex">
+				<div class="text">
+					<button type="text" class="btn btn-outline" aria-expanded="false" data-bs-offset="10,20">
+						<b>비활성시간</b>
+					</button>
+				</div>
+			</div>
+		</th>		
+	</tr>
   </thead>
   <tbody>
     <tr>
@@ -203,79 +393,56 @@
 			<td>2022-01-28 00:00:00</td>
 			<td>-</td>
 	</tr>
+    <tr>
+		<td>5</td>
+		<td>
+			<form action="" input="post" id="" name="">
+				<input type="checkbox" id="" name="">
+			</form>
+		</td>
+			<td>비활성</td>
+			<td>일반</td>
+			<td><img src="../../../images/xdmin/photo5.PNG" width="30px"></td>
+			<td>윤육나</td>
+			<td>남성</td>
+			<td>yukna</td>
+			<td>02-2222-2222</td>
+			<td>yuk@hanmail.net</td>
+			<td><img src="../../../images/xdmin/facebook_logo_30.png" width="30px"></td>
+			<td>www.yukna.com</td>
+			<td>동의</td>
+			<td>미동의</td>
+			<td>-</td>
+			<td>2022-01-30 00:00:00</td>
+	</tr>
+    <tr>
+		<td>6</td>
+		<td>
+			<form action="" input="post" id="" name="">
+				<input type="checkbox" id="" name="">
+			</form>
+		</td>
+			<td>비활성</td>
+			<td>일반</td>
+			<td><img src="../../../images/xdmin/photo1.PNG" width="30px"></td>
+			<td>윤칠나</td>
+			<td>남성</td>
+			<td>chilna</td>
+			<td>010-1111-1111</td>
+			<td>chilna@google.com.net</td>
+			<td><img src="../../../images/xdmin/kakaotalk_logo_30.png" width="30px"></td>
+			<td>www.chilna.com</td>
+			<td>미동의</td>
+			<td>동동의</td>
+			<td>-</td>
+			<td>2022-01-30 00:00:00</td>
+	</tr>
 
 
   </tbody>
 </table>
 
 
-<!-- navbar 삭제여부, 날짜, 이름 검색 -->
-
-<nav class="nav">
-	<div class="nav-link">
-		<div class="dropdown">
-			<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false" style="width:150px;">
-				삭제여부
-			</button>
-			<ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
-				<li><a class="dropdown-item active" href="#">Action</a></li>
-				<li><a class="dropdown-item" href="#">Another action</a></li>
-				<li><a class="dropdown-item" href="#">Something else here</a></li>
-				<li><hr class="dropdown-divider"></li>
-				<li><a class="dropdown-item" href="#">Separated link</a></li>
-			</ul>
-		</div>
-	</div>
-
-	<div class="nav-link">
-		<div class="input-group mb-3" >
- 			<button style="display:inline-block;" class="btn btn-secondary" type="button" aria-expanded="false" style="width:150px;">
- 				날짜
- 			</button>
-
- 		<div class="form">
-			<input type="date" class="form-control" id="">
-		</div>
-		<div class="form">
-			&nbsp;&nbsp;~&nbsp;&nbsp;
-		</div>
-		<div class="form">
-			<input type="date" class="form-control" id="">
-		</div>
- 		</div>
-	</div>
-	
-	<div class="nav-link">
-		<div class="input-group mb-3">
-			<button style="display:inline-block;" class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="width:150px;">
-				이름
-			</button>
-			<ul class="dropdown-menu">
-				<li><a class="dropdown-item" href="#">Action</a></li>
-				<li><a class="dropdown-item" href="#">Another action</a></li>
-				<li><a class="dropdown-item" href="#">Something else here</a></li>
-				<li><hr class="dropdown-divider"></li>
-				<li><a class="dropdown-item" href="#">Separated link</a></li>
-			</ul>
-			<input type="text" class="form-control" aria-label="Text input with dropdown button"> 
-		</div>
-	</div>
-	
-	<div class="nav-link">
-		<div class="mb-3">
-			<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-				<i class="fas fa-search"></i>
-			</button>
-		</div>
-	</div>
-	<div class="nav-link">
-		<div class="mb-3">
-			<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-				<i class="fas fa-search"></i>
-			</button>
-		</div>
-	</div>
-</nav>
 
 
 
