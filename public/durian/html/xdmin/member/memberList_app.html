@@ -26,64 +26,14 @@
 <!-- 상단 고정 navbar 로고, 로그아웃 -->
 
 
-
-
-
-
-<div class="container my-wrap">
-	<div class="col-sm-12">
 	
-<nav class="navbar navbar-light bg-light fixed-top">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Offcanvas navbar</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-      <div class="offcanvas-header">
-        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-      </div>
-      <div class="offcanvas-body">
-        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Dropdown
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-              <li><a class="dropdown-item" href="#">Action</a></li>
-              <li><a class="dropdown-item" href="#">Another action</a></li>
-              <li>
-                <hr class="dropdown-divider">
-              </li>
-              <li><a class="dropdown-item" href="#">Something else here</a></li>
-            </ul>
-          </li>
-        </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-      </div>
-    </div>
-  </div>
-</nav>	
-	
-	
-	
-	
-		<nav class="navbar navbar-light bg-light fixed-top col-sm-12" style="width: 380px;">
+		<nav class="navbar-responsive navbar-light bg-light" style="height:50px;">
 		  <div class="container-fluid">
-		    <a class="navbar-brand" href="#"><img src="../../../images/xdmin/cgv_logo1.png" width="100px"></a>
+		    <a class="navbar-brand" href="#"></a>
 		    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-		      <span class="navbar-toggler-icon"></span>
+		      <span class="navbar-toggler-icon""></span>
 		    </button>
+		    <img src="../../../images/xdmin/cgv_logo1.png" width="100px" style="margin-left: 20%;">
 		    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
 		      <div class="offcanvas-header">
 		        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
@@ -119,11 +69,7 @@
 		    </div>
 		  </div>
 		</nav>
-	</div>
 
-<br>
-<br>
-<br>
 <br>
 
 	<div style="float: right;">
@@ -167,7 +113,9 @@
 
 <h5 style="margin-left:1em;"> total : 10 </h5>
 
-<table class="table" style="font-family: '나눔스퀘어라운드 Regular';">
+<div class="table-responsive" style="font-family: '나눔스퀘어라운드 Regular';">
+
+ <table class="table align-middle">
 	<thead style="background-color: #F6F6F6;">
 		<tr style=" border-color: red;">
 			<th style="text-align: center;">
@@ -342,7 +290,7 @@
 				<td>2022-01-28 00:00:00</td>
 				<td>-</td>
 		</tr>
-	    <tr>
+	    <tr class="align-bottom">
 			<td>2</td>
 			<td>
 				<form action="" input="post" id="" name="">
@@ -538,10 +486,11 @@
 				<td>미동의</td>
 				<td>동의</td>
 				<td>2022-02-01 00:00:00</td>
-				<td>2022-01-30 00:00:00</td>
+				<td class="align-top">2022-01-30 00:00:00</td>
 		</tr>
 	</tbody>
 </table>
+</div>
 
 
 
@@ -655,8 +604,7 @@
 <br>
 <br>
 
-</div>
-</div>
+
 
 
 
