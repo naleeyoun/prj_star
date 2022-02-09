@@ -81,499 +81,465 @@
 
 <!-- 회원가입 -->
 
-<div class="table-responsive" style="font-family: '나눔스퀘어라운드 Regular';">
+<div class="container my-wrap">
+	<small style="margin:1em;">필수정보</small>
+	<div class="table" style="font-family: '나눔스퀘어라운드 Regular';">
+	
+	 <table class="table align-middle" >
+			<tr>
+				<th colspan="2">
+					<div class="row">
+		 			 	<div class="col" >
+		   			 		<input type="text" class="form-control" placeholder="이름" aria-label="First name" style="border-color:white;">
+		 				</div>
+		  			</div>
+	  			</th>
+			<tr>
+				<th colspan="2">
+					<div class="row">
+		 			 	<div class="col" >
+		   			 		<input type="text" class="form-control" placeholder="아이디" aria-label="First name" style="border-color:white;">
+		 				</div>
+		  			</div>
+	  			</th>
+			</tr>
+			<tr>
+				<th colspan="2" style="text-align: center;">
+					<div class="row">
+		 			 	<div>
+		   			 		<input type="text" class="form-control" placeholder="비밀번호" aria-label="First name" style="border-color:white;">
+		 				</div>
+		  			</div>
+	  			</th>
+			</tr>
+			<tr>
+				<th colspan="2" style="text-align: center;">
+					<div class="row">
+		 			 	<div class="col">
+		   			 		<input type="text" class="form-control" placeholder="비밀번호 확인" aria-label="First name" style="border-color:white;">
+		 				</div>
+		  			</div>
+	  			</th>
+			</tr>
+			<tr>
+				<td>
+					<div class="row">
+						<div class="col">
+							<div class="text">
+								<input type="text" class="form-control" aria-label="First name" placeholder="이메일" style="border-color:white; display:inline-block;">
+							</div>
+						</div>
+						<div class="col" style="display:inline-block;">
+							<div class="select">
+								<select class="form-select" id="floatingSelectGrid" aria-label="domain">
+									<option selected>@hanmail.net</option>
+									<option value="1">@daum.net</option>
+									<option value="2">@naver.com</option>
+									<option value="3">@google.com</option>
+								</select>
+							</div>
+						</div>
+					</div>
+				</td>
+			</tr>
+		</table>
+	</div>
+</div>
 
- <table class="table align-middle">
-	<thead style="background-color: #F6F6F6;">
-		<tr>
-			<th style="text-align: center;">
-				<div class="d-flex">
-					<div class="text">
-						<button type="button" class="btn btn-outline" aria-expanded="false" data-bs-offset="10,20">
-							<b>No.</b>
-						</button>
-					</div>
+
+<!-- 선택정보 입력 버튼 Accordion -->
+
+<div class="container my-wrap" style="font-family: '나눔스퀘어라운드 Regular';">
+	<div class="accordion-item">
+		<h2 class="accordion-header" id="headingTwo">
+			<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+	        	선택 정보 입력
+	        </button>
+		</h2>
+		<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+			<div class="accordion-body">
+				<div class="table" style="font-family: '나눔스퀘어라운드 Regular';">
+					<table class="table align-middle" >
+						<!-- 추천인 -->
+						<tr style="border-color:white;">
+							<td><small>추천인</small></td>
+						</tr>
+						<tr> 
+							<th>
+								<div class="row">
+					 			 	<div class="col" >
+					   			 		<input type="text" class="form-control" placeholder="추천인" aria-label="First name" style="border-color:white;">
+					 				</div>
+					  			</div>
+				  			</th>
+						</tr>
+						
+						<!-- 성별 -->
+						<tr style="border-color:white;">
+							<td><small>성별</small></td>
+						</tr>							
+						<tr>
+							<td>
+								<div class="form-check form-check-inline form-switch">
+									<input class="form-check-input" type="radio" name="radioGender" id="radioGender1" checked>
+									<label class="form-check-label" for="flexSwitchCheckDefault">남자</label>
+								</div>
+								<div class="form-check form-switch form-check-inline">
+									<input class="form-check-input" type="radio" name="radioGender" id="radioGender2">
+									<label class="form-check-label" for="flexSwitchCheckChecked">여자</label>
+								</div>
+				  			</td>
+						</tr>
+						
+						<!-- 생년월일 -->
+						<tr style="border-color:white;">
+							<td><small>생년월일</small></td>
+						</tr>								
+						<tr>
+							<td>
+								<div class="form">
+									<input type="date" class="form-control" id="">
+								</div>
+				  			</td>
+						</tr>
+						
+						<!-- 국적 -->
+						<tr style="border-color:white;">
+							<td><small>국적</small></td>
+						</tr>								
+						<tr>
+							<td>
+								<select class="form-select" aria-label="Default select example">
+									<option selected>대한민국</option>
+									<option value="1">미국</option>
+									<option value="2">일본</option>
+									<option value="3">중국</option>
+									<option value="4">캐나다</option>
+									<option value="5">독일</option>
+								</select>
+				  			</td>
+						</tr>
+						
+						<!-- 주소 -->
+						<tr style="border-color:white;">
+							<td><small>주소</small></td>
+						</tr>								
+						<tr>
+							<td>
+								<input type="text" style="width: 175px; display: inline-block;" class="form-control" placeholder="우편번호" max-length="5" aria-label="First name" disabled>
+								<button type="button" class="btn btn-sm" style="padding-top: 5px;">
+									<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+									  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+									</svg>
+								</button>									
+			
+								<!-- 우편번호검색 Modal -->
+								<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+									<div class="modal-dialog">
+										<div class="modal-content">
+											<div class="modal-header">
+												<h5 class="modal-title" id="exampleModalLabel">우편번호 검색</h5>
+												<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+											</div>
+											<div class="modal-body">
+												<form>
+													<div class="mb-3" style="display: inline-block;">
+														<input type="text" style="width: 400px; display: inline-block;" class="form-control" id="recipient-name" placeholder="예) 판교역로 235, 분당 주공, 삼평동 681">
+														<button type="button" class="btn btn-primary">검색</button>
+													</div>
+													<div class="mb-3">
+														<label for="message-text" class="col-form-label">
+															<b>Tip</b><br>
+															아래와 같은 조합으로 검색을 하시면 더욱 정확한 결과가 검색됩니다.<br><br>
+															도로명 + 건물번호<br>
+															<span style="color:blue;">예) 판교역로 235, 제주 첨단로 242</span><br><br>
+															지역명(동/리) + 번지<br>
+															<span style="color:blue;">예) 삼평동 681, 제주 영평동 2181</span><br><br>
+															지역명(동/리) + 건물명(아파트명)<br>
+															<span style="color:blue;">예) 분당 주공, 연수동 주공3차</span><br><br>
+														</label>
+													</div>
+												</form>
+											</div>
+											<div class="modal-footer">
+												<a class="btn btn-secondary" href="./memberForm.html" role="button">취소</a>
+												<a class="btn btn-primary" href="./memberForm.html" role="button">확인</a>
+											</div>
+										</div>
+									</div>
+								</div>				
+	  
+								<div class="row">
+									<div class="col">
+										<input type="text" class="form-control" placeholder="상세주소" aria-label="First name" style="border-color: white;">
+									</div>
+								</div>	
+				  			</td>
+						</tr>
+						
+						<!-- 전화번호 -->
+						<tr style="border-color:white;">
+							<td><small>전화번호</small></td>
+						</tr>								
+						<tr>
+							<td>
+								<div class="row">
+									<div class="col-5" style="display:inline-block;">
+										<div class="select">
+											<select class="form-select" id="floatingSelectGrid" aria-label="domain">
+												<option selected>모바일</option>
+												<option value="1">회사</option>
+												<option value="2">집</option>
+												<option value="3">팩스</option>
+											</select>
+										</div>
+									</div>									
+									<div class="col">
+										<div class="text">
+											<input type="text" class="form-control" aria-label="First name" placeholder="전화번호" style="border-color:white; display:inline-block;">
+										</div>
+									</div>
+								</div>
+				  			</td>
+						</tr>					
+						
+						<!-- 전화번호 -->
+						<tr style="border-color:white;">
+							<td><small>비밀번호 힌트</small></td>
+						</tr>								
+						<tr>
+							<td>
+								<select class="form-select" id="floatingSelectGrid" aria-label="domain">
+									<option selected>졸업한 초등학교 이름은?</option>
+									<option value="1">아버지 성함은?</option>
+									<option value="2">어머니 성함은?</option>
+									<option value="3">제일 좋아하는 장소는?</option>
+									<option value="4">제일 좋아하는 색깔은?</option>
+								</select>
+								<div class="text">
+									<input type="text" class="form-control" aria-label="First name" placeholder="비밀번호 힌트 답" style="border-color:white; display:inline-block;">
+								</div>
+				  			</td>
+						</tr>
+
+						<!-- 홈페이지/sns -->
+						<tr style="border-color:white;">
+							<td><small>홈페이지 / sns</small></td>
+						</tr>								
+						<tr>
+							<td>
+								<div class="row">
+									<div class="col-6" style="display:inline-block;">
+										<div class="select">
+											<select class="form-select" id="floatingSelectGrid" aria-label="domain">
+												<option selected>instagram</option>
+												<option value="1">facebook</option>
+												<option value="2">kakaotalk</option>
+												<option value="3">홈페이지</option>
+											</select>
+										</div>
+									</div>									
+									<div class="col">
+										<div class="text">
+											<input type="text" class="form-control" aria-label="First name" placeholder="URL" style="border-color:white; display:inline-block;">
+										</div>
+									</div>
+								</div>
+				  			</td>
+						</tr>			
+							
+						<!-- 직업 -->
+						<tr style="border-color:white;">
+							<td><small>직업</small></td>
+						</tr>								
+						<tr>
+							<td>
+								<select class="form-select" id="floatingSelectGrid" aria-label="domain">
+									<option selected>개발자</option>
+									<option value="1">교사</option>
+									<option value="2">농부</option>
+									<option value="3">어부</option>
+									<option value="4">사무직</option>
+									<option value="5">무직</option>
+								</select>
+				  			</td>
+						</tr>	
+									
+						<!-- 취미 -->
+						<tr style="border-color:white;">
+							<td><small>취미</small></td>
+						</tr>								
+						<tr>
+							<td>
+								<input type="checkbox" class="btn-check" id="btnHobby1" autocomplete="off">
+								<label class="btn btn-outline-secondary btn-sm" for="btnHobby1">요리</label>
+								<input type="checkbox" class="btn-check" id="btnHobby2" autocomplete="off">
+								<label class="btn btn-outline-secondary btn-sm" for="btnHobby2">운동</label>
+								<input type="checkbox" class="btn-check" id="btnHobby3" autocomplete="off">
+								<label class="btn btn-outline-secondary btn-sm" for="btnHobby3">게임</label>
+								<input type="checkbox" class="btn-check" id="btnHobby4" autocomplete="off">
+								<label class="btn btn-outline-secondary btn-sm" for="btnHobby4">독서</label>
+								<input type="checkbox" class="btn-check" id="btnHobby5" autocomplete="off">
+								<label class="btn btn-outline-secondary btn-sm" for="btnHobby5">영화감상</label>
+								<input type="checkbox" class="btn-check" id="btnHobby6" autocomplete="off">
+								<label class="btn btn-outline-secondary btn-sm" for="btnHobby6">낮잠</label>
+								<input type="checkbox" class="btn-check" id="btnHobby6" autocomplete="off">
+								<label class="btn btn-outline-secondary btn-sm" for="btnHobby6">코딩</label>
+								<input type="checkbox" class="btn-check" id="btnHobby6" autocomplete="off">
+								<label class="btn btn-outline-secondary btn-sm" for="btnHobby6">등산</label>
+								<input type="checkbox" class="btn-check" id="btnHobby6" autocomplete="off">
+								<label class="btn btn-outline-secondary btn-sm" for="btnHobby6">그림그리기</label>
+				  			</td>
+						</tr>	
+									
+						<!-- 결혼여부 -->
+						<tr style="border-color:white;">
+							<td><small>결혼여부 / 결혼기념일</small></td>
+						</tr>								
+						<tr>
+							<td>
+								<div class="form-check form-check-inline form-switch">
+									<input class="form-check-input" type="radio" name="radioMarige" id="flexSwitchCheckDefault1" checked>
+									<label class="form-check-label" for="flexSwitchCheckDefault">미혼</label>
+								</div>
+								<div class="form-check form-switch form-check-inline">
+									<input class="form-check-input" type="radio" name="radioMarige2" id="flexSwitchCheckChecked2">
+									<label class="form-check-label" for="flexSwitchCheckChecked">기혼</label>
+								</div>
+								<div class="form">
+									<input type="date" class="form-control" id="" placeholder="결혼기념일">
+								</div>
+				  			</td>
+						</tr>
+						
+						<!-- 자녀유무 -->
+						<tr style="border-color:white;">
+							<td><small>자녀유무</small></td>
+						</tr>								
+						<tr>
+							<td>
+								<div class="form-check form-check-inline form-switch">
+									<input class="form-check-input" type="radio" name="radioMarige" id="flexSwitchCheckDefault1" checked>
+									<label class="form-check-label" for="flexSwitchCheckDefault">무</label>
+								</div>
+								<div class="form-check form-switch form-check-inline">
+									<input class="form-check-input" type="radio" name="radioMarige2" id="flexSwitchCheckChecked2">
+									<label class="form-check-label" for="flexSwitchCheckChecked">유</label>
+								</div>
+				  			</td>
+						</tr>		
+									
+						<!-- 좋아하는 색깔 -->
+						<tr style="border-color:white;">
+							<td><small>좋아하는 색깔</small></td>
+						</tr>								
+						<tr>
+							<td>
+								<input type="color" class="form-control form-control-color" id="exampleColorInput" value="#563d7c" title="Choose your color">
+				  			</td>
+						</tr>					
+					</table>
 				</div>
-			</th>
-			<th style=" border-color: red;">
-				<form action="" input="post" id="" name="">
-					<input type="checkbox" id="" name="">
-				</form>
-			</th>
-			<th style=" border-color: red;">
-				<div class="d-flex">
-					<div class="dropdown me-1">
-						<button type="button" class="btn btn-outline dropdown-toggle" id="dropdownMenuOffset" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="10,20">
-							<b>상태</b>
-						</button>
-						<ul class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
-							<li><a class="dropdown-item" href="#">활성</a></li>
-							<li><a class="dropdown-item" href="#">비활성</a></li>
-						</ul>
+					<!-- 삭제 등록 버튼 -->
+				<div class="row">
+					<div class="col"></div>
+					<div class="col-6">
+						<button type="button" class="btn"  style="background-color: #FF5E00; color: white;">선택정보저장</button>
 					</div>
+					<div class="col"></div>
 				</div>
-			</th>
-			<th>
-				<div class="d-flex">
-					<div class="dropdown me-1">
-						<button type="button" class="btn btn-outline dropdown-toggle" id="dropdownMenuOffset" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="10,20">
-							<b>등급</b>
-						</button>
-						<ul class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
-							<li><a class="dropdown-item" href="#">최고관리자</a></li>
-							<li><a class="dropdown-item" href="#">관리자</a></li>
-							<li><a class="dropdown-item" href="#">일반</a></li>
-						</ul>
-					</div>
-				</div>			
-			</th>
-			<th colspan="2" style="text-align: center;">
-				<div class="d-flex">
-					<div class="text">
-						<button type="button" class="btn btn-outline" aria-expanded="false" data-bs-offset="10,20">
-							<b>이름</b>
-						</button>
-					</div>
-				</div>
-			</th>	
-			<th style="text-align: center;">
-				<div class="d-flex">
-					<div class="dropdown me-1">
-						<button type="button" class="btn btn-outline dropdown-toggle" id="dropdownMenuOffset" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="10,20">
-							<b>성별</b>
-						</button>
-						<ul class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
-							<li><a class="dropdown-item" href="#">남성</a></li>
-							<li><a class="dropdown-item" href="#">여성</a></li>
-					</div>
-				</div>
-			</th>
-			<th style="text-align: center; width: 100px;">
-				<div class="d-flex">
-					<div class="button">
-						<button type="button" class="btn btn-outline" aria-expanded="false" data-bs-offset="10,20">
-							<b>아이디</b>
-						</button>
-					</div>
-				</div>
-			</th>
-			<th style="text-align: center;">
-				<div class="d-flex">
-					<div class="text">
-						<button type="button" class="btn btn-outline" aria-expanded="false" data-bs-offset="10,20">
-							<b>연락처</b>
-						</button>
-					</div>
-				</div>
-			</th>
-			<th style="text-align: center;">
-				<div class="d-flex">
-					<div class="text">
-						<button type="button" class="btn btn-outline" aria-expanded="false" data-bs-offset="10,20">
-							<b>이메일</b>
-						</button>
-					</div>
-				</div>
-			</th>
-			<th colspan="2" style="text-align: center;">
-				<div class="d-flex">
-					<div class="dropdown me-1">
-						<button type="button" class="btn btn-outline dropdown-toggle" id="dropdownMenuOffset" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="10,20">
-							<b>sns</b>
-						</button>
-						<ul class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
-							<li><a class="dropdown-item" href="#">인스타그램</a></li>
-							<li><a class="dropdown-item" href="#">페이스북</a></li>
-							<li><a class="dropdown-item" href="#">카카오톡</a></li>
-						</ul>
-					</div>
-				</div>			
-			</th>
-			<th>
-				<div class="d-flex">
-					<div class="dropdown me-1">
-						<button type="button" class="btn btn-outline dropdown-toggle" id="dropdownMenuOffset" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="10,20">
-							<b>이메일마케팅</b>
-						</button>
-						<ul class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
-							<li><a class="dropdown-item" href="#">동의</a></li>
-							<li><a class="dropdown-item" href="#">미동의</a></li>
-						</ul>
-					</div>
-				</div>			
-			</th>
-			<th>
-				<div class="d-flex">
-					<div class="dropdown me-1">
-						<button type="button" class="btn btn-outline dropdown-toggle" id="dropdownMenuOffset" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="10,20">
-							<b>모바일마케팅</b>
-						</button>
-						<ul class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
-							<li><a class="dropdown-item" href="#">동의</a></li>
-							<li><a class="dropdown-item" href="#">미동의</a></li>
-						</ul>
-					</div>
-				</div>			
-			</th>
-			<th>
-				<div class="d-flex">
-					<div class="text">
-						<button type="text" class="btn btn-outline" aria-expanded="false" data-bs-offset="10,20">
-							<b>활성시간</b>
-						</button>
-					</div>
-				</div>
-			</th>		
-			<th>
-				<div class="d-flex">
-					<div class="text">
-						<button type="text" class="btn btn-outline" aria-expanded="false" data-bs-offset="10,20">
-							<b>비활성시간</b>
-						</button>
-					</div>
-				</div>
-			</th>		
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>1</td>
-			<td>
-				<form action="" input="post" id="" name="">
-					<input type="checkbox" id="" name="">
-				</form>
-			</td>
-				<td>활성</td>
-				<td><img src="../../../images/xdmin/admin_crown_30.png" width="20px">최고관리자</td>
-				<td><img src="../../../images/xdmin/photo1.PNG" width="30px"></td>
-				<td>윤이나</td>
-				<td>여성</td>
-				<td>yina</td>
-				<td>010-1111-1111</td>
-				<td>yina@naver.com</td>
-				<td><img src="../../../images/xdmin/instagram_logo_30.png" width="30px"></td>
-				<td>www.yina.com</td>
-				<td>동의</td>
-				<td>미동의</td>
-				<td>2022-01-28 00:00:00</td>
-				<td>-</td>
-		</tr>
-	    <tr class="align-bottom">
-			<td>2</td>
-			<td>
-				<form action="" input="post" id="" name="">
-					<input type="checkbox" id="" name="">
-				</form>
-			</td>
-				<td>활성</td>
-				<td><img src="../../../images/xdmin/admin_crown_30.png" width="20px">관리자</td>
-				<td><img src="../../../images/xdmin/photo2.PNG" width="30px"></td>
-				<td>윤삼나</td>
-				<td>여성</td>
-				<td>samna</td>
-				<td>02-2222-2222</td>
-				<td>samna@hanmail.net</td>
-				<td><img src="../../../images/xdmin/facebook_logo.png" width="30px"></td>
-				<td>www.samna.com</td>
-				<td>미동의</td>
-				<td>동의</td>
-				<td>2022-01-28 00:00:00</td>
-				<td>-</td>
-		</tr>
-	    <tr>
-			<td>3</td>
-			<td>
-				<form action="" input="post" id="" name="">
-					<input type="checkbox" id="" name="">
-				</form>
-			</td>
-				<td>활성</td>
-				<td><img src="../../../images/xdmin/admin_crown_30.png" width="20px">관리자</td>
-				<td><img src="../../../images/xdmin/photo3.PNG" width="30px"></td>
-				<td>윤사나</td>
-				<td>남성</td>
-				<td>sana</td>
-				<td>02-3333-3333</td>
-				<td>sana@google.com</td>
-				<td><img src="../../../images/xdmin/kakaotalk_logo.png" width="30px"></td>
-				<td>www.sana.com</td>
-				<td>동의</td>
-				<td>미동의</td>
-				<td>2022-01-28 00:00:00</td>
-				<td>-</td>
-		</tr>
-	    <tr>
-			<td>4</td>
-			<td>
-				<form action="" input="post" id="" name="">
-					<input type="checkbox" id="" name="">
-				</form>
-			</td>
-				<td>활성</td>
-				<td>일반</td>
-				<td><img src="../../../images/xdmin/photo4.PNG" width="30px"></td>
-				<td>윤오나</td>
-				<td>남성</td>
-				<td>sana</td>
-				<td>010-1111-1111</td>
-				<td>ona@naver.com</td>
-				<td><img src="../../../images/xdmin/instagram_logo_30.png" width="30px"></td>
-				<td>www.ona.com</td>
-				<td>미동의</td>
-				<td>동의</td>
-				<td>2022-01-28 00:00:00</td>
-				<td>-</td>
-		</tr>
-	    <tr>
-			<td>5</td>
-			<td>
-				<form action="" input="post" id="" name="">
-					<input type="checkbox" id="" name="">
-				</form>
-			</td>
-				<td>비활성</td>
-				<td>일반</td>
-				<td><img src="../../../images/xdmin/photo5.PNG" width="30px"></td>
-				<td>윤육나</td>
-				<td>남성</td>
-				<td>yukna</td>
-				<td>02-2222-2222</td>
-				<td>yuk@hanmail.net</td>
-				<td><img src="../../../images/xdmin/facebook_logo_30.png" width="30px"></td>
-				<td>www.yukna.com</td>
-				<td>동의</td>
-				<td>미동의</td>
-				<td>-</td>
-				<td>2022-01-30 00:00:00</td>
-		</tr>
-	    <tr>
-			<td>6</td>
-			<td>
-				<form action="" input="post" id="" name="">
-					<input type="checkbox" id="" name="">
-				</form>
-			</td>
-				<td>비활성</td>
-				<td>일반</td>
-				<td><img src="../../../images/xdmin/photo1.PNG" width="30px"></td>
-				<td>윤칠나</td>
-				<td>남성</td>
-				<td>chilna</td>
-				<td>010-1111-1111</td>
-				<td>chilna@google.com</td>
-				<td><img src="../../../images/xdmin/kakaotalk_logo_30.png" width="30px"></td>
-				<td>www.chilna.com</td>
-				<td>미동의</td>
-				<td>동의</td>
-				<td>-</td>
-				<td>2022-01-30 00:00:00</td>
-		</tr>
-	    <tr>
-			<td>7</td>
-			<td>
-				<form action="" input="post" id="" name="">
-					<input type="checkbox" id="" name="">
-				</form>
-			</td>
-				<td>비활성</td>
-				<td>일반</td>
-				<td><img src="../../../images/xdmin/photo2.PNG" width="30px"></td>
-				<td>윤팔나</td>
-				<td>여성</td>
-				<td>palna</td>
-				<td>010-1111-1111</td>
-				<td>pallna@naver.com</td>
-				<td><img src="../../../images/xdmin/instagram_logo_30.png" width="30px"></td>
-				<td>www.palna.com</td>
-				<td>동의</td>
-				<td>미동의</td>
-				<td>-</td>
-				<td>2022-01-30 00:00:00</td>
-		</tr>
-	    <tr>
-			<td>8</td>
-			<td>
-				<form action="" input="post" id="" name="">
-					<input type="checkbox" id="" name="">
-				</form>
-			</td>
-				<td>활성</td>
-				<td>일반</td>
-				<td><img src="../../../images/xdmin/photo3.PNG" width="30px"></td>
-				<td>윤구나</td>
-				<td>남성</td>
-				<td>kuna</td>
-				<td>02-1111-1111</td>
-				<td>kuna@hanmail.net</td>
-				<td><img src="../../../images/xdmin/facebook_logo_30.png" width="30px"></td>
-				<td>www.kuna.com</td>
-				<td>미동의</td>
-				<td>동의</td>
-				<td>2022-02-01 00:00:00</td>
-				<td>2022-01-30 00:00:00</td>
-		</tr>
-	    <tr>
-			<td>9</td>
-			<td>
-				<form action="" input="post" id="" name="">
-					<input type="checkbox" id="" name="">
-				</form>
-			</td>
-				<td>활성</td>
-				<td>일반</td>
-				<td><img src="../../../images/xdmin/photo4.PNG" width="30px"></td>
-				<td>윤십나</td>
-				<td>여성</td>
-				<td>sipna</td>
-				<td>010-1111-1111</td>
-				<td>sipna@google.com</td>
-				<td><img src="../../../images/xdmin/kakaotalk_logo_30.png" width="30px"></td>
-				<td>www.sipna.com</td>
-				<td>동의</td>
-				<td>미동의</td>
-				<td>2022-02-01 00:00:00</td>
-				<td>2022-01-30 00:00:00</td>
-		</tr>
-	    <tr>
-			<td>10</td>
-			<td>
-				<form action="" input="post" id="" name="">
-					<input type="checkbox" id="" name="">
-				</form>
-			</td>
-				<td>활성</td>
-				<td>일반</td>
-				<td><img src="../../../images/xdmin/photo5.PNG" width="30px"></td>
-				<td>십일나</td>
-				<td>여성</td>
-				<td>sipilna</td>
-				<td>010-1111-1111</td>
-				<td>sipilna@naver.com</td>
-				<td><img src="../../../images/xdmin/instagram_logo_30.png" width="30px"></td>
-				<td>www.sipilna.com</td>
-				<td>미동의</td>
-				<td>동의</td>
-				<td>2022-02-01 00:00:00</td>
-				<td class="align-top">2022-01-30 00:00:00</td>
-		</tr>
-	</tbody>
-</table>
+					        
+	    	</div>
+	    </div>
+	</div>
+</div>
+
+<br>
+
+
+<!-- 개인정보 동의 -->
+
+<div style="color:gray; font-size:13px; padding-left:2em;">
+	
+	
+	<!-- 개인정보 유효 기간 -->
+	<span>
+		<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+		  <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+		</svg>
+	</span>
+	개인 정보 유효 기간 <span style="color: orange;">(필수)</span>
+	<span class="badge rounded-pill bg-light text-dark">내용보기</span>
+	<br>
+	<div class="form-check form-switch form-check-inline" style="margin-left:15px;">
+		<input class="form-check-input" type="radio" name="radioPrivacy" id="radioPrivacy1">
+		<label class="form-check-label" for="flexSwitchCheckChecked">1년	</label>
+	</div>
+	<div class="form-check form-switch form-check-inline">
+		<input class="form-check-input" type="radio" name="radioPrivacy" id="radioPrivacy2">
+		<label class="form-check-label" for="flexSwitchCheckChecked">3년	</label>
+	</div>
+	<div class="form-check form-switch form-check-inline">
+		<input class="form-check-input" type="radio" name="radioPrivacy" id="radioPrivacy3">
+		<label class="form-check-label" for="flexSwitchCheckChecked">5년	</label>
+	</div>
+	<div class="form-check form-switch form-check-inline">
+		<input class="form-check-input" type="radio" name="radioPrivacy" id="radioPrivacy4">
+		<label class="form-check-label" for="flexSwitchCheckChecked">10년	</label>
+	</div>
+	<br>
+	
+	<!-- 이용 약관 동의 -->
+	<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+	  <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+	</svg>	
+	<div class="form-check form-switch form-check-inline">
+		<input class="form-check-input" type="checkbox" name="checkbox" id="flexSwitchCheckChecked2">
+		<label class="form-check-label" for="flexSwitchCheckChecked2">
+			이용 약관 동의 <span style="color: orange;">(필수)</span>
+		</label>
+		<span class="badge rounded-pill bg-light text-dark">내용보기</span>
+	</div>
+	<br>
+	
+	<!-- 메일 수신 동의 -->
+	<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+	  <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+	</svg>		
+	<div class="form-check form-switch form-check-inline">
+		<input class="form-check-input" type="checkbox" name="checkbox" id="flexSwitchCheckChecked2">
+		<label class="form-check-label" for="flexSwitchCheckChecked">
+			메일 수신 동의 <span style="color: orange;">(선택)</span>
+		</label>
+		<span class="badge rounded-pill bg-light text-dark">내용보기</span>
+	</div>
+	<br>
+	
+	<!-- 모바일 수신 동의 -->
+	<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
+	  <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+	</svg>		
+	<div class="form-check form-switch form-check-inline">
+		<input class="form-check-input" type="checkbox" name="checkbox" id="flexSwitchCheckChecked2">
+		<label class="form-check-label" for="flexSwitchCheckChecked">
+			모바일 수신 동의 <span style="color: orange;">(선택)</span>
+		</label>
+		<span class="badge rounded-pill bg-light text-dark">내용보기</span>
+	</div>
+</div>
+<br>
+
+<!-- 회원가입 버튼 -->						
+<div class="container my-wrap">
+	<div>
+		<button type="submit" class="form-control btn" style="background-color: #FF5E00; color: white; margin-top:0;">회원가입</button>
+	</div>
 </div>
 
 
 
-<!-- navbar 삭제여부, 날짜, 이름 검색 -->
-<!-- 
-<nav class="nav" style="font-family: '나눔스퀘어라운드 Regular'; float:right;">
-	<div class="nav-link">
-		<div class="dropdown">
-			<button class="btn btn-outline-secondary dropdown-toggle" type="button" id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false" style="width:150px;">
-				삭제여부
-			</button>
-			<ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
-				<li><a class="dropdown-item active" href="#">Action</a></li>
-				<li><a class="dropdown-item" href="#">Another action</a></li>
-				<li><a class="dropdown-item" href="#">Something else here</a></li>
-				<li><hr class="dropdown-divider"></li>
-				<li><a class="dropdown-item" href="#">Separated link</a></li>
-			</ul>
-		</div>
-	</div>
-
-	<div class="nav-link">
-		<div class="input-group mb-3" >
- 			<button class="btn btn-secondary" type="button" aria-expanded="false" style="width:150px;">
- 				날짜
- 			</button>
-
- 		<div class="form">
-			<input type="date" class="form-control" id="">
-		</div>
-		<div class="form">
-			&nbsp;&nbsp;~&nbsp;&nbsp;
-		</div>
-		<div class="form">
-			<input type="date" class="form-control" id="">
-		</div>
- 		</div>
-	</div>
-	
-	<div class="nav-link">
-		<div class="input-group mb-3">
-			<button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" style="width:150px;">
-				이름
-			</button>
-			<ul class="dropdown-menu">
-				<li><a class="dropdown-item" href="#">Action</a></li>
-				<li><a class="dropdown-item" href="#">Another action</a></li>
-				<li><a class="dropdown-item" href="#">Something else here</a></li>
-				<li><hr class="dropdown-divider"></li>
-				<li><a class="dropdown-item" href="#">Separated link</a></li>
-			</ul>
-			<input type="text" class="form-control" aria-label="Text input with dropdown button"> 
-		</div>
-	</div> -->
-
-
-
-<!-- 삭제, 저장, 등록 버튼 -->
-
-<button type="button" class="btn btn-danger" data-bs-dismiss="modal" aria-label="Close" style="float: left; margin-left: 1em;">
-	<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-trash-fill" viewBox="0 0 16 16">
-  		<path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0z"/>
-	</svg>
-</button>
-<button type="button" class="btn btn-success" data-bs-dismiss="modal" aria-label="Close" style="float: right; margin-right: 1em;">
-	<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-plus-square" viewBox="0 0 16 16">
-  		<path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
-  		<path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
-	</svg>
-</button>
-<button type="button" class="btn btn-primary" data-bs-dismiss="modal" aria-label="Close" style="float:right; margin-right: 5px;">
-	<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-file-earmark-arrow-down" viewBox="0 0 16 16">
-  		<path d="M8.5 6.5a.5.5 0 0 0-1 0v3.793L6.354 9.146a.5.5 0 1 0-.708.708l2 2a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0-.708-.708L8.5 10.293V6.5z"/>
-  		<path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z"/>
-	</svg>
-</button>
-
-
-	 
 <br>
 <br>
-<br>
-<br>
-
-
-
-<!-- 페이징 -->
-
-<nav aria-label="Page navigation example">
-	<ul class="pagination justify-content-center">
-		<li class="page-item">
-			<a class="page-link" href="#" aria-label="Previous">
-				<span aria-hidden="true">&laquo;</span>
-			</a>
-		</li>
-		<li class="page-item">
-			<a class="page-link" href="./memberList.html">1</a>
-		</li>
-		<li class="page-item"><a class="page-link" href="#">2</a></li>
-		<li class="page-item"><a class="page-link" href="#">3</a></li>
-		<li class="page-item">
-			<a class="page-link" href="#" aria-label="Next">
-				<span aria-hidden="true">&raquo;</span>
-			</a>
-		</li>
-	</ul>
-</nav>
-
-
-<br>
-<br>
-<br>
-
-
-
 
 
 
