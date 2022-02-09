@@ -23,105 +23,107 @@
 <body>
 
 
-<!-- 상단 고정 navbar 로고, 로그아웃 -->
+<!-- 상단 고정 navbar 로고 -->
 
 
-	
-		<nav class="navbar-responsive navbar-light bg-light" style="height:50px;">
-		  <div class="container-fluid">
-		    <a class="navbar-brand" href="#"></a>
-		    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-		      <span class="navbar-toggler-icon""></span>
-		    </button>
-		    <img src="../../../images/xdmin/cgv_logo1.png" width="100px" style="margin-left: 20%;">
-		    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-		      <div class="offcanvas-header">
-		        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
-		        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-		      </div>
-		      <div class="offcanvas-body">
-		        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-		          <li class="nav-item">
-		            <a class="nav-link active" aria-current="page" href="#">Home</a>
-		          </li>
-		          <li class="nav-item">
-		            <a class="nav-link" href="#">Link</a>
-		          </li>
-		          <li class="nav-item dropdown">
-		            <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-		              Dropdown
-		            </a>
-		            <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-		              <li><a class="dropdown-item" href="#">Action</a></li>
-		              <li><a class="dropdown-item" href="#">Another action</a></li>
-		              <li>
-		                <hr class="dropdown-divider">
-		              </li>
-		              <li><a class="dropdown-item" href="#">Something else here</a></li>
-		            </ul>
-		          </li>
-		        </ul>
-		        <form class="d-flex">
-		          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-		          <button class="btn btn-outline-success" type="submit">Search</button>
-		        </form>
-		      </div>
-		    </div>
-		  </div>
-		</nav>
-
-<br>
-
-	<div style="float: right;">
-		<img src="../../../images/xdmin/photo1.PNG" style="float: left;">
-		<p style="float: left;">윤이나(CEO)</p>
-		<button type="button" class="btn btn-primary btn-sm" style="margin-left: 10px;">로그아웃</button>
-   	</div>
-
-
-<h2 style="color: #4C4C4C; text-align: center; font-family: '나눔스퀘어라운드 Regular'; margin-top: 4em;">회원리스트</h1>
-<br>
-<br>
-
-
-
-<!-- navbar 삭제여부, 날짜, 이름 검색 -->
-
-<form class="row row-cols-auto row-cols-md-auto row-cols-lg-auto g-3 align-items-center" style="float:right;">
-	<div class="col-12">
-		<label class="visually-hidden" for="inlineFormSelectPref"></label>
-		<select class="form-select" id="inlineFormSelectPref">
-			<option selected>이름</option>
-			<option value="1">아이디</option>
-			<option value="2">연락처</option>
-			<option value="3">번호</option>
-		</select>
-	</div>  
-	<div style="margin-left:0">
-		<label class="visually-hidden" for="inlineFormInputGroupUsername">회원정보 검색</label>
-		<div class="input-group">
-			<input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="회원정보 검색">
+<nav class="navbar-responsive navbar-light bg-light" style="height:4em; padding:0.5em;">
+	<div class="container-fluid">
+		<a class="navbar-brand" href="#"></a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+			<span class="navbar-toggler-icon""></span>
+		</button>
+		<img src="../../../images/xdmin/cgv_logo1.png" width="100px" style="margin-left: 20%;">
+		<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+			<div class="offcanvas-header">
+				<h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+				<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+			</div>
+			<div class="offcanvas-body">
+				<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="#">Home</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Link</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Dropdown
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+							<li><a class="dropdown-item" href="#">Action</a></li>
+							<li><a class="dropdown-item" href="#">Another action</a></li>
+							<li><hr class="dropdown-divider"></li>
+							<li><a class="dropdown-item" href="#">Something else here</a></li>
+						</ul>
+					</li>
+				</ul>
+				<form class="d-flex">
+					<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+					<button class="btn btn-outline-success" type="submit">Search</button>
+				</form>
+			</div>
 		</div>
 	</div>
-	<div class="col-12"  style="margin-left:0; margin-right:0;">
-		<button type="submit" class="btn btn-primary"><i class="fas fa-search"></i></button>
-	</div>
-</form>
+</nav>
 
+<br>
+
+<div class="d-inline-flex p-2" style="float: right;">
+	<div>
+		<button type="button" class="btn btn-secondary btn-sm" style="margin-left: 10px; float: right; ">
+			<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+				<path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z"/>
+				<path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+			</svg>
+		</button>
+		<p style="float: right;">윤이나(최고관리자)</p>
+		<img src="../../../images/xdmin/photo1.PNG" style="float: right;">
+	</div>
+</div>
+
+
+
+<!-- 회원리스트 글 -->
+<br>
+<h2 style="color: #4C4C4C; text-align: center; font-family: '나눔스퀘어라운드 Regular'; margin-top: 3em;">회원리스트</h1>
+<br>
+<br>
+
+
+<!-- 회원정보 검색 -->
+
+<div class="input-group mb-3" style="margin: 10px;">
+	<button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">이름</button>
+	<ul class="dropdown-menu">
+		<li><a class="dropdown-item" href="#">번호</a></li>
+		<li><a class="dropdown-item" href="#">상태</a></li>
+		<li><a class="dropdown-item" href="#">등급</a></li>
+		<li><a class="dropdown-item" href="#">이름</a></li>
+		<li><a class="dropdown-item" href="#">성별</a></li>
+		<li><a class="dropdown-item" href="#">아이디</a></li>
+		<li><a class="dropdown-item" href="#">sns</a></li>
+		<li><a class="dropdown-item" href="#">이메일마케팅</a></li>
+		<li><a class="dropdown-item" href="#">모바일마케팅</a></li>
+	</ul>
+	<input type="text" class="form-control" aria-label="Text input with dropdown button" placeholder="회원정보 검색">
+	<button type="submit" class="btn btn-light" style="margin-right:10px;"><i class="fas fa-search"></i></button>
+</div>
+<br>
 
 <!-- 회원리스트 -->
 
-<h5 style="margin-left:1em;"> total : 10 </h5>
+<h6 style="margin-left:1em;"> total : 10 </h6>
 
 <div class="table-responsive" style="font-family: '나눔스퀘어라운드 Regular';">
 
  <table class="table align-middle">
 	<thead style="background-color: #F6F6F6;">
-		<tr style=" border-color: red;">
+		<tr>
 			<th style="text-align: center;">
 				<div class="d-flex">
 					<div class="text">
-						<button type="text" class="btn btn-outline" aria-expanded="false" data-bs-offset="10,20">
+						<button type="button" class="btn btn-outline" aria-expanded="false" data-bs-offset="10,20">
 							<b>No.</b>
 						</button>
 					</div>
@@ -162,7 +164,7 @@
 			<th colspan="2" style="text-align: center;">
 				<div class="d-flex">
 					<div class="text">
-						<button type="text" class="btn btn-outline" aria-expanded="false" data-bs-offset="10,20">
+						<button type="button" class="btn btn-outline" aria-expanded="false" data-bs-offset="10,20">
 							<b>이름</b>
 						</button>
 					</div>
@@ -180,10 +182,10 @@
 					</div>
 				</div>
 			</th>
-			<th style="text-align: center;">
+			<th style="text-align: center; width: 100px;">
 				<div class="d-flex">
-					<div class="text">
-						<button type="text" class="btn btn-outline" aria-expanded="false" data-bs-offset="10,20">
+					<div class="button">
+						<button type="button" class="btn btn-outline" aria-expanded="false" data-bs-offset="10,20">
 							<b>아이디</b>
 						</button>
 					</div>
@@ -192,7 +194,7 @@
 			<th style="text-align: center;">
 				<div class="d-flex">
 					<div class="text">
-						<button type="text" class="btn btn-outline" aria-expanded="false" data-bs-offset="10,20">
+						<button type="button" class="btn btn-outline" aria-expanded="false" data-bs-offset="10,20">
 							<b>연락처</b>
 						</button>
 					</div>
@@ -201,7 +203,7 @@
 			<th style="text-align: center;">
 				<div class="d-flex">
 					<div class="text">
-						<button type="text" class="btn btn-outline" aria-expanded="false" data-bs-offset="10,20">
+						<button type="button" class="btn btn-outline" aria-expanded="false" data-bs-offset="10,20">
 							<b>이메일</b>
 						</button>
 					</div>
