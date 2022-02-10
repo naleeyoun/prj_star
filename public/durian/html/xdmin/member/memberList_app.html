@@ -89,17 +89,17 @@
 		<li><a class="dropdown-item" href="#">모바일마케팅</a></li>
 	</ul>
 	<input type="text" class="form-control" aria-label="Text input with dropdown button" placeholder="회원정보 검색">
-	<button type="submit" class="btn btn-light" style="margin-right:10px;"><i class="fas fa-search"></i></button>
+	<button type="submit" class="btn btn-outline-secondary" style="margin-right:10px;"><i class="fas fa-search"></i></button>
 </div>
 <br>
 
-<!-- 회원리스트 -->
+<!-- 회원리스트 table-->
 
-<h6 style="margin-left:1em;"> total : 10 </h6>
+<h6 style="margin-left: 1em; font-family: '나눔스퀘어라운드 Regular';"> total : 10 </h6>
 
-<div class="table-responsive" style="font-family: '나눔스퀘어라운드 Regular';">
+<div class="table table-responsive" style="font-family: '나눔스퀘어라운드 Regular'; white-space:nowrap; margin:auto;">
 
- <table class="table align-middle">
+ <table class="table table-responsive">
 	<thead style="background-color: #F6F6F6;">
 		<tr>
 			<th style="text-align: center;">
@@ -111,12 +111,12 @@
 					</div>
 				</div>
 			</th>
-			<th style=" border-color: red;">
+			<th>
 				<form action="" input="post" id="" name="">
 					<input type="checkbox" id="" name="">
 				</form>
 			</th>
-			<th style=" border-color: red;">
+			<th>
 				<div class="d-flex">
 					<div class="dropdown me-1">
 						<button type="button" class="btn btn-outline dropdown-toggle" id="dropdownMenuOffset" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="10,20">
@@ -143,7 +143,7 @@
 					</div>
 				</div>			
 			</th>
-			<th colspan="2" style="text-align: center;">
+			<th colspan="2">
 				<div class="d-flex">
 					<div class="text">
 						<button type="button" class="btn btn-outline" aria-expanded="false" data-bs-offset="10,20">
@@ -152,7 +152,7 @@
 					</div>
 				</div>
 			</th>	
-			<th style="text-align: center;">
+			<th>
 				<div class="d-flex">
 					<div class="dropdown me-1">
 						<button type="button" class="btn btn-outline dropdown-toggle" id="dropdownMenuOffset" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="10,20">
@@ -164,7 +164,7 @@
 					</div>
 				</div>
 			</th>
-			<th style="text-align: center; width: 100px;">
+			<th>
 				<div class="d-flex">
 					<div class="button">
 						<button type="button" class="btn btn-outline" aria-expanded="false" data-bs-offset="10,20">
@@ -173,7 +173,7 @@
 					</div>
 				</div>
 			</th>
-			<th style="text-align: center;">
+			<th>
 				<div class="d-flex">
 					<div class="text">
 						<button type="button" class="btn btn-outline" aria-expanded="false" data-bs-offset="10,20">
@@ -182,7 +182,7 @@
 					</div>
 				</div>
 			</th>
-			<th style="text-align: center;">
+			<th>
 				<div class="d-flex">
 					<div class="text">
 						<button type="button" class="btn btn-outline" aria-expanded="false" data-bs-offset="10,20">
@@ -191,7 +191,7 @@
 					</div>
 				</div>
 			</th>
-			<th colspan="2" style="text-align: center;">
+			<th colspan="2">
 				<div class="d-flex">
 					<div class="dropdown me-1">
 						<button type="button" class="btn btn-outline dropdown-toggle" id="dropdownMenuOffset" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="10,20">
@@ -231,6 +231,7 @@
 					</div>
 				</div>			
 			</th>
+			
 			<th>
 				<div class="d-flex">
 					<div class="text">
@@ -248,7 +249,8 @@
 						</button>
 					</div>
 				</div>
-			</th>		
+			</th>
+					
 		</tr>
 	</thead>
 	<tbody>
@@ -274,7 +276,7 @@
 				<td>2022-01-28 00:00:00</td>
 				<td>-</td>
 		</tr>
-	    <tr class="align-bottom">
+	    <tr>
 			<td>2</td>
 			<td>
 				<form action="" input="post" id="" name="">
@@ -563,15 +565,15 @@
 
 <!-- 페이징 -->
 
-<nav aria-label="Page navigation example">
-	<ul class="pagination justify-content-center">
+<nav aria-label="Page navigation">
+	<ul class="pagination justify-content-center" >
 		<li class="page-item">
 			<a class="page-link" href="#" aria-label="Previous">
 				<span aria-hidden="true">&laquo;</span>
 			</a>
 		</li>
 		<li class="page-item">
-			<a class="page-link" href="./memberList.html">1</a>
+			<a class="page-link" href="#">1</a>
 		</li>
 		<li class="page-item"><a class="page-link" href="#">2</a></li>
 		<li class="page-item"><a class="page-link" href="#">3</a></li>
