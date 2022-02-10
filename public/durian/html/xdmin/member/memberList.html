@@ -13,6 +13,13 @@
 <title>memberList_durian</title>
 
 <style type="text/css">
+
+
+    .my-wrap {
+    	width: 380px;
+    	 font-family: '나눔스퀘어라운드 Regular';
+    }
+
 	
 
 
@@ -34,8 +41,13 @@
 		<div class="d-inline-flex p-2">
 			<div>
 				<img src="../../../images/xdmin/photo1.PNG" style="float: left;">
-				<p style="float: left;">윤이나(CEO)</p>
-				<button type="button" class="btn btn-primary btn-sm" style="margin-left: 10px;">로그아웃</button>
+				<p style="float: left;">윤이나(최고관리자)</p>
+				<button type="button" class="btn  btn-sm" style="margin-left: 5px; padding-top: 0;float: right; ">
+					<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+						<path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z"/>
+						<path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+					</svg>
+				</button>
 	    	</div>
 	    </div>
 	</div>
@@ -44,7 +56,7 @@
 
 <!-- 상단 navbar home, Features, 시스템관리 메뉴 -->
 
-<nav class="navbar fixed-top navbar-expand-lg navbar-light" style="margin-top: 7em; font-family: '나눔스퀘어라운드 Regular'; background-color: #FF5E00;">
+<nav class="navbar fixed-top navbar-expand-lg navbar-light" style="margin-top: 7em; font-family: '나눔스퀘어라운드 Regular'; border: 1px solid #EAEAEA; border-bottom-color: #FF5E00; background-color:white;">
   <div class="container-fluid">
     <a class="navbar-brand" href="#"  style="color:white;" >Home<a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,24 +65,16 @@
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#"  style="color:white;">회원관리</a>
+          <a class="nav-link active" aria-current="page" href="#">홈</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#" style="color:white;" >시스템관리</a>
+          <a class="nav-link" href="#"e;" >회원관리</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#" style="color:white;" >환경설정</a>
+          <a class="nav-link" href="#">예매현황</a>
         </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" style="color:white;" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Dropdown link
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">설정</a>
       </ul>
     </div>
   </div>
@@ -87,415 +91,410 @@
 
 
 
-<!-- navbar 회원정보 검색 -->
+<!-- 회원정보 검색 -->
 
-<form class="row">
-	<div class="col">
-		<label class="visually-hidden" for="inlineFormSelectPref"></label>
-		<select class="form-select" id="inlineFormSelectPref">
-			<option selected>이름</option>
-			<option value="1">아이디</option>
-			<option value="2">연락처</option>
-			<option value="3">번호</option>
-		</select>
-	</div>  
-	<div class="col">
-		<label class="visually-hidden" for="inlineFormInputGroupUsername">회원정보 검색</label>
-		<div class="input-group">
-			<input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="회원정보 검색">
-		</div>
-	</div>  
-	<div class="col">
-		<div class="col-12"  style="margin-left:0; margin-right:0;">
-			<button type="submit" class="btn btn-primary"><i class="fas fa-search"></i></button>
-		</div>
-	</div>  
-
-</form>
+<div class="input-group mb-3" style="margin: 10px; width: 400px; float: right;">
+	<button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">이름</button>
+	<ul class="dropdown-menu">
+		<li><a class="dropdown-item" href="#">번호</a></li>
+		<li><a class="dropdown-item" href="#">상태</a></li>
+		<li><a class="dropdown-item" href="#">등급</a></li>
+		<li><a class="dropdown-item" href="#">이름</a></li>
+		<li><a class="dropdown-item" href="#">성별</a></li>
+		<li><a class="dropdown-item" href="#">아이디</a></li>
+		<li><a class="dropdown-item" href="#">sns</a></li>
+		<li><a class="dropdown-item" href="#">이메일마케팅</a></li>
+		<li><a class="dropdown-item" href="#">모바일마케팅</a></li>
+	</ul>
+	<input type="text" class="form-control" aria-label="Text input with dropdown button" placeholder="회원정보 검색">
+	<button type="submit" class="btn btn-outline-secondary" style="margin-right:10px;"><i class="fas fa-search"></i></button>
+</div>
+<br>
 
 <br>
 
 
-<!-- 회원리스트 -->
+<!-- 회원리스트 table -->
 
-<h5 style="margin-left:1em;"> total : 10 </h5>
+<h5 style="margin-left:1em; font-family: '나눔스퀘어라운드 Regular';"> total : 10 </h5>
 
-<table class="table" style="font-family: '나눔스퀘어라운드 Regular';">
-	<thead style="background-color: #F6F6F6;">
-		<tr style=" border-color: red;">
-			<th style="text-align: center;">
-				<div class="d-flex">
-					<div class="text">
-						<button type="text" class="btn btn-outline" aria-expanded="false" data-bs-offset="10,20">
-							<b>No.</b>
-						</button>
+<div class="table table-responsive" style="font-family: '나눔스퀘어라운드 Regular'; white-space:nowrap; margin:auto;">
+	<table class="table" style="font-family: '나눔스퀘어라운드 Regular';">
+		<thead style="background-color: #F6F6F6;">
+			<tr style=" border-color: red;">
+				<th style="text-align: center;">
+					<div class="d-flex">
+						<div class="text">
+							<button type="text" class="btn btn-outline" aria-expanded="false" data-bs-offset="10,20">
+								<b>No.</b>
+							</button>
+						</div>
 					</div>
-				</div>
-			</th>
-			<th style=" border-color: red;">
-				<form action="" input="post" id="" name="">
-					<input type="checkbox" id="" name="">
-				</form>
-			</th>
-			<th style=" border-color: red;">
-				<div class="d-flex">
-					<div class="dropdown me-1">
-						<button type="button" class="btn btn-outline dropdown-toggle" id="dropdownMenuOffset" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="10,20">
-							<b>상태</b>
-						</button>
-						<ul class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
-							<li><a class="dropdown-item" href="#">활성</a></li>
-							<li><a class="dropdown-item" href="#">비활성</a></li>
-						</ul>
+				</th>
+				<th style=" border-color: red;">
+					<form action="" input="post" id="" name="">
+						<input type="checkbox" id="" name="">
+					</form>
+				</th>
+				<th style=" border-color: red;">
+					<div class="d-flex">
+						<div class="dropdown me-1">
+							<button type="button" class="btn btn-outline dropdown-toggle" id="dropdownMenuOffset" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="10,20">
+								<b>상태</b>
+							</button>
+							<ul class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+								<li><a class="dropdown-item" href="#">활성</a></li>
+								<li><a class="dropdown-item" href="#">비활성</a></li>
+							</ul>
+						</div>
 					</div>
-				</div>
-			</th>
-			<th>
-				<div class="d-flex">
-					<div class="dropdown me-1">
-						<button type="button" class="btn btn-outline dropdown-toggle" id="dropdownMenuOffset" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="10,20">
-							<b>등급</b>
-						</button>
-						<ul class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
-							<li><a class="dropdown-item" href="#">최고관리자</a></li>
-							<li><a class="dropdown-item" href="#">관리자</a></li>
-							<li><a class="dropdown-item" href="#">일반</a></li>
-						</ul>
+				</th>
+				<th>
+					<div class="d-flex">
+						<div class="dropdown me-1">
+							<button type="button" class="btn btn-outline dropdown-toggle" id="dropdownMenuOffset" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="10,20">
+								<b>등급</b>
+							</button>
+							<ul class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+								<li><a class="dropdown-item" href="#">최고관리자</a></li>
+								<li><a class="dropdown-item" href="#">관리자</a></li>
+								<li><a class="dropdown-item" href="#">일반</a></li>
+							</ul>
+						</div>
+					</div>			
+				</th>
+				<th colspan="2" style="text-align: center;">
+					<div class="d-flex">
+						<div class="text">
+							<button type="text" class="btn btn-outline" aria-expanded="false" data-bs-offset="10,20">
+								<b>이름</b>
+							</button>
+						</div>
 					</div>
-				</div>			
-			</th>
-			<th colspan="2" style="text-align: center;">
-				<div class="d-flex">
-					<div class="text">
-						<button type="text" class="btn btn-outline" aria-expanded="false" data-bs-offset="10,20">
-							<b>이름</b>
-						</button>
+				</th>	
+				<th style="text-align: center;">
+					<div class="d-flex">
+						<div class="dropdown me-1">
+							<button type="button" class="btn btn-outline dropdown-toggle" id="dropdownMenuOffset" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="10,20">
+								<b>성별</b>
+							</button>
+							<ul class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+								<li><a class="dropdown-item" href="#">남성</a></li>
+								<li><a class="dropdown-item" href="#">여성</a></li>
+						</div>
 					</div>
-				</div>
-			</th>	
-			<th style="text-align: center;">
-				<div class="d-flex">
-					<div class="dropdown me-1">
-						<button type="button" class="btn btn-outline dropdown-toggle" id="dropdownMenuOffset" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="10,20">
-							<b>성별</b>
-						</button>
-						<ul class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
-							<li><a class="dropdown-item" href="#">남성</a></li>
-							<li><a class="dropdown-item" href="#">여성</a></li>
+				</th>
+				<th style="text-align: center;">
+					<div class="d-flex">
+						<div class="text">
+							<button type="text" class="btn btn-outline" aria-expanded="false" data-bs-offset="10,20">
+								<b>아이디</b>
+							</button>
+						</div>
 					</div>
-				</div>
-			</th>
-			<th style="text-align: center;">
-				<div class="d-flex">
-					<div class="text">
-						<button type="text" class="btn btn-outline" aria-expanded="false" data-bs-offset="10,20">
-							<b>아이디</b>
-						</button>
+				</th>
+				<th style="text-align: center;">
+					<div class="d-flex">
+						<div class="text">
+							<button type="text" class="btn btn-outline" aria-expanded="false" data-bs-offset="10,20">
+								<b>연락처</b>
+							</button>
+						</div>
 					</div>
-				</div>
-			</th>
-			<th style="text-align: center;">
-				<div class="d-flex">
-					<div class="text">
-						<button type="text" class="btn btn-outline" aria-expanded="false" data-bs-offset="10,20">
-							<b>연락처</b>
-						</button>
+				</th>
+				<th style="text-align: center;">
+					<div class="d-flex">
+						<div class="text">
+							<button type="text" class="btn btn-outline" aria-expanded="false" data-bs-offset="10,20">
+								<b>이메일</b>
+							</button>
+						</div>
 					</div>
-				</div>
-			</th>
-			<th style="text-align: center;">
-				<div class="d-flex">
-					<div class="text">
-						<button type="text" class="btn btn-outline" aria-expanded="false" data-bs-offset="10,20">
-							<b>이메일</b>
-						</button>
+				</th>
+				<th colspan="2" style="text-align: center;">
+					<div class="d-flex">
+						<div class="dropdown me-1">
+							<button type="button" class="btn btn-outline dropdown-toggle" id="dropdownMenuOffset" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="10,20">
+								<b>sns</b>
+							</button>
+							<ul class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+								<li><a class="dropdown-item" href="#">인스타그램</a></li>
+								<li><a class="dropdown-item" href="#">페이스북</a></li>
+								<li><a class="dropdown-item" href="#">카카오톡</a></li>
+							</ul>
+						</div>
+					</div>			
+				</th>
+				<th>
+					<div class="d-flex">
+						<div class="dropdown me-1">
+							<button type="button" class="btn btn-outline dropdown-toggle" id="dropdownMenuOffset" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="10,20">
+								<b>이메일마케팅</b>
+							</button>
+							<ul class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+								<li><a class="dropdown-item" href="#">동의</a></li>
+								<li><a class="dropdown-item" href="#">미동의</a></li>
+							</ul>
+						</div>
+					</div>			
+				</th>
+				<th>
+					<div class="d-flex">
+						<div class="dropdown me-1">
+							<button type="button" class="btn btn-outline dropdown-toggle" id="dropdownMenuOffset" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="10,20">
+								<b>모바일마케팅</b>
+							</button>
+							<ul class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
+								<li><a class="dropdown-item" href="#">동의</a></li>
+								<li><a class="dropdown-item" href="#">미동의</a></li>
+							</ul>
+						</div>
+					</div>			
+				</th>
+				<th>
+					<div class="d-flex">
+						<div class="text">
+							<button type="text" class="btn btn-outline" aria-expanded="false" data-bs-offset="10,20">
+								<b>활성시간</b>
+							</button>
+						</div>
 					</div>
-				</div>
-			</th>
-			<th colspan="2" style="text-align: center;">
-				<div class="d-flex">
-					<div class="dropdown me-1">
-						<button type="button" class="btn btn-outline dropdown-toggle" id="dropdownMenuOffset" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="10,20">
-							<b>sns</b>
-						</button>
-						<ul class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
-							<li><a class="dropdown-item" href="#">인스타그램</a></li>
-							<li><a class="dropdown-item" href="#">페이스북</a></li>
-							<li><a class="dropdown-item" href="#">카카오톡</a></li>
-						</ul>
+				</th>		
+				<th>
+					<div class="d-flex">
+						<div class="text">
+							<button type="text" class="btn btn-outline" aria-expanded="false" data-bs-offset="10,20">
+								<b>비활성시간</b>
+							</button>
+						</div>
 					</div>
-				</div>			
-			</th>
-			<th>
-				<div class="d-flex">
-					<div class="dropdown me-1">
-						<button type="button" class="btn btn-outline dropdown-toggle" id="dropdownMenuOffset" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="10,20">
-							<b>이메일마케팅</b>
-						</button>
-						<ul class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
-							<li><a class="dropdown-item" href="#">동의</a></li>
-							<li><a class="dropdown-item" href="#">미동의</a></li>
-						</ul>
-					</div>
-				</div>			
-			</th>
-			<th>
-				<div class="d-flex">
-					<div class="dropdown me-1">
-						<button type="button" class="btn btn-outline dropdown-toggle" id="dropdownMenuOffset" data-bs-toggle="dropdown" aria-expanded="false" data-bs-offset="10,20">
-							<b>모바일마케팅</b>
-						</button>
-						<ul class="dropdown-menu" aria-labelledby="dropdownMenuOffset">
-							<li><a class="dropdown-item" href="#">동의</a></li>
-							<li><a class="dropdown-item" href="#">미동의</a></li>
-						</ul>
-					</div>
-				</div>			
-			</th>
-			<th>
-				<div class="d-flex">
-					<div class="text">
-						<button type="text" class="btn btn-outline" aria-expanded="false" data-bs-offset="10,20">
-							<b>활성시간</b>
-						</button>
-					</div>
-				</div>
-			</th>		
-			<th>
-				<div class="d-flex">
-					<div class="text">
-						<button type="text" class="btn btn-outline" aria-expanded="false" data-bs-offset="10,20">
-							<b>비활성시간</b>
-						</button>
-					</div>
-				</div>
-			</th>		
-		</tr>
-	</thead>
-	<tbody>
-		<tr>
-			<td>1</td>
-			<td>
-				<form action="" input="post" id="" name="">
-					<input type="checkbox" id="" name="">
-				</form>
-			</td>
-				<td>활성</td>
-				<td><img src="../../../images/xdmin/admin_crown_30.png" width="20px">최고관리자</td>
-				<td><img src="../../../images/xdmin/photo1.PNG" width="30px"></td>
-				<td>윤이나</td>
-				<td>여성</td>
-				<td>yina</td>
-				<td>010-1111-1111</td>
-				<td>yina@naver.com</td>
-				<td><img src="../../../images/xdmin/instagram_logo_30.png" width="30px"></td>
-				<td>www.yina.com</td>
-				<td>동의</td>
-				<td>미동의</td>
-				<td>2022-01-28 00:00:00</td>
-				<td>-</td>
-		</tr>
-	    <tr>
-			<td>2</td>
-			<td>
-				<form action="" input="post" id="" name="">
-					<input type="checkbox" id="" name="">
-				</form>
-			</td>
-				<td>활성</td>
-				<td><img src="../../../images/xdmin/admin_crown_30.png" width="20px">관리자</td>
-				<td><img src="../../../images/xdmin/photo2.PNG" width="30px"></td>
-				<td>윤삼나</td>
-				<td>여성</td>
-				<td>samna</td>
-				<td>02-2222-2222</td>
-				<td>samna@hanmail.net</td>
-				<td><img src="../../../images/xdmin/facebook_logo.png" width="30px"></td>
-				<td>www.samna.com</td>
-				<td>미동의</td>
-				<td>동의</td>
-				<td>2022-01-28 00:00:00</td>
-				<td>-</td>
-		</tr>
-	    <tr>
-			<td>3</td>
-			<td>
-				<form action="" input="post" id="" name="">
-					<input type="checkbox" id="" name="">
-				</form>
-			</td>
-				<td>활성</td>
-				<td><img src="../../../images/xdmin/admin_crown_30.png" width="20px">관리자</td>
-				<td><img src="../../../images/xdmin/photo3.PNG" width="30px"></td>
-				<td>윤사나</td>
-				<td>남성</td>
-				<td>sana</td>
-				<td>02-3333-3333</td>
-				<td>sana@google.com</td>
-				<td><img src="../../../images/xdmin/kakaotalk_logo.png" width="30px"></td>
-				<td>www.sana.com</td>
-				<td>동의</td>
-				<td>미동의</td>
-				<td>2022-01-28 00:00:00</td>
-				<td>-</td>
-		</tr>
-	    <tr>
-			<td>4</td>
-			<td>
-				<form action="" input="post" id="" name="">
-					<input type="checkbox" id="" name="">
-				</form>
-			</td>
-				<td>활성</td>
-				<td>일반</td>
-				<td><img src="../../../images/xdmin/photo4.PNG" width="30px"></td>
-				<td>윤오나</td>
-				<td>남성</td>
-				<td>sana</td>
-				<td>010-1111-1111</td>
-				<td>ona@naver.com</td>
-				<td><img src="../../../images/xdmin/instagram_logo_30.png" width="30px"></td>
-				<td>www.ona.com</td>
-				<td>미동의</td>
-				<td>동의</td>
-				<td>2022-01-28 00:00:00</td>
-				<td>-</td>
-		</tr>
-	    <tr>
-			<td>5</td>
-			<td>
-				<form action="" input="post" id="" name="">
-					<input type="checkbox" id="" name="">
-				</form>
-			</td>
-				<td>비활성</td>
-				<td>일반</td>
-				<td><img src="../../../images/xdmin/photo5.PNG" width="30px"></td>
-				<td>윤육나</td>
-				<td>남성</td>
-				<td>yukna</td>
-				<td>02-2222-2222</td>
-				<td>yuk@hanmail.net</td>
-				<td><img src="../../../images/xdmin/facebook_logo_30.png" width="30px"></td>
-				<td>www.yukna.com</td>
-				<td>동의</td>
-				<td>미동의</td>
-				<td>-</td>
-				<td>2022-01-30 00:00:00</td>
-		</tr>
-	    <tr>
-			<td>6</td>
-			<td>
-				<form action="" input="post" id="" name="">
-					<input type="checkbox" id="" name="">
-				</form>
-			</td>
-				<td>비활성</td>
-				<td>일반</td>
-				<td><img src="../../../images/xdmin/photo1.PNG" width="30px"></td>
-				<td>윤칠나</td>
-				<td>남성</td>
-				<td>chilna</td>
-				<td>010-1111-1111</td>
-				<td>chilna@google.com</td>
-				<td><img src="../../../images/xdmin/kakaotalk_logo_30.png" width="30px"></td>
-				<td>www.chilna.com</td>
-				<td>미동의</td>
-				<td>동의</td>
-				<td>-</td>
-				<td>2022-01-30 00:00:00</td>
-		</tr>
-	    <tr>
-			<td>7</td>
-			<td>
-				<form action="" input="post" id="" name="">
-					<input type="checkbox" id="" name="">
-				</form>
-			</td>
-				<td>비활성</td>
-				<td>일반</td>
-				<td><img src="../../../images/xdmin/photo2.PNG" width="30px"></td>
-				<td>윤팔나</td>
-				<td>여성</td>
-				<td>palna</td>
-				<td>010-1111-1111</td>
-				<td>pallna@naver.com</td>
-				<td><img src="../../../images/xdmin/instagram_logo_30.png" width="30px"></td>
-				<td>www.palna.com</td>
-				<td>동의</td>
-				<td>미동의</td>
-				<td>-</td>
-				<td>2022-01-30 00:00:00</td>
-		</tr>
-	    <tr>
-			<td>8</td>
-			<td>
-				<form action="" input="post" id="" name="">
-					<input type="checkbox" id="" name="">
-				</form>
-			</td>
-				<td>활성</td>
-				<td>일반</td>
-				<td><img src="../../../images/xdmin/photo3.PNG" width="30px"></td>
-				<td>윤구나</td>
-				<td>남성</td>
-				<td>kuna</td>
-				<td>02-1111-1111</td>
-				<td>kuna@hanmail.net</td>
-				<td><img src="../../../images/xdmin/facebook_logo_30.png" width="30px"></td>
-				<td>www.kuna.com</td>
-				<td>미동의</td>
-				<td>동의</td>
-				<td>2022-02-01 00:00:00</td>
-				<td>2022-01-30 00:00:00</td>
-		</tr>
-	    <tr>
-			<td>9</td>
-			<td>
-				<form action="" input="post" id="" name="">
-					<input type="checkbox" id="" name="">
-				</form>
-			</td>
-				<td>활성</td>
-				<td>일반</td>
-				<td><img src="../../../images/xdmin/photo4.PNG" width="30px"></td>
-				<td>윤십나</td>
-				<td>여성</td>
-				<td>sipna</td>
-				<td>010-1111-1111</td>
-				<td>sipna@google.com</td>
-				<td><img src="../../../images/xdmin/kakaotalk_logo_30.png" width="30px"></td>
-				<td>www.sipna.com</td>
-				<td>동의</td>
-				<td>미동의</td>
-				<td>2022-02-01 00:00:00</td>
-				<td>2022-01-30 00:00:00</td>
-		</tr>
-	    <tr>
-			<td>10</td>
-			<td>
-				<form action="" input="post" id="" name="">
-					<input type="checkbox" id="" name="">
-				</form>
-			</td>
-				<td>활성</td>
-				<td>일반</td>
-				<td><img src="../../../images/xdmin/photo5.PNG" width="30px"></td>
-				<td>십일나</td>
-				<td>여성</td>
-				<td>sipilna</td>
-				<td>010-1111-1111</td>
-				<td>sipilna@naver.com</td>
-				<td><img src="../../../images/xdmin/instagram_logo_30.png" width="30px"></td>
-				<td>www.sipilna.com</td>
-				<td>미동의</td>
-				<td>동의</td>
-				<td>2022-02-01 00:00:00</td>
-				<td>2022-01-30 00:00:00</td>
-		</tr>
-	</tbody>
-</table>
-
+				</th>		
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>1</td>
+				<td>
+					<form action="" input="post" id="" name="">
+						<input type="checkbox" id="" name="">
+					</form>
+				</td>
+					<td>활성</td>
+					<td><img src="../../../images/xdmin/admin_crown_30.png" width="20px">최고관리자</td>
+					<td><img src="../../../images/xdmin/photo1.PNG" width="30px"></td>
+					<td>윤이나</td>
+					<td>여성</td>
+					<td>yina</td>
+					<td>010-1111-1111</td>
+					<td>yina@naver.com</td>
+					<td><img src="../../../images/xdmin/instagram_logo_30.png" width="30px"></td>
+					<td>www.yina.com</td>
+					<td>동의</td>
+					<td>미동의</td>
+					<td>2022-01-28 00:00:00</td>
+					<td>-</td>
+			</tr>
+		    <tr>
+				<td>2</td>
+				<td>
+					<form action="" input="post" id="" name="">
+						<input type="checkbox" id="" name="">
+					</form>
+				</td>
+					<td>활성</td>
+					<td><img src="../../../images/xdmin/admin_crown_30.png" width="20px">관리자</td>
+					<td><img src="../../../images/xdmin/photo2.PNG" width="30px"></td>
+					<td>윤삼나</td>
+					<td>여성</td>
+					<td>samna</td>
+					<td>02-2222-2222</td>
+					<td>samna@hanmail.net</td>
+					<td><img src="../../../images/xdmin/facebook_logo.png" width="30px"></td>
+					<td>www.samna.com</td>
+					<td>미동의</td>
+					<td>동의</td>
+					<td>2022-01-28 00:00:00</td>
+					<td>-</td>
+			</tr>
+		    <tr>
+				<td>3</td>
+				<td>
+					<form action="" input="post" id="" name="">
+						<input type="checkbox" id="" name="">
+					</form>
+				</td>
+					<td>활성</td>
+					<td><img src="../../../images/xdmin/admin_crown_30.png" width="20px">관리자</td>
+					<td><img src="../../../images/xdmin/photo3.PNG" width="30px"></td>
+					<td>윤사나</td>
+					<td>남성</td>
+					<td>sana</td>
+					<td>02-3333-3333</td>
+					<td>sana@google.com</td>
+					<td><img src="../../../images/xdmin/kakaotalk_logo.png" width="30px"></td>
+					<td>www.sana.com</td>
+					<td>동의</td>
+					<td>미동의</td>
+					<td>2022-01-28 00:00:00</td>
+					<td>-</td>
+			</tr>
+		    <tr>
+				<td>4</td>
+				<td>
+					<form action="" input="post" id="" name="">
+						<input type="checkbox" id="" name="">
+					</form>
+				</td>
+					<td>활성</td>
+					<td>일반</td>
+					<td><img src="../../../images/xdmin/photo4.PNG" width="30px"></td>
+					<td>윤오나</td>
+					<td>남성</td>
+					<td>sana</td>
+					<td>010-1111-1111</td>
+					<td>ona@naver.com</td>
+					<td><img src="../../../images/xdmin/instagram_logo_30.png" width="30px"></td>
+					<td>www.ona.com</td>
+					<td>미동의</td>
+					<td>동의</td>
+					<td>2022-01-28 00:00:00</td>
+					<td>-</td>
+			</tr>
+		    <tr>
+				<td>5</td>
+				<td>
+					<form action="" input="post" id="" name="">
+						<input type="checkbox" id="" name="">
+					</form>
+				</td>
+					<td>비활성</td>
+					<td>일반</td>
+					<td><img src="../../../images/xdmin/photo5.PNG" width="30px"></td>
+					<td>윤육나</td>
+					<td>남성</td>
+					<td>yukna</td>
+					<td>02-2222-2222</td>
+					<td>yuk@hanmail.net</td>
+					<td><img src="../../../images/xdmin/facebook_logo_30.png" width="30px"></td>
+					<td>www.yukna.com</td>
+					<td>동의</td>
+					<td>미동의</td>
+					<td>-</td>
+					<td>2022-01-30 00:00:00</td>
+			</tr>
+		    <tr>
+				<td>6</td>
+				<td>
+					<form action="" input="post" id="" name="">
+						<input type="checkbox" id="" name="">
+					</form>
+				</td>
+					<td>비활성</td>
+					<td>일반</td>
+					<td><img src="../../../images/xdmin/photo1.PNG" width="30px"></td>
+					<td>윤칠나</td>
+					<td>남성</td>
+					<td>chilna</td>
+					<td>010-1111-1111</td>
+					<td>chilna@google.com</td>
+					<td><img src="../../../images/xdmin/kakaotalk_logo_30.png" width="30px"></td>
+					<td>www.chilna.com</td>
+					<td>미동의</td>
+					<td>동의</td>
+					<td>-</td>
+					<td>2022-01-30 00:00:00</td>
+			</tr>
+		    <tr>
+				<td>7</td>
+				<td>
+					<form action="" input="post" id="" name="">
+						<input type="checkbox" id="" name="">
+					</form>
+				</td>
+					<td>비활성</td>
+					<td>일반</td>
+					<td><img src="../../../images/xdmin/photo2.PNG" width="30px"></td>
+					<td>윤팔나</td>
+					<td>여성</td>
+					<td>palna</td>
+					<td>010-1111-1111</td>
+					<td>pallna@naver.com</td>
+					<td><img src="../../../images/xdmin/instagram_logo_30.png" width="30px"></td>
+					<td>www.palna.com</td>
+					<td>동의</td>
+					<td>미동의</td>
+					<td>-</td>
+					<td>2022-01-30 00:00:00</td>
+			</tr>
+		    <tr>
+				<td>8</td>
+				<td>
+					<form action="" input="post" id="" name="">
+						<input type="checkbox" id="" name="">
+					</form>
+				</td>
+					<td>활성</td>
+					<td>일반</td>
+					<td><img src="../../../images/xdmin/photo3.PNG" width="30px"></td>
+					<td>윤구나</td>
+					<td>남성</td>
+					<td>kuna</td>
+					<td>02-1111-1111</td>
+					<td>kuna@hanmail.net</td>
+					<td><img src="../../../images/xdmin/facebook_logo_30.png" width="30px"></td>
+					<td>www.kuna.com</td>
+					<td>미동의</td>
+					<td>동의</td>
+					<td>2022-02-01 00:00:00</td>
+					<td>2022-01-30 00:00:00</td>
+			</tr>
+		    <tr>
+				<td>9</td>
+				<td>
+					<form action="" input="post" id="" name="">
+						<input type="checkbox" id="" name="">
+					</form>
+				</td>
+					<td>활성</td>
+					<td>일반</td>
+					<td><img src="../../../images/xdmin/photo4.PNG" width="30px"></td>
+					<td>윤십나</td>
+					<td>여성</td>
+					<td>sipna</td>
+					<td>010-1111-1111</td>
+					<td>sipna@google.com</td>
+					<td><img src="../../../images/xdmin/kakaotalk_logo_30.png" width="30px"></td>
+					<td>www.sipna.com</td>
+					<td>동의</td>
+					<td>미동의</td>
+					<td>2022-02-01 00:00:00</td>
+					<td>2022-01-30 00:00:00</td>
+			</tr>
+		    <tr>
+				<td>10</td>
+				<td>
+					<form action="" input="post" id="" name="">
+						<input type="checkbox" id="" name="">
+					</form>
+				</td>
+					<td>활성</td>
+					<td>일반</td>
+					<td><img src="../../../images/xdmin/photo5.PNG" width="30px"></td>
+					<td>십일나</td>
+					<td>여성</td>
+					<td>sipilna</td>
+					<td>010-1111-1111</td>
+					<td>sipilna@naver.com</td>
+					<td><img src="../../../images/xdmin/instagram_logo_30.png" width="30px"></td>
+					<td>www.sipilna.com</td>
+					<td>미동의</td>
+					<td>동의</td>
+					<td>2022-02-01 00:00:00</td>
+					<td>2022-01-30 00:00:00</td>
+			</tr>
+		</tbody>
+	</table>
+</div>
 
 
 <!-- navbar 삭제여부, 날짜, 이름 검색 -->
