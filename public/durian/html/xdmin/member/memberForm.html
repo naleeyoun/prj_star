@@ -18,15 +18,82 @@
     	width: 380px;
     	 font-family: '나눔스퀘어라운드 Regular';
     }
+    
+       .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+      
+ .b-example-divider {
+  height: 3rem;
+  background-color: rgba(0, 0, 0, .1);
+  border: solid rgba(0, 0, 0, .15);
+  border-width: 1px 0;
+  box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+}
+
+.bi {
+  vertical-align: -.125em;
+  fill: currentColor;
+}     
+
+
 
 </style>
 </head>
 <body>
 
 
-<!-- 상단 고정 navbar 로고, 로그인사용자, 로그아웃 -->
+<!-- 상단 hearder 로고, 로그인사용자, 로그아웃 -->
 
 
+<div class="b-example-divider-header"></div>
+
+  <header class="p-3 mb-3 border-bottom">
+    <div class="container">
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+        <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-dark text-decoration-none">
+          <svg class="bi me-2" width="40" height="32" role="img" aria-label="Bootstrap"><img src="../../../images/xdmin/cgv_logo1.png" width="100px"></svg>
+        </a>
+
+        <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0" style="font-family: '나눔스퀘어라운드 Regular';">
+          <li><a href="#" class="nav-link px-2 link-secondary">홈</a></li>
+          <li><a href="#" class="nav-link px-2 link-dark">회원관리</a></li>
+          <li><a href="#" class="nav-link px-2 link-dark">예매관리</a></li>
+          <li><a href="#" class="nav-link px-2 link-dark">설정</a></li>
+        </ul>
+
+		<h4 style="font-family: '나눔스퀘어라운드 Regular'; margin-right: 15%;">Managerment System</h4>
+        <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
+          <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+        </form>
+
+        <div class="dropdown text-end">
+          <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+            <img src="../../../images/xdmin/photo1.PNG" alt="mdo" width="32" height="32" class="rounded-circle">
+          </a>
+          <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser1">
+            <li><a class="dropdown-item" href="#">회원정보</a></li>
+            <li><a class="dropdown-item" href="#">Setting</a></li>
+            <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">로그아웃</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+<!-- 
 <nav class="navbar fixed-top navbar-light" style="background-color: white; font-family: '나눔스퀘어라운드 Regular';">
  	<div class="container-fluid p-3">
 		<a class="navbar-brand" style="display:inline-block;">
@@ -50,7 +117,7 @@
 </nav>
 
 
-<!-- 상단 navbar home, Features, 시스템관리 메뉴 -->
+상단 navbar home, Features, 시스템관리 메뉴
 
 <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="margin-top: 7em; font-family: '나눔스퀘어라운드 Regular'; border: 1px solid #EAEAEA; border-bottom-color: #FF5E00; background-color:white;">
   <div class="container-fluid">
@@ -77,15 +144,12 @@
 </nav>
 <br>
 <br>
-
-
-
-
+ -->
 
 
 <!-- 회원가입 글 -->
-<br>
-<h2 style="color: #4C4C4C; text-align: center; font-family: '나눔스퀘어라운드 Regular'; margin-top: 5em;">회원가입</h1>
+
+<h2 style="color: #4C4C4C; text-align: center; font-family: '나눔스퀘어라운드 Regular'; margin-top: 3em;">회원가입</h2>
 
 <div style="font-family: '나눔스퀘어라운드 Regular'; text-align: center; color: gray;">
 	<small>이미 cgv 회원이신가요?</small>
@@ -558,8 +622,25 @@
 
 <br>
 <br>
+<br>
+<br>
 
+<!-- 푸터 -->
 
+<div class="b-example-divider"></div>
+
+<div class="container">
+  <footer class="py-3 my-4">
+    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+    </ul>
+    <p class="text-center text-muted">&copy; 2022 CJ CGV. All Rights Reserved</p>
+  </footer>
+</div>
 
 
 
