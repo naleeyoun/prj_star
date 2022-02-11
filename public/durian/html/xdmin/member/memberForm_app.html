@@ -33,18 +33,18 @@
         }
       }
 
- .b-example-divider {
-  height: 3rem;
-  background-color: rgba(0, 0, 0, .1);
-  border: solid rgba(0, 0, 0, .15);
-  border-width: 1px 0;
-  box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-}
+	 .b-example-divider {
+	  height: 3rem;
+	  background-color: rgba(0, 0, 0, .1);
+	  border: solid rgba(0, 0, 0, .15);
+	  border-width: 1px 0;
+	  box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+	}
 
-.bi {
-  vertical-align: -.125em;
-  fill: currentColor;
-}  
+	.bi {
+	  vertical-align: -.125em;
+	  fill: currentColor;
+	}  
 
 
 </style>
@@ -55,98 +55,65 @@
 <!-- 상단 고정 navbar 로고, 로그인사용자, 로그아웃 -->
 
 
-  <div class="b-example-divider-header"></div>
+<div class="b-example-divider-header"></div>
 
-  <header class="py-3 mb-3 border-bottom">
-    <div class="container-fluid d-grid gap-3 align-items-center" style="grid-template-columns: 1fr 2fr;">
-      <div class="dropdown"  style="margin:0;">
-        <a href="#" class="d-flex align-items-center col-lg-4 mb-2 mb-lg-0 link-dark text-decoration-none dropdown-toggle" id="dropdownNavLink" data-bs-toggle="dropdown" aria-expanded="false">
-          <svg class="bi" width="10" height="32" ><img src="../../../images/xdmin/cgv_logo1.png" width="60px"></svg>
-        </a>
-        <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownNavLink">
-          <li><a class="dropdown-item active" href="#" aria-current="page">홈</a></li>
-          <li><a class="dropdown-item" href="#">회원관리</a></li>
-          <li><a class="dropdown-item" href="#">예매관리</a></li>
-          <li><a class="dropdown-item" href="#">설정</a></li>
-          <li><hr class="dropdown-divider"></li>
-          <li><a class="dropdown-item" href="#">Reports</a></li>
-          <li><a class="dropdown-item" href="#">Analytics</a></li>
-        </ul>
-      </div>
-
-      <div class="d-flex align-items-center">
-        <form class="w-100 me-3">
-          <input type="search" class="form-control" placeholder="Search..." aria-label="Search">
-        </form>
-
-        <div class="flex-shrink-0 dropdown">
-          <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
-            <img src="../../../images/xdmin/photo1.PNG" alt="mdo" width="32" height="32" class="rounded-circle">
-          </a>
-          <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
-            <li><a class="dropdown-item" href="#">회원정보</a></li>
-            <li><a class="dropdown-item" href="#">Settings</a></li>
-            <li><a class="dropdown-item" href="#">Profile</a></li>
-            <li><hr class="dropdown-divider"></li>
-            <li><a class="dropdown-item" href="#">로그아웃</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </header>
-
-
-<!-- 
-
-<nav class="navbar-responsive fixed-top navbar-light" style="background-color: white; font-family: '나눔스퀘어라운드 Regular';">
- 	<div class="container-fluid p-3">
-		<a class="navbar-brand" style="display:inline-block;">
-			<img src="../../../images/xdmin/cgv_logo1.png" style="width: 80px">
-		</a>
-		<div class="d-inline-flex p-2" style="float: right;">
-			<div>
-				<button type="button" class="btn  btn-sm" style="margin-left: 10px; padding-top: 0;float: right; ">
-					<svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-box-arrow-right" viewBox="0 0 16 16">
-						<path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z"/>
-						<path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
-					</svg>
-				</button>
-				<img src="../../../images/xdmin/photo1.PNG" style="float: right;">
+<header class="py-3 mb-3 border-bottom">
+	<div class="container-fluid d-grid gap-3 align-items-center" style="grid-template-columns: 1fr 2fr;">
+		<div class="dropdown"  style="margin:0;">
+			<a href="#" class="d-flex align-items-center col-lg-4 mb-2 mb-lg-0 link-dark text-decoration-none dropdown-toggle" id="dropdownNavLink" data-bs-toggle="dropdown" aria-expanded="false">
+				<svg class="bi" width="10" height="32" ><img src="../../../images/xdmin/cgv_logo1.png" width="60px"></svg>
+			</a>
+			<ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownNavLink">
+				<li><a class="dropdown-item active" href="#" aria-current="page">홈</a></li>
+				<li><a class="dropdown-item" href="#">회원관리</a></li>
+				<li><a class="dropdown-item" href="#">예매관리</a></li>
+				<li><a class="dropdown-item" href="#">설정</a></li>
+				<li><hr class="dropdown-divider"></li>
+				<li><a class="dropdown-item" href="#">Reports</a></li>
+				<li><a class="dropdown-item" href="#">Analytics</a></li>
+			</ul>
+		</div>
+	
+		<div class="d-flex align-items-center">
+			<form class="w-100 me-3">
+				<input type="search" class="form-control" placeholder="Search..." aria-label="Search">
+			</form>
+	
+			<div class="flex-shrink-0 dropdown">
+				<a href="#" class="d-block link-dark text-decoration-none dropdown-toggle" id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
+					<img src="../../../images/xdmin/photo1.PNG" alt="mdo" width="32" height="32" class="rounded-circle">
+				</a>
+				<ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2">
+					<li><a class="dropdown-item" href="#">회원정보</a></li>
+					<li><a class="dropdown-item" href="#">Settings</a></li>
+					<li><a class="dropdown-item" href="#">Profile</a></li>
+					<li><hr class="dropdown-divider"></li>
+					<li><a class="dropdown-item" href="#">로그아웃</a></li>
+				</ul>
 			</div>
 		</div>
 	</div>
+</header>
+
+
+<!-- Breadcrumb -->
+
+<nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;); margin-left:10px; font-family: '나눔스퀘어라운드 Regular';" aria-label="breadcrumb">
+	<ol class="breadcrumb">
+			<li class="breadcrumb-item" onclick="location.href='./memberList_app.html'">홈</li>
+			<li class="breadcrumb-item active" onclick="location.href='./memberList_app.html'">회원관리</li>
+			<li class="breadcrumb-item active" aria-current="page">회원가입</li>
+	</ol>
 </nav>
 
 
-
-상단 고정 navbar 로고
-
-<ul class="nav fixed-top nav-pills nav-justified" style="margin-top: 5em; background-color: #FF5E00; font-family: '나눔스퀘어라운드 Regular';">
-  <li class="nav-item" >
-    <a class="nav-link" aria-current="page" href="#" style="color: white;">홈</a>
-  </li>
-  <li class="nav-item" style="color: white;">
-    <a class="nav-link" href="#" style="color: white;"><b>회원관리</b></a>
-  </li>
-  <li class="nav-item" style="color: white;">
-    <a class="nav-link" href="#" style="color: white;">예매현황</b></a>
-  </li>
-  <li class="nav-item" style="color: white;">
-    <a class="nav-link" style="color: white;">설정</a>
-  </li>
-</ul>
-
-<br>
-
- -->
- 
 <!-- 회원가입 글 -->
 <br>
 <h2 style="color: #4C4C4C; text-align: center; font-family: '나눔스퀘어라운드 Regular'; margin-top: 1em;">회원가입</h2>
 
 <div style="font-family: '나눔스퀘어라운드 Regular'; text-align: center; color: gray;">
 	<small>이미 cgv 회원이신가요?</small>
-	<button type="button" class="btn" style="padding: 0;  font-size:13px; color: red;">로그인</button>
+	<button type="button" class="btn" style="padding: 0;  font-size:13px; color: red;" onclick="location.href='../loginout/login.html'">로그인</button>
 </div>
 
 <br>
@@ -180,7 +147,7 @@
 				<th colspan="2" style="text-align: center;">
 					<div class="row">
 		 			 	<div>
-		   			 		<input type="text" class="form-control" placeholder="비밀번호" aria-label="First name" style="border-color:white;">
+		   			 		<input type="password" class="form-control" placeholder="비밀번호" aria-label="First name" style="border-color:white;">
 		 				</div>
 		  			</div>
 	  			</th>
@@ -189,7 +156,7 @@
 				<th colspan="2" style="text-align: center;">
 					<div class="row">
 		 			 	<div class="col">
-		   			 		<input type="text" class="form-control" placeholder="비밀번호 확인" aria-label="First name" style="border-color:white;">
+		   			 		<input type="password" class="form-control" placeholder="비밀번호 확인" aria-label="First name" style="border-color:white;">
 		 				</div>
 		  			</div>
 	  			</th>
@@ -344,6 +311,9 @@
 								</div>				
 	  
 								<div class="row">
+									<div class="col">
+										<input type="text" class="form-control" placeholder="간편주소" aria-label="First name" style="border-color: white;">
+									</div>
 									<div class="col">
 										<input type="text" class="form-control" placeholder="상세주소" aria-label="First name" style="border-color: white;">
 									</div>
@@ -564,7 +534,7 @@
 	
 	<!-- 이용 약관 동의 -->
 	<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
-	  <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+		<path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
 	</svg>	
 	<div class="form-check form-switch form-check-inline">
 		<input class="form-check-input" type="checkbox" name="checkbox" id="flexSwitchCheckChecked2">
@@ -577,7 +547,7 @@
 	
 	<!-- 메일 수신 동의 -->
 	<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
-	  <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+		<path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
 	</svg>		
 	<div class="form-check form-switch form-check-inline">
 		<input class="form-check-input" type="checkbox" name="checkbox" id="flexSwitchCheckChecked2">
@@ -590,7 +560,7 @@
 	
 	<!-- 모바일 수신 동의 -->
 	<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-dot" viewBox="0 0 16 16">
-	  <path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+		<path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
 	</svg>		
 	<div class="form-check form-switch form-check-inline">
 		<input class="form-check-input" type="checkbox" name="checkbox" id="flexSwitchCheckChecked2">
@@ -605,30 +575,26 @@
 <!-- 회원가입 버튼 -->						
 <div class="container my-wrap">
 	<div>
-		<button type="submit" class="form-control btn" style="background-color: #FF5E00; color: white; margin-top:0; font-family: '나눔스퀘어라운드 Regular';">회원가입</button>
+		<button type="submit" class="form-control btn btn-lg" style="background-color: #FF5E00; color: white; margin-top:0; font-family: '나눔스퀘어라운드 Regular';" onclick="location.href='./memberForm_finish_app.html'">회원가입</button>
 	</div>
 </div>
 
 
-<br>
-<br>
-<br>
-
 <!-- 푸터 -->
 
-<div class="b-example-divider"></div>
+<div class="b-example-divider" style="margin-top:8em;"></div>
 
 <div class="container">
-  <footer class="py-3 my-4">
-    <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
-    </ul>
-    <p class="text-center text-muted">&copy; 2022 CJ CGV. All Rights Reserved</p>
-  </footer>
+	<footer class="py-3 my-4">
+		<ul class="nav justify-content-center border-bottom pb-3 mb-3">
+			<li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+			<li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
+			<li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
+			<li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+			<li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+		</ul>
+		<p class="text-center text-muted">&copy; 2022 CJ CGV. All Rights Reserved</p>
+	</footer>
 </div>
 
 

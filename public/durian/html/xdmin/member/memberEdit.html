@@ -10,7 +10,7 @@
 <!-- Bootstrap CSS -->
 <link href="../../../bootstrap/bootstrap-5.1.3-dist/css/bootstrap.min.css" rel="stylesheet">
 
-<title>memberForm_durian</title>
+<title>memberEdit_durian</title>
 
 <style type="text/css">
 	.my-wrap {
@@ -86,6 +86,7 @@
 	</div>
 </header>
 
+
 <!-- Breadcrumb -->
 
 <header class="p-3 mb-3 ">
@@ -124,13 +125,13 @@
 	<small style="margin:1em;">필수정보</small>
 	<div class="table" style="font-family: '나눔스퀘어라운드 Regular';">
 	
-		<table class="table align-middle" >
+	 <table class="table align-middle" >
 			<!-- 이름 -->
 			<tr>
 				<th colspan="2">
 					<div class="row">
 		 			 	<div class="col" >
-		   			 		<input type="text" class="form-control" placeholder="이름" aria-label="First name" style="border-color:white;">
+		   			 		<input type="text" class="form-control" placeholder="이름" aria-label="First name" style="border-color:white;" value="윤이나">
 		 				</div>
 		  			</div>
 	  			</th>
@@ -140,7 +141,7 @@
 				<th colspan="2">
 					<div class="row">
 		 			 	<div class="col" >
-		   			 		<input type="text" class="form-control" placeholder="아이디" aria-label="First name" style="border-color:white;">
+		   			 		<input type="text" class="form-control" placeholder="아이디" aria-label="First name" style="border-color:white;" value="yina123">
 		 				</div>
 		  			</div>
 	  			</th>
@@ -151,7 +152,7 @@
 				<th colspan="2" style="text-align: center;">
 					<div class="row">
 		 			 	<div>
-		   			 		<input type="password" class="form-control" placeholder="비밀번호" aria-label="First name" style="border-color:white;">
+		   			 		<input type="password" class="form-control" placeholder="비밀번호" aria-label="First name" style="border-color:white;" value="안녕하세요비밀번호입니다.">
 		 				</div>
 		  			</div>
 	  			</th>
@@ -162,7 +163,7 @@
 				<th colspan="2" style="text-align: center;">
 					<div class="row">
 		 			 	<div class="col">
-		   			 		<input type="password" class="form-control" placeholder="비밀번호 확인" aria-label="First name" style="border-color:white;">
+		   			 		<input type="password" class="form-control" placeholder="비밀번호 확인" aria-label="First name" style="border-color:white;" value="안녕하세요비밀번호입니다.">
 		 				</div>
 		  			</div>
 	  			</th>
@@ -174,7 +175,7 @@
 					<div class="row">
 						<div class="col">
 							<div class="text">
-								<input type="text" class="form-control" aria-label="First name" placeholder="이메일" style="border-color:white; display:inline-block;">
+								<input type="text" class="form-control" aria-label="First name" placeholder="이메일" style="border-color:white; display:inline-block;" value="yinayina">
 							</div>
 						</div>
 						<div class="col" style="display:inline-block;">
@@ -216,7 +217,7 @@
 							<th>
 								<div class="row">
 					 			 	<div class="col" >
-					   			 		<input type="text" class="form-control" placeholder="추천인" aria-label="First name" style="border-color:white;">
+					   			 		<input type="text" class="form-control" placeholder="추천인" aria-label="First name" style="border-color:white;" value="admin">
 					 				</div>
 					  			</div>
 				  			</th>
@@ -229,11 +230,11 @@
 						<tr>
 							<td>
 								<div class="form-check form-check-inline form-switch">
-									<input class="form-check-input" type="radio" name="radioGender" id="radioGender1" checked>
+									<input class="form-check-input" type="radio" name="radioGender" id="radioGender1">
 									<label class="form-check-label" for="flexSwitchCheckDefault">남자</label>
 								</div>
 								<div class="form-check form-switch form-check-inline">
-									<input class="form-check-input" type="radio" name="radioGender" id="radioGender2">
+									<input class="form-check-input" type="radio" name="radioGender" id="radioGender2" checked>
 									<label class="form-check-label" for="flexSwitchCheckChecked">여자</label>
 								</div>
 				  			</td>
@@ -246,7 +247,7 @@
 						<tr>
 							<td>
 								<div class="form">
-									<input type="date" class="form-control" id="">
+									<input type="date" class="form-control" id="" value="2000-01-25">
 								</div>
 				  			</td>
 						</tr>
@@ -274,7 +275,7 @@
 						</tr>								
 						<tr>
 							<td>
-								<input type="text" style="width: 175px; display: inline-block;" class="form-control" placeholder="우편번호" max-length="5" aria-label="First name" disabled>
+								<input type="text" style="width: 175px; display: inline-block;" class="form-control" placeholder="우편번호" max-length="5" aria-label="First name" disabled value="12345">
 								<button type="button" class="btn btn-sm" style="padding-top: 5px;">
 									<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
 									  <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
@@ -319,10 +320,10 @@
 	  
 								<div class="row">
 									<div class="col">
-										<input type="text" class="form-control" placeholder="간편주소" aria-label="First name" style="border-color: white;">
+										<input type="text" class="form-control" placeholder="간편주소" aria-label="First name" style="border-color: white;" value="인천광역시 계양구 계양로 85">
 									</div>
 									<div class="col">
-										<input type="text" class="form-control" placeholder="상세주소" aria-label="First name" style="border-color: white;">
+										<input type="text" class="form-control" placeholder="상세주소" aria-label="First name" style="border-color: white;" value="이젠아파트 3452-1234">
 									</div>
 								</div>	
 				  			</td>
@@ -347,7 +348,7 @@
 									</div>									
 									<div class="col">
 										<div class="text">
-											<input type="text" class="form-control" aria-label="First name" placeholder="전화번호" style="border-color:white; display:inline-block;">
+											<input type="text" class="form-control" aria-label="First name" placeholder="전화번호" style="border-color:white; display:inline-block;" value="010-1234-1234">
 										</div>
 									</div>
 								</div>
@@ -368,7 +369,7 @@
 									<option value="4">제일 좋아하는 색깔은?</option>
 								</select>
 								<div class="text">
-									<input type="text" class="form-control" aria-label="First name" placeholder="비밀번호 힌트 답" style="border-color:white; display:inline-block;">
+									<input type="text" class="form-control" aria-label="First name" placeholder="비밀번호 힌트 답" style="border-color:white; display:inline-block;" value="이젠초등학교">
 								</div>
 				  			</td>
 						</tr>
@@ -383,16 +384,16 @@
 									<div class="col-6" style="display:inline-block;">
 										<div class="select">
 											<select class="form-select" id="floatingSelectGrid" aria-label="domain">
-												<option selected>instagram</option>
+												<option value="4">instagram</option>
 												<option value="1">facebook</option>
 												<option value="2">kakaotalk</option>
-												<option value="3">홈페이지</option>
+												<option value="3" selected>홈페이지</option>
 											</select>
 										</div>
 									</div>									
 									<div class="col">
 										<div class="text">
-											<input type="text" class="form-control" aria-label="First name" placeholder="URL" style="border-color:white; display:inline-block;">
+											<input type="text" class="form-control" aria-label="First name" placeholder="URL" style="border-color:white; display:inline-block;" value="www.naver.com">
 										</div>
 									</div>
 								</div>
@@ -422,19 +423,19 @@
 						</tr>								
 						<tr>
 							<td>
-								<input type="checkbox" class="btn-check" id="btnHobby1" autocomplete="off">
+								<input type="checkbox" class="btn-check" id="btnHobby1" autocomplete="off" checked>
 								<label class="btn btn-outline-secondary btn-sm" for="btnHobby1">요리</label>
 								<input type="checkbox" class="btn-check" id="btnHobby2" autocomplete="off">
 								<label class="btn btn-outline-secondary btn-sm" for="btnHobby2">운동</label>
 								<input type="checkbox" class="btn-check" id="btnHobby3" autocomplete="off">
 								<label class="btn btn-outline-secondary btn-sm" for="btnHobby3">게임</label>
-								<input type="checkbox" class="btn-check" id="btnHobby4" autocomplete="off">
+								<input type="checkbox" class="btn-check" id="btnHobby4" autocomplete="off" checked>
 								<label class="btn btn-outline-secondary btn-sm" for="btnHobby4">독서</label>
 								<input type="checkbox" class="btn-check" id="btnHobby5" autocomplete="off">
 								<label class="btn btn-outline-secondary btn-sm" for="btnHobby5">영화감상</label>
-								<input type="checkbox" class="btn-check" id="btnHobby6" autocomplete="off">
+								<input type="checkbox" class="btn-check" id="btnHobby6" autocomplete="off" checked>
 								<label class="btn btn-outline-secondary btn-sm" for="btnHobby6">낮잠</label>
-								<input type="checkbox" class="btn-check" id="btnHobby6" autocomplete="off">
+								<input type="checkbox" class="btn-check" id="btnHobby6" autocomplete="off" checked>
 								<label class="btn btn-outline-secondary btn-sm" for="btnHobby6">코딩</label>
 								<input type="checkbox" class="btn-check" id="btnHobby6" autocomplete="off">
 								<label class="btn btn-outline-secondary btn-sm" for="btnHobby6">등산</label>
@@ -450,15 +451,15 @@
 						<tr>
 							<td>
 								<div class="form-check form-check-inline form-switch">
-									<input class="form-check-input" type="radio" name="radioMarige" id="flexSwitchCheckDefault1" checked>
+									<input class="form-check-input" type="radio" name="radioMarige" id="flexSwitchCheckDefault1">
 									<label class="form-check-label" for="flexSwitchCheckDefault">미혼</label>
 								</div>
 								<div class="form-check form-switch form-check-inline">
-									<input class="form-check-input" type="radio" name="radioMarige2" id="flexSwitchCheckChecked2">
+									<input class="form-check-input" type="radio" name="radioMarige2" id="flexSwitchCheckChecked2" checked>
 									<label class="form-check-label" for="flexSwitchCheckChecked">기혼</label>
 								</div>
 								<div class="form">
-									<input type="date" class="form-control" id="" placeholder="결혼기념일">
+									<input type="date" class="form-control" id="" placeholder="결혼기념일" value="2021-11-04">
 								</div>
 				  			</td>
 						</tr>
@@ -486,7 +487,7 @@
 						</tr>								
 						<tr>
 							<td>
-								<input type="color" class="form-control form-control-color" id="exampleColorInput" value="#563d7c" title="Choose your color">
+								<input type="color" class="form-control form-control-color" id="exampleColorInput" value="pink" title="Choose your color">
 				  			</td>
 						</tr>					
 					</table>
@@ -528,7 +529,7 @@
 		<label class="form-check-label" for="flexSwitchCheckChecked">1년	</label>
 	</div>
 	<div class="form-check form-switch form-check-inline">
-		<input class="form-check-input" type="radio" name="radioPrivacy" id="radioPrivacy2">
+		<input class="form-check-input" type="radio" name="radioPrivacy" id="radioPrivacy2" checked>
 		<label class="form-check-label" for="flexSwitchCheckChecked">3년	</label>
 	</div>
 	<div class="form-check form-switch form-check-inline">
@@ -546,7 +547,7 @@
 		<path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
 	</svg>	
 	<div class="form-check form-switch form-check-inline">
-		<input class="form-check-input" type="checkbox" name="checkbox" id="flexSwitchCheckChecked2">
+		<input class="form-check-input" type="checkbox" name="checkbox" id="flexSwitchCheckChecked2" checked>
 		<label class="form-check-label" for="flexSwitchCheckChecked2">
 			이용 약관 동의 <span style="color: orange;">(필수)</span>
 		</label>
@@ -559,7 +560,7 @@
 		<path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
 	</svg>		
 	<div class="form-check form-switch form-check-inline">
-		<input class="form-check-input" type="checkbox" name="checkbox" id="flexSwitchCheckChecked2">
+		<input class="form-check-input" type="checkbox" name="checkbox" id="flexSwitchCheckChecked2" checked>
 		<label class="form-check-label" for="flexSwitchCheckChecked">
 			메일 수신 동의 <span style="color: orange;">(선택)</span>
 		</label>
@@ -572,7 +573,7 @@
 		<path d="M8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
 	</svg>		
 	<div class="form-check form-switch form-check-inline">
-		<input class="form-check-input" type="checkbox" name="checkbox" id="flexSwitchCheckChecked2">
+		<input class="form-check-input" type="checkbox" name="checkbox" id="flexSwitchCheckChecked2" checked>
 		<label class="form-check-label" for="flexSwitchCheckChecked">
 			모바일 수신 동의 <span style="color: orange;">(선택)</span>
 		</label>
