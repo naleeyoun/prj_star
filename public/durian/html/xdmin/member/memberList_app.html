@@ -518,53 +518,55 @@
 	</tbody>
 </table>
 </div>
-
+<br>
 
 <!-- 삭제, 저장, 등록 버튼 -->
 
-<!-- 삭제버튼 -->
-<button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#delete" aria-label="Close" style="float: left; margin-left: 1em;">
-	<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-trash-fill" viewBox="0 0 16 16">
-  		<path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0z"/>
-	</svg>
-</button>
+<div class="container my-wrap">
 
-<!-- 삭제버튼 modal -->
-<div class="modal fade py-5" id="delete" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-	<div class="modal-dialog" role="document">
-		<div class="modal-content rounded-4 shadow">
-			<div class="modal-body p-4 text-center" style="font-family: '나눔스퀘어라운드 Regular';">
-				<h5 class="mb-0" style="color:red;">회원정보가 삭제됩니다.</h5>
-				<p class="mb-0">정말 삭제하시겠습니까?</p>
-			</div>
-			<div class="modal-footer flex-nowrap p-0">
-				<button type="button" class="btn btn-lg btn-link fs-6 text-decoration-none col-6 m-0 rounded-0 border-right"><strong>예</strong></button>
-				<button type="button" class="btn btn-lg btn-link fs-6 text-decoration-none col-6 m-0 rounded-0" data-bs-dismiss="modal">아니오</button>
+	<!-- 삭제버튼 -->
+	<button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#delete" aria-label="Close" style="float: left;">
+		<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-trash-fill" viewBox="0 0 16 16">
+	  		<path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1H2.5zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5zM8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5zm3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0z"/>
+		</svg>
+	</button>
+	
+	<!-- 삭제버튼 modal -->
+	<div class="modal fade py-5" id="delete" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content rounded-4 shadow">
+				<div class="modal-body p-4 text-center" style="font-family: '나눔스퀘어라운드 Regular';">
+					<h5 class="mb-0" style="color:red;">회원정보가 삭제됩니다.</h5>
+					<p class="mb-0">정말 삭제하시겠습니까?</p>
+				</div>
+				<div class="modal-footer flex-nowrap p-0">
+					<button type="button" class="btn btn-lg btn-link fs-6 text-decoration-none col-6 m-0 rounded-0 border-right"><strong>예</strong></button>
+					<button type="button" class="btn btn-lg btn-link fs-6 text-decoration-none col-6 m-0 rounded-0" data-bs-dismiss="modal">아니오</button>
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
-
-<!-- 등록버튼 -->
-<div class="d-grid gap-1 d-md-flex justify-content-md-end" data-bs-dismiss="modal" aria-label="Close" style="float:right; margin-right: 5px;">
-	<a class="btn btn-primary" href="./memberForm_app.html" role="button">	
-		<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-plus-square" viewBox="0 0 16 16">
-	  		<path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
-	  		<path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
-		</svg>		
-	</a>
-</div>
-
-<!-- 저장버튼 -->
-<div>
-<button type="button" class="btn btn-success" data-bs-dismiss="modal" aria-label="Close" style="float:right; margin-right: 5px;">
-	<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-file-earmark-arrow-down" viewBox="0 0 16 16">
-  		<path d="M8.5 6.5a.5.5 0 0 0-1 0v3.793L6.354 9.146a.5.5 0 1 0-.708.708l2 2a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0-.708-.708L8.5 10.293V6.5z"/>
-  		<path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z"/>
-	</svg>
-</button>
-</div>
-	 
+	
+	<!-- 등록버튼 -->
+	<div class="d-grid gap-1 d-md-flex justify-content-md-end" data-bs-dismiss="modal" aria-label="Close" style="float:right;">
+		<a class="btn btn-primary" href="./memberForm_app.html" role="button">	
+			<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-plus-square" viewBox="0 0 16 16">
+		  		<path d="M14 1a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+		  		<path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+			</svg>		
+		</a>
+	</div>
+	
+	<!-- 저장버튼 -->
+	<div>
+	<button type="button" class="btn btn-success" data-bs-dismiss="modal" aria-label="Close" style="float:right; margin-right: 5px;">
+		<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-file-earmark-arrow-down" viewBox="0 0 16 16">
+	  		<path d="M8.5 6.5a.5.5 0 0 0-1 0v3.793L6.354 9.146a.5.5 0 1 0-.708.708l2 2a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0-.708-.708L8.5 10.293V6.5z"/>
+	  		<path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z"/>
+		</svg>
+	</button>
+	</div>
+</div>	 
 <br>
 <br>
 <br>
