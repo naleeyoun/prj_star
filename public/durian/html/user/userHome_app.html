@@ -40,7 +40,7 @@
 			padding-left: 1rem;
 			overflow-y: auto;
 			visibility: hidden;
-			background-color: #343a40;
+			/* background-color: #343a40; */
 			transition: transform .3s ease-in-out, visibility .3s ease-in-out;
 		}
 		.offcanvas-collapse.open {
@@ -84,96 +84,100 @@
   		color: #343a40;
 	}
 
-	.bg-purple {
-  		background-color: #6f42c1;
+	
+	
+		/* CUSTOMIZE THE CAROUSEL
+	-------------------------------------------------- */
+	
+	/* Carousel base class */
+	.carousel {
+	  /* margin-bottom: 1rem; */
+	}
+	/* Since positioning the image, we need to help out the caption */
+	.carousel-caption {
+	  bottom: 3rem;
+	  z-index: 10;
+	}
+	
+	/* Declare heights because of positioning of img element */
+	.carousel-item {
+	  height: 7rem;
+	}
+	.carousel-item > img {
+	  position: absolute;
+	  top: 0;
+	  left: 0;
+	  min-width: 100%;
+	  height: 7rem;
 	}
 	
 	
-/* CUSTOMIZE THE CAROUSEL
--------------------------------------------------- */
-
-/* Carousel base class */
-.carousel {
-  /* margin-bottom: 1rem; */
-}
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-  bottom: 3rem;
-  z-index: 10;
-}
-
-/* Declare heights because of positioning of img element */
-.carousel-item {
-  height: 7rem;
-}
-.carousel-item > img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  height: 7rem;
-}
-
-
-/* MARKETING CONTENT
--------------------------------------------------- */
-
-/* Center align the text within the three columns below the carousel */
-.marketing .col-lg-4 {
-  margin-bottom: 1.5rem;
-  text-align: center;
-}
-.marketing h2 {
-  font-weight: 400;
-}
-/* rtl:begin:ignore */
-.marketing .col-lg-4 p {
-  margin-right: .75rem;
-  margin-left: .75rem;
-}
-/* rtl:end:ignore */
-
-
-/* Featurettes
-------------------------- */
-
-.featurette-divider {
-  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
-}
-
-/* Thin out the marketing headings */
-.featurette-heading {
-  font-weight: 300;
-  line-height: 1;
-  /* rtl:remove */
-  letter-spacing: -.05rem;
-}
-
-
-/* RESPONSIVE CSS
--------------------------------------------------- */
-
-@media (min-width: 40em) {
-  /* Bump up size of carousel content */
-  .carousel-caption p {
-    margin-bottom: 1.25rem;
-    font-size: 1.25rem;
-    line-height: 1.4;
-  }
-
-  .featurette-heading {
-    font-size: 50px;
-  }
-}
-
-@media (min-width: 62em) {
-  .featurette-heading {
-    margin-top: 7rem;
-  }
-}	
+	/* MARKETING CONTENT
+	-------------------------------------------------- */
+	
+	/* Center align the text within the three columns below the carousel */
+	.marketing .col-lg-4 {
+	  margin-bottom: 1.5rem;
+	  text-align: center;
+	}
+	.marketing h2 {
+	  font-weight: 400;
+	}
+	/* rtl:begin:ignore */
+	.marketing .col-lg-4 p {
+	  margin-right: .75rem;
+	  margin-left: .75rem;
+	}
+	/* rtl:end:ignore */
 	
 	
-
+	/* Featurettes
+	------------------------- */
+	
+	.featurette-divider {
+	  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+	}
+	
+	/* Thin out the marketing headings */
+	.featurette-heading {
+	  font-weight: 300;
+	  line-height: 1;
+	  /* rtl:remove */
+	  letter-spacing: -.05rem;
+	}
+	
+	
+	/* RESPONSIVE CSS
+	-------------------------------------------------- */
+	
+	@media (min-width: 40em) {
+	  /* Bump up size of carousel content */
+		.carousel-caption p {
+	    margin-bottom: 1.25rem;
+	    font-size: 1.25rem;
+	    line-height: 1.4;
+	  }
+	
+	  .featurette-heading {
+	    font-size: 50px;
+	  }
+	}
+	
+	@media (min-width: 62em) {
+	  .featurette-heading {
+	    margin-top: 7rem;
+	  }
+	}	
+	
+	/* 푸터 */	
+	.b-example-divider {
+		height: 1rem;
+		background-color: rgba(0, 0, 0, .1);
+		border: solid rgba(0, 0, 0, .15);
+		border-width: 1px 0;
+		box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+	}	
+	
 	</style>
 </head>
 <body>
@@ -189,18 +193,21 @@
 		</button>
 		<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
 			<div class="offcanvas-header">
-				<h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+				<h5 class="offcanvas-title" id="offcanvasNavbarLabel"><img src="../../images/user/cgv_logo1.png" width="60px;"></h5>
 				<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 			</div>
 			<div class="offcanvas-body">
 				<ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
 					<li class="nav-item">
-						<a class="nav-link active" aria-current="page" href="#">Home</a>
+						<a class="nav-link active" aria-current="page" href="#">My CGV</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Link</a>
+						<a class="nav-link" href="#">빠른예매</a>
 					</li>
-					<li class="nav-item dropdown">
+					<li class="nav-item">
+						<a class="nav-link" href="#">CGV 안내</a>
+					</li>
+<!-- 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
 							Dropdown
 						</a>
@@ -215,7 +222,7 @@
 				<form class="d-flex">
 					<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
 					<button class="btn btn-outline-success" type="submit">Search</button>
-				</form>
+				</form> -->
 			</div>
 		</div>
 	</div>
@@ -223,8 +230,8 @@
 
 <div class="nav-scroller bg-body shadow-sm">
 	<nav class="nav nav-underline" aria-label="Secondary navigation" style="font-family: '나눔스퀘어라운드 Regular';">
-		<a class="nav-link active" aria-current="page" href="#" style="font-size: 18px;  color: #FF5E00;"><b>홈</b></a>
-		<a class="nav-link" href="#" style="font-size: 18px;"><b>영화</b></a>
+		<a class="nav-link active" aria-current="page" href="./userHome_app.html" style="font-size: 18px;  color: #FF5E00;"><b>홈</b></a>
+		<a class="nav-link" href="./userMovie_app.html" style="font-size: 18px;"><b>영화</b></a>
 		<a class="nav-link" href="#" style="font-size: 18px;"><b>빠른예매</b></a>
 		<a class="nav-link" href="#" style="font-size: 18px;"><b>이벤트</b></a>
 	</nav>
@@ -265,7 +272,7 @@
 
 <!-- 무비차트 -->
 
-<div class="album py-5 bg-light" style="font-family: '나눔스퀘어라운드 Regular'; margin-top:0;">
+<div class="album py-5 bg-light" style="font-family: '나눔스퀘어라운드 Regular'; margin:0;">
 	<h5 style="font-family: '나눔스퀘어라운드 Regular'; margin-left: 10px;"><b>무비차트</b></h5>	<br>
 	<div class="container">
 		<div class="row row-cols-3 g-1">
@@ -283,17 +290,17 @@
 		<div class="row row-cols-3 g-1">
 			<div class="col">
 				<div class="card shadow-sm" style="border-color:white;">
-					<img src="../../images/user/batman_image.jpg">
+					<button type="button" class="btn" style="padding : 0; margin : 0;"><img src="../../images/user/batman_image.jpg" width="112.33px"></button>
 				</div>
 			</div>
 			<div class="col">
 				<div class="card shadow-sm">
-					<img src="../../images/user/uncharted_image.jpg">
+					<button type="button" class="btn" style="padding : 0;"><img src="../../images/user/uncharted_image.jpg" width="112.33px"></button>
 				</div>
 			</div>
 			<div class="col">
 				<div class="card shadow-sm">
-					<img src="../../images/user/lalaland_image.jpg">
+					<button type="button" class="btn" style="padding : 0;"><img src="../../images/user/lalaland_image.jpg" width="112.33px"></button>
 				</div>
 			</div>
 		</div>
@@ -312,13 +319,19 @@
 				
 		<div class="row row-cols-3 g-1">
 			<div class="card bg-light" style="border: 0px;">
-				<span class="badge rounded-pill" style="background-color:#FF5E00; margin-left:20px; margin-right:20px;">예매하기</span>
+				<button type="button" class="badge rounded-pill" style="background-color:#FF5E00; margin-left:20px; margin-right:20px; border: 0px;">
+					예매하기
+				</button>
 			</div>
 			<div class="card bg-light" style="border: 0px">
-				<span class="badge rounded-pill" style="background-color:#FF5E00; margin-left:20px; margin-right:20px;">예매하기</span>
+				<button type="button" class="badge rounded-pill" style="background-color:#FF5E00; margin-left:20px; margin-right:20px; border: 0px;">
+					예매하기
+				</button>
 			</div>
 			<div class="card bg-light" style="border: 0px;">
-				<span class="badge rounded-pill" style="background-color:#FF5E00; margin-left:20px; margin-right:20px;">예매하기</span>
+				<button type="button" class="badge rounded-pill" style="background-color:#FF5E00; margin-left:20px; margin-right:20px; border: 0px;">
+					예매하기
+				</button>
 			</div>
 		</div>		
 	</div>
@@ -333,32 +346,25 @@
 <div class="container marketing" style="font-family: '나눔스퀘어라운드 Regular';">
 
 	<!-- Three columns of text below the carousel -->
-	<div class="row row-cols-3 g-3 p-5">
+	<div class="row row-cols-4 g-1 p-4" style>
 		<div class="col">
-			<img src="../../images/user/mycgv_button.PNG">
-			<p>my CGV</p>
+			<button type="button" class="btn"><img src="../../images/user/mycgv_button.PNG"></button>
+			<p style="text-align: center"><small>my CGV</small></p>
 		</div>
 		<div class="col">
-			<img src="../../images/user/discount_button.PNG">
-		<h2>Heading</h2>
-        <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
-        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-      </div><!-- /.col-lg-4 -->
-      <div class="col">
-			<img src="../../images/user/store_button.PNG">
-        <h2>Heading</h2>
-        <p>And lastly this, the third column of representative placeholder content.</p>
-        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-      </div><!-- /.col-lg-4 -->
-    </div><!-- /.row -->
-
-
-
-
-
-
-
-
+			<button type="button" class="btn"><img src="../../images/user/discount_button.PNG"></button>
+			<p style="text-align: center"><small>할인정보</small></p>
+		</div><!-- /.col-lg-4 -->
+		<div class="col">
+			<button type="button" class="btn"><img src="../../images/user/store_button.PNG"></button>
+			<p style="text-align: center"><small>CGV스토어</small></p>
+		</div><!-- /.col-lg-4 -->
+		<div class="col">
+			<button type="button" class="btn"><img src="../../images/user/photo_button.PNG"></button>
+			<p style="text-align: center"><small>포토플레이</small></p>
+		</div><!-- /.col-lg-4 -->
+	</div><!-- /.row -->
+</div>
 
 
 
@@ -366,7 +372,7 @@
 
 <!-- 푸터 -->
 
-<div class="b-example-divider" style="margin-top:8em;"></div>
+<div class="b-example-divider" style="margin-top:4em;"></div>
 
 <div class="container">
 	<footer class="py-3 my-4">
