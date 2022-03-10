@@ -171,7 +171,7 @@
 			<a class="navbar-brand" href="#" style="font-size: 17px;">언차티드 <img src="../../images/user/12age.PNG"> 1시간 56분</a>
 		</div>
 	</nav>
-		<div class="table py-3 table-responsive">
+	<div class="table py-3 table-responsive">
 		<table class="table" style="border: 0px solid white; vertical-align: bottom; text-align: center; font-size: 15px;">
 			<tr>
 				<td width="80px">
@@ -208,51 +208,51 @@
 
 </div>
 
-<div class="d-flex flex-column align-items-stretch flex-shrink-0 bg-white" style="width: 170px;">
-	<a href="/" class="d-flex align-items-center flex-shrink-0 link-dark text-decoration-none border-bottom">
-		<svg class="bi me-2" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
-	</a>
-	<div class="list-group list-group-flush border-bottom scrollarea">
-		<a href="#" class="list-group-item list-group-item-action active py-3 lh-tight" aria-current="true">
-			<div class="d-flex w-100 align-items-center justify-content-between">
-				<strong class="mb-1">서울</strong>
-			</div>
-		</a>
- 		<a href="#" class="list-group-item list-group-item-action py-3 lh-tight">
-			<div class="d-flex w-100 align-items-center justify-content-between">
-				<strong class="mb-1">경기</strong>
-			</div>
-		</a>
-		<a href="#" class="list-group-item list-group-item-action py-3 lh-tight">
-			<div class="d-flex w-100 align-items-center justify-content-between">
-				<strong class="mb-1">인천</strong>
-			</div>
-		</a>
-		<div class="btn-group dropend">
-		  <button type="button" class="btn dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-		    <strong class="mb-1">인천</strong>
-		  </button>
-		  <ul class="dropdown-menu">
-		    <li><a class="dropdown-item active" href="#"><strong class="mb-1">계양</strong></a></li>
-		    <li><a class="dropdown-item" href="#"><strong class="mb-1">부평</strong></a></li>
-		    <li><a class="dropdown-item" href="#">
-		    		<a href="#" class="list-group-item list-group-item-action py-3 lh-tight" aria-current="true">
-			<div class="d-flex w-100 align-items-center justify-content-between">
-				<strong class="mb-1">서울</strong>
-			</div>
-		</a>
-		    
-		    </a></li>
-		  </ul>
-		</div>
-		
-	</div>
+<div class="accordion" id="accordionExample">
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingOne">
+      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+        서울
+      </button>
+    </h2>
+    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+         <table>
+         	<tr style="border-bottom-color: gray;">
+         		<td>강남</td>
+           	</tr>
+         	<tr>
+         		<td>강변</td>
+           	</tr>
+         </table>
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingTwo">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+        경기
+      </button>
+    </h2>
+    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="headingThree">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+        인천
+      </button>
+    </h2>
+    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+      <div class="accordion-body">
+        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+      </div>
+    </div>
+  </div>
 </div>
-
-
-
-
-
 
 
 
