@@ -103,7 +103,7 @@
 
 <nav class="navbar navbar-light fixed-top" style="background-color: white;">
 	<div class="container-fluid">
-		<a class="navbar-brand" href="#"><img src="../../images/user/cgv_logo1.png" width="80px;"></a>
+		<div class="navbar-brand" href="#"><img src="../../images/user/cgv_logo1.png" width="80px;"></div>
 		<button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
 			<span class="navbar-toggler-icon"></span>
 		</button>
@@ -168,7 +168,7 @@
 	
 	<nav class="navbar navbar-light bg-light" style="padding: 0; clear:both;">
 		<div class="container-fluid">
-			<a class="navbar-brand" href="#" style="font-size: 17px;">언차티드 <img src="../../images/user/12age.PNG"> 1시간 56분</a>
+			<div class="navbar-brand" style="font-size: 17px;">언차티드 <img src="../../images/user/12age.PNG"> 1시간 56분</div>
 		</div>
 	</nav>
 	<div class="table py-3 table-responsive">
@@ -200,61 +200,161 @@
 
 <!-- 극장선택 -->
 <div>
-	<nav class="navbar navbar-light bg-light" style="padding: 0;">
+	<nav class="navbar navbar-light bg-light" style="padding: 0; font-family: '나눔스퀘어라운드 Regular';">
 		<div class="container-fluid">
-			<a class="navbar-brand" href="#" style="font-size: 17px;">선택 된 극장 <b>&nbsp;강남</b></a>
+			<div class="navbar-brand" style="font-size: 17px;">선택 된 극장 <b>&nbsp;강남</b></div>
 		</div>
 	</nav>
-
 </div>
 
-<div class="accordion" id="accordionExample">
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingOne">
-      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-        서울
-      </button>
-    </h2>
-    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-         <table>
-         	<tr style="border-bottom-color: gray;">
-         		<td>강남</td>
-           	</tr>
-         	<tr>
-         		<td>강변</td>
-           	</tr>
-         </table>
-      </div>
-    </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingTwo">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-        경기
-      </button>
-    </h2>
-    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-      </div>
-    </div>
-  </div>
-  <div class="accordion-item">
-    <h2 class="accordion-header" id="headingThree">
-      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-        인천
-      </button>
-    </h2>
-    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-      <div class="accordion-body">
-        <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-      </div>
-    </div>
-  </div>
+<div class="accordion" id="accordionExample" style=" font-family: '나눔스퀘어라운드 Regular';">
+	<div class="accordion-item">
+		<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="font-size :17px;">
+			서울
+		</button>
+		<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+			<div class="accordion-body">
+				<div class="d-flex flex-column align-items-stretch flex-shrink-0 bg-white" style="width: 100%;">
+					<a href="/" class="d-flex align-items-center flex-shrink-0 p-3 link-dark text-decoration-none border-bottom">
+						<svg class="bi me-2" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+						<span class="fw-semibold">강남</span>
+					</a>
+				</div> 
+				<div class="d-flex flex-column align-items-stretch flex-shrink-0 bg-white" style="width: 100%;">
+					<a href="/" class="d-flex align-items-center flex-shrink-0 p-3 link-dark text-decoration-none border-bottom">
+						<svg class="bi me-2" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+						<span class="fw-semibold">강변</span>
+					</a>
+				</div> 
+			</div>
+		</div>
+	</div>
+	<div class="accordion-item">
+		<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne" style="font-size :17px;">
+			경기
+		</button>
+
+		<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+			<div class="accordion-body">
+				<div class="d-flex flex-column align-items-stretch flex-shrink-0 bg-white" style="width: 100%;">
+					<a href="/" class="d-flex align-items-center flex-shrink-0 p-3 link-dark text-decoration-none border-bottom">
+						<svg class="bi me-2" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+						<span class="fw-semibold">경기광주</span>
+					</a>
+				</div> 
+				<div class="d-flex flex-column align-items-stretch flex-shrink-0 bg-white" style="width: 100%;">
+					<a href="/" class="d-flex align-items-center flex-shrink-0 p-3 link-dark text-decoration-none border-bottom">
+						<svg class="bi me-2" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+						<span class="fw-semibold">고양행신</span>
+					</a>
+				</div> 
+			</div>
+		</div>
+	</div>
+	<div class="accordion-item">
+		<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseOne" style="font-size :17px;">
+			인천
+		</button>
+
+		<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+			<div class="accordion-body">
+				<div class="d-flex flex-column align-items-stretch flex-shrink-0 bg-white" style="width: 100%;">
+					<a href="/" class="d-flex align-items-center flex-shrink-0 p-3 link-dark text-decoration-none border-bottom">
+						<svg class="bi me-2" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+						<span class="fw-semibold">계양</span>
+					</a>
+				</div> 
+				<div class="d-flex flex-column align-items-stretch flex-shrink-0 bg-white" style="width: 100%;">
+					<a href="/" class="d-flex align-items-center flex-shrink-0 p-3 link-dark text-decoration-none border-bottom">
+						<svg class="bi me-2" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
+						<span class="fw-semibold">부평</span>
+					</a>
+				</div> 
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="py-4"></div>
+
+
+<!-- 날짜선택 -->
+<div>
+	<nav class="navbar navbar-light bg-light" style="padding: 0; font-family: '나눔스퀘어라운드 Regular';">
+		<div class="container-fluid">
+			<div class="navbar-brand" style="font-size: 17px; text-align: center;">2022.2.14(월) <span style="color: blue">오늘</span></div>
+		</div>
+	</nav>
+</div>
+
+<div class="table py-3 table-responsive">
+	<table class="table" style="border: 0px solid white; vertical-align: bottom; text-align: center; font-size: 15px; background-color: white;">
+		<tr>
+			<td>
+				<button type="button" class="btn" style="background-color: #FF5E00; color: white;">14</button>
+			</td>
+			<td>
+				<button type="button" class="btn">15</button>
+			</td>
+			<td>
+				<button type="button" class="btn">16</button>
+			</td>
+			<td>
+				<button type="button" class="btn">17</button>
+			</td>
+			<td>
+				<button type="button" class="btn">18</button>
+			</td>
+			<td>
+				<button type="button" class="btn">19</button>
+			</td>
+			<td>
+				<button type="button" class="btn">20</button>
+			</td>
+		</tr>
+		<tr style="background-color: white;">
+			<td>
+				<button type="button" class="btn" style="padding : 0; margin : 0; color: #FF5E00">오늘</button>
+			</td>
+			<td>
+				<button type="button" class="btn" style="padding : 0; margin : 0;">내일</button>
+			</td>
+			<td>
+				<button type="button" class="btn" style="padding : 0; margin : 0;">수</button>
+			</td>
+			<td>
+				<button type="button" class="btn" style="padding : 0; margin : 0;">목</button>
+			</td>
+			<td>
+				<button type="button" class="btn" style="padding : 0; margin : 0;">금</button>
+			</td>
+			<td>
+				<button type="button" class="btn" style="padding : 0; margin : 0;">토</button>
+			</td>
+			<td>
+				<button type="button" class="btn" style="padding : 0; margin : 0;">일</button>
+			</td>
+		</tr>
+	</table>
+</div>
+
+<div class="py-4"></div>
+
+
+<!-- 시간선택 -->
+<div>
+	<nav class="navbar navbar-light bg-light" style="padding: 0; font-family: '나눔스퀘어라운드 Regular';">
+		<div class="container-fluid">
+			<div class="navbar-brand" style="font-size: 17px; text-align: center;">2022.2.14(월) <span style="color: blue">오늘</span></div>
+		</div>
+	</nav>
 </div>
 
 
+
+
+ 
+        
 
 
 <!-- 푸터 -->
